@@ -14,7 +14,6 @@ const CreateGrouplist = ({ navigation }) => {
                 <Image resizeMode='contain' style={{ height: 60, width: 60, }} source={require('../Image/profile1.png')} />
             </View>
             <View style={{ margin: 10, padding: 10 }}>
-
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, borderWidth: 2, borderColor: '#FFFFFF', marginBottom: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>Connections</Text>
                     <Image resizeMode='contain' style={{ height: 20, width: 20 }} source={require('../Image/arrowdown.jpg')} />
@@ -28,7 +27,6 @@ const CreateGrouplist = ({ navigation }) => {
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, borderWidth: 2, borderColor: '#FFFFFF', marginBottom: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>Goals Time  eg. Twice a day</Text>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 50, width: 70, borderTopRightRadius: 20, borderBottomRightRadius: 20, left: 15, textAlign: 'center', lineHeight: 50 }}>Days</Text>
-
                 </View>
                 <View style={{ backgroundColor: '#1E293B', height: 150, borderRadius: 20, padding: 10, borderWidth: 2, borderColor: '#FFFFFF', marginBottom: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>Group Name</Text>
@@ -53,7 +51,6 @@ const CreateGrouplist = ({ navigation }) => {
                             <Image resizeMode='contain' style={{ height: 40, width: 40, margin: 5 }} source={require('../Image/parsnal.jpg')} />
                             <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 10 }}>Dovid</Text>
                         </View>
-
                         <Image resizeMode='cover' style={{ height: 20, width: 20 }} source={require('../Image/right.jpg')} />
                     </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, margin: 5 }}>
@@ -62,7 +59,6 @@ const CreateGrouplist = ({ navigation }) => {
                             <Image resizeMode='contain' style={{ height: 40, width: 40, margin: 5 }} source={require('../Image/parsnal.jpg')} />
                             <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 10 }}>Dovid</Text>
                         </View>
-
                         <Image resizeMode='cover' style={{ height: 20, width: 20 }} source={require('../Image/right.jpg')} />
                     </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, margin: 5 }}>

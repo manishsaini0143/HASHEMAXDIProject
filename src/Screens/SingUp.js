@@ -2,6 +2,7 @@
 import React , { useState } from 'react';
 import axios from 'axios';
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 const SingUp = ({ navigation }) => {
   const [fullname, setfullname] = useState();
   const [Email, setEmail] = useState();
@@ -18,6 +19,7 @@ const SingUp = ({ navigation }) => {
       if (res.status == 200) {
         navigation.navigate('Home'),
          console.log('fdg', res) }
+         AsyncStorage.setItem('userToken', res.data.token);
     })
       .catch(err => { console.log('singh', err) })
   };

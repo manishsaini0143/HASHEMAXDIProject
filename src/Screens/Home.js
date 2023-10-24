@@ -1,16 +1,16 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, Slider } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Image, TouchableOpacity, ScrollView, Switch } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
+// let labels = ['1D', '5D', '1M', '3M', '6M', 'YTD']
 const data = {
-  labels: ['1D', '5D', '1M', '3M', '6M', 'YTD'],
   datasets: [
     {
-      data: [17, 8, 45, 35, 55, 30, 40, 25, 80, 58, 75],//blue
+      data: [17, 8, 45, 35, 55, 30, 40, 25, 80, 58, 75],//blue//
       color: (opacity = 1) => `rgba(74, 81, 226, ${opacity = 1})`,
       strokeWidth: 2,
     },
     {
-      data: [40, 50, 30, 50, 70, 75, 77, 79, 77, 78, 80],//green
+      data: [40, 50, 30, 50, 70, 75, 77, 79, 77, 78, 80],//green//
       color: (opacity = 1) => `rgba(34, 197, 94, ${opacity = 1})`,
       strokeWidth: 2,
     },
@@ -20,7 +20,7 @@ const data = {
       strokeWidth: 2,
     },
     {
-      data: [15, 9, 15, 17, 18, 20, 25, 45, 55, 65, 70],//red
+      data: [15, 9, 15, 17, 18, 20, 25, 45, 55, 65, 70],//red//
       color: (opacity = 1) => `rgba(239, 68, 68, ${opacity = 1})`,
       strokeWidth: 2,
     },
@@ -32,16 +32,69 @@ const chartConfig = {
   backgroundGradientTo: '#0D1134',
   color: (opacity = 1) => `rgba(222, 444, 555, ${opacity})`,
 
-  decimalPlaces: 0, // Number of decimal places for Y-axis labels
+  decimalPlaces: 0,
 };
 const dataList = [90, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 const Home = ({ navigation }) => {
+
+  const [onoff, setonoff] = useState(true);
+  const [onoff1, setonoff1] = useState(true);
+  const [onoff2, setonoff2] = useState(true);
+  const [onoff3, setonoff3] = useState(true);
+  const [onoff4, setonoff4] = useState(true);
+  const [onoff5, setonoff5] = useState(false);
+  const [onoff6, setonoff6] = useState(true);
+  const [onoff7, setonoff7] = useState(true);
+  const [onoff8, setonoff8] = useState(true);
+  const [onoff9, setonoff9] = useState(true);
+  const [onoff10, setonoff10] = useState(true);
+  const [onoff11, setonoff11] = useState(true);
+  const [onoff12, setonoff12] = useState(true);
+  const onoffSwitch = () => {
+    setonoff((previousState) => !previousState);
+  };
+  const onoffSwitch1 = () => {
+    setonoff1((previousState) => !previousState);
+  };
+  const onoffSwitch2 = () => {
+    setonoff2((previousState) => !previousState);
+  };
+  const onoffSwitch3 = () => {
+    setonoff3((previousState) => !previousState);
+  };
+  const onoffSwitch4 = () => {
+    setonoff4((previousState) => !previousState);
+  };
+  const onoffSwitch5 = () => {
+    setonoff5((previousState) => !previousState);
+  };
+  const onoffSwitch6 = () => {
+    setonoff6((previousState) => !previousState);
+  };
+  const onoffSwitch7 = () => {
+    setonoff7((previousState) => !previousState);
+  };
+  const onoffSwitch8 = () => {
+    setonoff8((previousState) => !previousState);
+  };
+  const onoffSwitch9 = () => {
+    setonoff9((previousState) => !previousState);
+  };
+  const onoffSwitch10 = () => {
+    setonoff10((previousState) => !previousState);
+  };
+  const onoffSwitch11 = () => {
+    setonoff11((previousState) => !previousState);
+  };
+  const onoffSwitch12 = () => {
+    setonoff12((previousState) => !previousState);
+  };
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <View style={{ flexDirection: 'row' }}>
         <View style={{ padding: 10 }} >
           <Image resizeMode='cover' style={{ height: 100, width: 130, position: 'relative' }} source={require('../Image/Splash.png')} />
-          <Text style={{ width: 150, fontSize: 19, fontWeight: 'bold', color: '#FFFFFF' }}>My Connections 2000</Text>
+          <Text style={{ width: 150, fontSize: 19, fontWeight: 'bold', color: '#FFFFFF',marginLeft:10 }}>My Connections 2000</Text>
         </View>
         <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
           <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/settings.png')} />
@@ -50,13 +103,10 @@ const Home = ({ navigation }) => {
           <TouchableOpacity onPress={() => navigation.navigate('profile')}>
             <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
-
         </View>
       </View>
       <View style={{ flexDirection: 'row' }}>
-
         <View style={{ flexDirection: 'row', width: 190, height: 40, margin: 10, padding: 5 }}>
-
           <Image style={{ height: 20, width: 20, top: 5 }} source={require('../Image/arrow.png')} />
           <Text style={{ color: '#4CE364', fontSize: 18, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
         </View>
@@ -80,15 +130,33 @@ const Home = ({ navigation }) => {
                 <Text style={{ margin: 1, color: '#BDBDBD' }}> {i}</Text>
               )
             })}
-            <Text style={{ color: '#BDBDBD' }}>Data Range</Text>
+            <View style={{ flexDirection: 'row' }}>
+
+              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 120, height: 25, alignItems: 'center', justifyContent: 'center' }}>
+                <Image resizeMode='contain' style={{ height: 15, width: 20 }} source={require('../Image/tared.png')} />
+                <Text style={{ color: '#BDBDBD', left: 10 }}>Data Range</Text>
+              </View>
+              <View style={{ flexDirection: 'row', width: 200, height: 25, left: 30 }}>
+
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5 }}>1D</Text>
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>5D</Text>
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>1M</Text>
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>3M</Text>
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>6M</Text>
+                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>Y1D</Text>
+              </View>
+            </View>
           </View>
           <LineChart
+            // horizontal
             data={data}
             withDots={false}
             width={450}
             height={250}
             withHorizontalLabels={false}
+            withVerticalLabels={false}
             chartConfig={chartConfig}
+            withHorizontalLines={false}
           />
         </View>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B' }}>
@@ -119,7 +187,7 @@ const Home = ({ navigation }) => {
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}></Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>20</Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
         </ScrollView>
@@ -139,7 +207,12 @@ const Home = ({ navigation }) => {
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
+              <Switch
+                trackColor={{ false: '#0F172A', true: '#D1A684' }}
+                thumbColor={onoff ? '#FFFFFF' : '#FFFFFF'}
+                onValueChange={onoffSwitch}
+                value={onoff}
+              />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
@@ -153,7 +226,11 @@ const Home = ({ navigation }) => {
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
+              <Switch
+                trackColor={{ false: '#0F172A', true: '#D1A684' }}
+                thumbColor={onoff1 ? '#FFFFFF' : '#FFFFFF'}
+                onValueChange={onoffSwitch1}
+                value={onoff1} />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
@@ -167,7 +244,12 @@ const Home = ({ navigation }) => {
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
+              <Switch
+                trackColor={{ false: '#0F172A', true: '#D1A684' }}
+                thumbColor={onoff2 ? '#FFFFFF' : '#FFFFFF'}
+                onValueChange={onoffSwitch2}
+                value={onoff2}
+              />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', left: 105, alignSelf: 'center' }}>Add Goals</Text>
@@ -182,89 +264,152 @@ const Home = ({ navigation }) => {
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
+              <Switch
+                trackColor={{ false: '#0F172A', true: '#D1A684' }}
+                thumbColor={onoff3 ? '#FFFFFF' : '#FFFFFF'}
+                onValueChange={onoffSwitch3}
+                value={onoff3}
+              />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
-              <Text style={{ color: '#D2A784', fontSize: 20 }}>+</Text>
             </View>
           </View>
         </ScrollView>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 15 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, padding: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>My Group</Text>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', left: 90 }}>Create</Text>
           <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, bottom: 5 }}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
           </View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 15 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', color: '#D2A784' }}>Davening</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, padding: 10 }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', color: '#D2A784' }}>Davening</Text>
           <View>
-            <Image resizeMode='contain' style={{ height: 40, width: 40 }} source={require('../Image/button.jpg')} />
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff4 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch4}
+              value={onoff4}
+            />
           </View>
         </View>
         <View style={{ backgroundColor: '#1E293B', margin: 20, borderRadius: 15, position: 'relative', bottom: 15 }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
             <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold' }}>Bhala 1</Text>
-            <Image resizeMode='contain' style={{ height: 35, width: 35 }} source={require('../Image/offbutton.jpg')} />
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff5 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch5}
+              value={onoff5}
+            />
           </View>
           <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 310, alignSelf: 'center', borderRadius: 10 }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', margin: 10, width: 300 }}>Mission:45/ Friend:30/ Today:200 Complede 200/ Connection:200</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 10, width: 300, textAlign: 'center' }}>Mission:45<Text style={{ color: '#D1A684' }}>/</Text> Friend:30<Text style={{ color: '#D1A684' }}>/</Text> Today:200 Complede 200<Text style={{ color: '#D1A684', }}>/</Text>Connection:200</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold' }}>Bhala 1</Text>
-            <Image resizeMode='contain' style={{ height: 35, width: 35 }} source={require('../Image/button.jpg')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold' }}>Bhala 1.1</Text>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff6 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch6}
+              value={onoff6}
+            />
           </View>
           <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 310, alignSelf: 'center', borderRadius: 10 }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', margin: 10, width: 300 }}>Mission:45/ Friend:30/ Today:200 Complede 200/ Connection:200</Text>
+
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 10, width: 300, textAlign: 'center' }}>Mission:45
+            <Text style={{ color: '#D1A684' }}>/</Text>
+
+            Friend:30
+            <Text style={{ color: '#D1A684' }}>/</Text>
+            Today:200 Complede 200
+            <Text style={{ color: '#D1A684' }}>/</Text>
+            Connection:200</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold' }}>Bhala 1</Text>
-            <Image resizeMode='contain' style={{ height: 35, width: 35 }} source={require('../Image/button.jpg')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold' }}>Bhala 1.2</Text>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff7 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch7}
+              value={onoff7}
+            />
           </View>
           <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 310, alignSelf: 'center', borderRadius: 10 }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 16, fontWeight: 'bold', margin: 10, width: 300 }}>Mission:45/ Friend:30/ Today:200 Complede 200/ Connection:200</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 10, width: 300, textAlign: 'center' }}>Mission:45<Text style={{ color: '#D1A684' }}>/</Text>Friend:30<Text style={{ color: '#D1A684' }}>/</Text> Today:200 Complede 200<Text style={{ color: '#D1A684' }}>/</Text> Connection:200</Text>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 15, position: 'relative', bottom: 20 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', color: 'green' }}>Respect</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, padding: 10, bottom: 25 }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', color: '#4CE364' }}>Respect</Text>
           <View>
-            <Image resizeMode='contain' style={{ height: 40, width: 40 }} source={require('../Image/button.jpg')} />
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff8 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch8}
+              value={onoff8}
+            />
           </View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Connections </Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Today</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>All Time</Text>
-        </View>
-        <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
-          <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Davening</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>28</Text>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>40</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
-          <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Tzedkah</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>67</Text>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>35</Text>
-        </TouchableOpacity>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
-          <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Respect</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>86</Text>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>75</Text>
-        </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
-          <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/button.jpg')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Charity</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>32</Text>
-          <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
-          <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>85</Text>
+        <View style={{ margin: 10 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10 }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Connections </Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Today</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>All Time</Text>
+          </View>
+          <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
+            <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff9 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch9}
+              value={onoff9}
+            />
+
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Davening</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>28</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>40</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
+            <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff10 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch10}
+              value={onoff10}
+            />
+
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Tzedkah</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>67</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>35</Text>
+          </TouchableOpacity>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
+            <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff11 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch11}
+              value={onoff11}
+            />
+
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Respect</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>86</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>75</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
+            <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
+            <Switch
+              trackColor={{ false: '#0F172A', true: '#D1A684' }}
+              thumbColor={onoff12 ? '#FFFFFF' : '#FFFFFF'}
+              onValueChange={onoffSwitch12}
+              value={onoff12}
+            />
+
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>Charity</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>32</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', top: 5 }}>85</Text>
+          </View>
         </View>
         <Image style={{ margin: 20, height: 150, width: 350 }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
       </ScrollView>

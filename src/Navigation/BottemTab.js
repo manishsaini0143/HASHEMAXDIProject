@@ -36,8 +36,8 @@ export default function BottomTab() {
                 tabBarIcon: ({ focused }) => (
 
                     focused ?
-                        <Image resizeMode='contain' style={{height: 35, width: 35, position: 'absolute', top: 15 }} source={require('../Image/group1.jpg')} />
-                        : <Image resizeMode='contain' style={{height: 35, width: 35, position: 'absolute', top: 15 }} source={require('../Image/group.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 35, width: 35, position: 'absolute', top: 15 }} source={require('../Image/group1.jpg')} />
+                        : <Image resizeMode='contain' style={{ height: 35, width: 35, position: 'absolute', top: 15 }} source={require('../Image/group.jpg')} />
                 )
             }} />
             <Tab.Screen name="Buddies" component={Buddies} options={{
@@ -55,8 +55,6 @@ export default function BottomTab() {
                         : <Image resizeMode='contain' style={{ height: 30, width: 30, marginTop: 10 }} source={require('../Image/calendar.jpg')} />
                 )
             }} />
-
-
         </Tab.Navigator>
     );
 }

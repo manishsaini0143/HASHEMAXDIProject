@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, TextInput } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, Switch } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 const data = {
     labels: ['1D', '5D', '1M', '3M', '6M', 'YTD'],
@@ -21,6 +21,10 @@ const chartConfig = {
 const dataList = [90, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 
 const GroupDele = ({ navigation }) => {
+    const [onoffo1, setonoffo1] = useState(true);
+    const onoffSwitcho1 = () => {
+        setonoffo1((previousState) => !previousState);
+    };
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
 
@@ -28,7 +32,7 @@ const GroupDele = ({ navigation }) => {
                 <View style={{ padding: 10 }} >
                     <TouchableOpacity onPress={() => navigation.goBack()}>
 
-                        <Image resizeMode='contain' style={{ height: 20, width: 20, top: 20, left: 15 }} source={require('../Image/Backerro.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 25, width: 30, top: 20, left: 20 }} source={require('../Image/Backerro.jpg')} />
                     </TouchableOpacity>
                 </View>
                 <View style={{ flexDirection: 'row', width: '60%', height: 70, justifyContent: 'center', left: 10 }}>
@@ -47,7 +51,6 @@ const GroupDele = ({ navigation }) => {
                 <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 20, margin: 5 }}>Group Connections - 500</Text>
                 <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 20, margin: 5 }}>Connection -ABC  </Text>
                 <View style={{ flexDirection: 'row', width: 190, height: 40 }}>
-
                     <Image style={{ height: 20, width: 20, }} source={require('../Image/arrow.png')} />
                     <Text style={{ color: '#4CE364', fontSize: 18, fontWeight: 'bold', }}>500(2.36%)today</Text>
                 </View>
@@ -66,10 +69,22 @@ const GroupDele = ({ navigation }) => {
                     <View style={{ position: 'absolute', zIndex: 100, left: 15, margin: 5 }}>
                         {dataList.map(i => {
                             return (
-                                <Text style={{ margin: 1, color: '#BDBDBD' }}> {i}</Text>
-                            )
+                                <Text style={{ margin: 1, color: '#BDBDBD' }}> {i}</Text>)
                         })}
-                        <Text style={{ color: '#BDBDBD' }}>Data Range</Text>
+                        <View style={{ flexDirection: 'row' }}>
+                            <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 120, height: 25, alignItems: 'center', justifyContent: 'center' }}>
+                                <Image resizeMode='contain' style={{ height: 15, width: 20 }} source={require('../Image/tared.png')} />
+                                <Text style={{ color: '#BDBDBD', left: 10 }}>Data Range</Text>
+                            </View>
+                            <View style={{ flexDirection: 'row', width: 200, height: 25, left: 30 }}>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5 }}>1D</Text>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>5D</Text>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>1M</Text>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>3M</Text>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>6M</Text>
+                                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>Y1D</Text>
+                            </View>
+                        </View>
                     </View>
                     <LineChart
                         data={data}
@@ -78,6 +93,9 @@ const GroupDele = ({ navigation }) => {
                         height={250}
                         withHorizontalLabels={false}
                         chartConfig={chartConfig}
+                        withVerticalLabels={false}
+                        withHorizontalLines={false}
+
                     />
                 </View>
                 <View style={{ padding: 15, backgroundColor: '#1E293B', borderRadius: 15, margin: 5 }}>
@@ -85,7 +103,12 @@ const GroupDele = ({ navigation }) => {
                     <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', justifyContent: 'space-between' }}>
 
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Go to specific day for group</Text>
-                        <Image resizeMode='contain' style={{ height: 35, width: 35, alignSelf: 'center' }} source={require('../Image/button.jpg')} />
+                        <Switch
+                            trackColor={{ false: '#0F172A', true: '#D1A684' }}
+                            thumbColor={onoffo1 ? '#FFFFFF' : '#FFFFFF'}
+                            onValueChange={onoffSwitcho1}
+                            value={onoffo1}
+                        />
                     </View>
                     <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B' }}>
 

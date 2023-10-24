@@ -2,6 +2,7 @@
 import React  ,{ useState } from 'react';
 import axios from 'axios';
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Login = ({ navigation }) => { 
 

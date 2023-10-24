@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React,{useState} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from '../Screens/Login';
@@ -18,11 +18,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const Stack = createNativeStackNavigator();
 
 const StackNavigation = () => {
+  const [token, setToken] = React.useState("");
   const storedToken = AsyncStorage.getItem('userToken')
+  storedToken.then(Res=> {setToken(Res),console.log('ResResResResResRes',Res)})
+  
+  console.log('storedTokenstoredToken',storedToken)
   return (
 
     <NavigationContainer >
-      <Stack.Navigator initialRouteName={storedToken ? 'Home' : 'Desktop'} screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName={token ? 'Home' : 'Desktop'} screenOptions={{ headerShown: false }}>
 
         <Stack.Screen name="Desktop" component={Desktop} />
         <Stack.Screen name="Login" component={Login} />
