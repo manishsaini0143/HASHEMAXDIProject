@@ -91,37 +91,60 @@ const Home = ({ navigation }) => {
   };
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-      <View style={{ flexDirection: 'row' }}>
-        <View style={{ padding: 10 }} >
-          <Image resizeMode='cover' style={{ height: 100, width: 130, position: 'relative' }} source={require('../Image/Splash.png')} />
-          <Text style={{ width: 150, fontSize: 19, fontWeight: 'bold', color: '#FFFFFF',marginLeft:10 }}>My Connections 2000</Text>
+      <View style={{ flexDirection: 'row',justifyContent:'space-between' ,marginTop:10}}>
+        <View >
+          <Image resizeMode='cover' style={{ height: 136, width: 180,}} source={require('../Image/Splash.png')} />
         </View>
-        <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
-          <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/settings.png')} />
-          <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/notification.jpg')} />
-          <View style={{ backgroundColor: 'red', height: 13, width: 13, borderRadius: 20, zIndex: 1, position: 'absolute', top: 25, right: 110 }}></View>
+        <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center',left:10}}>
+          <TouchableOpacity>
+            
+          <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/settings.png')} />
+          </TouchableOpacity>
+          <TouchableOpacity>
+          <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/notification.jpg')} />
+          <View style={{ backgroundColor: 'red', height: 13, width: 13, borderRadius: 20, zIndex: 1, position: 'absolute', top: 25, right: 11 }}></View>
+          </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-            <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
+            <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{ flexDirection: 'row' }}>
-        <View style={{ flexDirection: 'row', width: 190, height: 40, margin: 10, padding: 5 }}>
+      <Text style={{ width: 180, fontSize: 24, fontWeight: 'bold', color: '#FFFFFF',left:30,fontFamily: 'Josefin-Sans',marginTop:20}}>My Connections 2000</Text>
+      <View style={{ flexDirection: 'row',bottom:10,justifyContent:'space-around'}}>
+        <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5}}>
           <Image style={{ height: 20, width: 20, top: 5 }} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 18, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
+          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
         </View>
-        <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 40, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 20, margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 16 }}>Our Connections</Text>
+        <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 40, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
+          <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 17 ,fontFamily: 'Josefin-Sans'}}>Our Connections</Text>
         </TouchableOpacity>
       </View>
       <ScrollView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jan</Text>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Feb</Text>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Mar</Text>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Apr</Text>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jun</Text>
-          <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jul</Text>
+          <TouchableOpacity>
+
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jan</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Feb</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Mar</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Apr</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jun</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity>
+
+            <Text style={{ color: '#BDBDBD', fontSize: 14, fontWeight: 'bold', }}>Jul</Text>
+          </TouchableOpacity>
         </View>
         <View style={{ flexDirection: 'row', }}>
           <View style={{ position: 'absolute', zIndex: 100, left: 15, margin: 5 }}>
@@ -137,13 +160,31 @@ const Home = ({ navigation }) => {
                 <Text style={{ color: '#BDBDBD', left: 10 }}>Data Range</Text>
               </View>
               <View style={{ flexDirection: 'row', width: 200, height: 25, left: 30 }}>
+                <TouchableOpacity>
 
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5 }}>1D</Text>
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>5D</Text>
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>1M</Text>
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>3M</Text>
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>6M</Text>
-                <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>Y1D</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5 }}>1D</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>5D</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>1M</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>3M</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>6M</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+
+                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5 }}>Y1D</Text>
+                </TouchableOpacity>
+
               </View>
             </View>
           </View>
@@ -159,53 +200,103 @@ const Home = ({ navigation }) => {
             withHorizontalLines={false}
           />
         </View>
-        <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B' }}>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+        <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25,marginTop:20 }}>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>15</Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>16</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Fri</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>17</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Set</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5, borderBottomWidth: 2, borderBottomColor: '#D2A784' }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>18</Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>19</Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>20</Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>21</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>22</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>23</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>24</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>25</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>26</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>27</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>28</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>29</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>30</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          </View>
         </ScrollView>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 15 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>My Connections </Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', left: 60 }}>Add</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>My Gools</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold',left:100}}>Add</Text>
           <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, bottom: 5 }}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
           </View>
         </View>
         <ScrollView style={{ position: 'relative', bottom: 15, padding: 10 }}>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
+          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 ,borderWidth:2,borderColor:'#D2A784'}}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
-              <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, marginLeft: 10 }}></View>
-              <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>Davening (40)</Text>
+              <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, marginLeft: 10,alignSelf:'center'}}></View>
+              <Text style={{ color: '#FFFFFF', fontSize: 17, fontWeight: 'bold', marginLeft: 10,alignSelf:'center' }}>Davening (40)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center',opacity:0.5  }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -220,11 +311,11 @@ const Home = ({ navigation }) => {
           </View>
           <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
-              <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, marginLeft: 10 }}></View>
-              <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>Tzedkah (30)</Text>
+              <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, marginLeft: 10 ,alignSelf:'center'}}></View>
+              <Text style={{ color: '#FFFFFF', fontSize: 17, fontWeight: 'bold', marginLeft: 10,alignSelf:'center' }}>Tzedkah (30)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center',opacity:0.5  }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -238,11 +329,11 @@ const Home = ({ navigation }) => {
           </View>
           <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
-              <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, marginLeft: 10 }}></View>
-              <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>Respect (45)</Text>
+              <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, marginLeft: 10 ,alignSelf:'center'}}></View>
+              <Text style={{ color: '#FFFFFF', fontSize: 17, fontWeight: 'bold', marginLeft: 10,alignSelf:'center'}}>Respect (45)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center',opacity:0.5  }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -258,11 +349,11 @@ const Home = ({ navigation }) => {
           </View>
           <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
-              <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, marginLeft: 10 }}></View>
-              <Text style={{ color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginLeft: 10 }}>Charity (20)</Text>
+              <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, marginLeft: 10 ,alignSelf:'center'}}></View>
+              <Text style={{ color: '#FFFFFF', fontSize: 17, fontWeight: 'bold', marginLeft: 10,alignSelf:'center'}}>Charity (20)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center',opacity:0.5 }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -354,7 +445,7 @@ const Home = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>Today</Text>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', }}>All Time</Text>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10 }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10,borderWidth:2,borderColor:'#D2A784' }}>
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, top: 5 }}></View>
             <Switch
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
