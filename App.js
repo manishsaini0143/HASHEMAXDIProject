@@ -8,7 +8,7 @@ const App = () => {
   const [showSplash, setShowSplash] = useState(false)
   setTimeout(() => {
     setShowSplash(true)
-  }, 1000);
+  }, 3000);
   return (
     <>
       {
