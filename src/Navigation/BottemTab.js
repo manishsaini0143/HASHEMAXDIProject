@@ -18,10 +18,10 @@ export default function BottomTab() {
                 height: 70,
                 paddingHorizontal: 5,
                 paddingTop: 0,
-                backgroundColor: '#0D1134',
+                backgroundColor: '#1E293B',
                 position: 'absolute',
                 borderTopWidth: 0,
-                borderRadius: 10
+                borderRadius: 15
             },
         })} initialRouteName='Home'>
             <Tab.Screen name="Home" component={Home} options={{
