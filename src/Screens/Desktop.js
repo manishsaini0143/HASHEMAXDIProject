@@ -12,12 +12,12 @@ const Desktop = ({ navigation }) => {
             <View style={{width: '100%', top: 100 }}>
 
                 <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 18, height: 44,borderWidth:1,borderColor:'#000000' ,justifyContent:'center'}}>
-                    <Text style={{ textAlign: 'center', color: '#FFFFFF', fontSize: 16,fontWeight:'bold'}}>
+                    <Text style={{ textAlign: 'center', color: '#FFFFFF', fontSize: 16,fontFamily:'Poppins-SemiBold',}}>
                         Log in
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44,borderWidth:1,borderColor:'#FFFFFF',justifyContent:'center' }}>
-                    <Text style={{ color: '#FFFFFF', textAlign: 'center', fontSize: 16,fontWeight:'bold'}}>
+                    <Text style={{ color: '#FFFFFF',alignSelf:'center', fontSize: 16,fontFamily:'Poppins-SemiBold',}}>
                         Sign up
                     </Text>
                 </TouchableOpacity>

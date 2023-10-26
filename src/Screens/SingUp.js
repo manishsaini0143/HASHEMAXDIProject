@@ -43,7 +43,7 @@ const SingUp = ({ navigation }) => {
       <View style={{ backgroundColor: '#0F172A', flex: 1 }}>
         <View style={{ alignItems: 'center', padding: 15 }}>
           <Image style={{ width: 316, height: 316 }} source={require('../Image/Singup.jpg')} />
-          <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 32, fontFamily: 'Josefin-Sans' }}>Sign up</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 32,fontFamily: 'JosefinSans-Bold' }}>Sign up</Text>
         </View>
         <ScrollView>
 
@@ -95,7 +95,7 @@ const SingUp = ({ navigation }) => {
               singhapi()
             }
           }} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 46, marginTop: 25 }}>
-            <Text style={{ textAlign: 'center', color: '#FFFFFF', margin: 10, textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>
+            <Text style={{ textAlign: 'center', color: '#FFFFFF', margin: 10, textAlign: 'center', fontSize: 16,fontFamily:'Poppins-SemiBold'}}>
               Sign up
             </Text>
           </TouchableOpacity>

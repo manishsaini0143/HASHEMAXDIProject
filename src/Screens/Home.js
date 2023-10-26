@@ -109,14 +109,14 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <Text style={{ width: 180, fontSize: 24, fontWeight: 'bold', color: '#FFFFFF',left:30,fontFamily: 'Josefin-Sans',marginTop:20}}>My Connections 2000</Text>
+      <Text style={{ width: 200, fontSize: 24,color: '#FFFFFF',left:30, fontFamily: 'JosefinSans-Bold',marginTop:20}}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row',bottom:10,justifyContent:'space-around'}}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5}}>
           <Image style={{ height: 20, width: 20, top: 5 }} source={require('../Image/arrow.png')} />
           <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 17 ,fontFamily: 'Josefin-Sans'}}>Our Connections</Text>
+          <Text style={{ color: '#FFFFFF',fontSize: 17 , fontFamily: 'JosefinSans-Bold',}}>Our Connections</Text>
         </TouchableOpacity>
       </View>
       <ScrollView>
@@ -201,85 +201,85 @@ const Home = ({ navigation }) => {
           />
         </View>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25,marginTop:20 }}>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>15</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>15</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>16</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Fri</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>16</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Fri</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>17</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Set</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16,  fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF'}}>17</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Set</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5, borderBottomWidth: 2, borderBottomColor: '#D2A784' }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>18</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Sun</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16,fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5, borderBottomWidth: 2, borderBottomColor: '#D2A784' }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>18</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Sun</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>19</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Mon</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16,fontFamily: 'JosefinSans-Bold',width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}></Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>19</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Mon</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>20</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16,fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>20</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>21</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16,fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>21</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>22</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>22</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>23</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold',width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>23</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>24</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>24</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>25</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>25</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>26</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784',opacity:0.8 }}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>26</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>27</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20,fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>27</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>28</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>28</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>29</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>29</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>30</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' ,opacity:0.8}}>
+            <Text style={{ backgroundColor: '#D2A784', fontSize: 20,fontFamily: 'JosefinSans-Bold',width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#FFFFFF' }}>30</Text>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
           </View>
         </ScrollView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>

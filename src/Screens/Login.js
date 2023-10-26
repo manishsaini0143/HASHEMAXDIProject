@@ -39,12 +39,12 @@ const Login = ({ navigation }) => {
           : null}
             <View style={{ alignItems: 'center', padding: 15 }}>
                 <Image style={{ width: 305, height: 316 }} source={require('../Image/Login.png')} />
-                <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 32, fontFamily: 'Josefin-Sans' }}>Log in</Text>
+                <Text style={{ color: '#FFFFFF', fontSize: 32,  fontFamily: 'JosefinSans-Bold' }}>Log in</Text>
             </View>
             <ScrollView>
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/email.jpg')} />
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, fontFamily: 'Poppins' }} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf:'center',opacity: 0.7,}} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
                 </View>
                 {
                 logEmail == '' ?
@@ -55,9 +55,9 @@ const Login = ({ navigation }) => {
                     Please Enter Valid Email
                   </Text> : null
               }
-                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
+                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center'}} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/lock.png')} />
-                    <TextInput maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, fontFamily: 'Poppins' }} onChangeText={(txt) => { setlogPassword(txt) }} keyboardType='Password-type' placeholder='Password'
+                    <TextInput maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, }} onChangeText={(txt) => { setlogPassword(txt) }} keyboardType='Password-type' placeholder='Password'
                         placeholderTextColor='#FFFFFF' secureTextEntry={true} />
                 </View>
                 {
@@ -67,21 +67,21 @@ const Login = ({ navigation }) => {
                 </Text>
               }
 
-                <TouchableOpacity><Text style={{ color: '#FFFFFF', fontSize: 14, alignSelf: 'flex-end', right: 20, opacity: 0.7 }}>Forgot your Password ?</Text></TouchableOpacity>
+                <TouchableOpacity><Text style={{ color: '#FFFFFF', fontSize: 14, alignSelf: 'flex-end', right: 20, opacity: 0.7, fontFamily:'Poppins-Medium'}}>Forgot your Password ?</Text></TouchableOpacity>
 
                 <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => { 
                     loginapi() }} style={{ backgroundColor: '#1E293B', width: '90%', height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
-                    <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontWeight: 'bold' }}>
+                    <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontFamily:'Poppins-SemiBold', }}>
                         Log in
                     </Text>
                 </TouchableOpacity>
 
                 <View style={{ flexDirection: 'row', alignSelf: 'center', marginTop: 50 }}>
-                    <Text style={{ fontSize: 20, color: '#FFFFFF', opacity: 0.5 }}>
+                    <Text style={{ fontSize: 14, color: '#FFFFFF', opacity: 0.5,fontFamily:'Poppins-Medium'}}>
                         Don't have an account?
                     </Text>
                     <TouchableOpacity onPress={() => navigation.navigate('SingUp')}  >
-                        <Text style={{ fontWeight: 'bold', color: '#CF3939', fontSize: 20, marginLeft: 5, opacity: 0.8 }}>
+                        <Text style={{ fontWeight: 'bold', color: '#CF3939', fontSize: 14, marginLeft: 5, opacity: 0.8,fontFamily:'Poppins-Medium' }}>
                             create
                         </Text>
                     </TouchableOpacity>
