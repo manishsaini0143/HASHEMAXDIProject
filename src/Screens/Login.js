@@ -11,7 +11,7 @@ const Login = ({ navigation }) => {
     const [loader, setLoader] = useState(false)
     const loginapi = async () => {
         setLoader(true)
-        if (!Email || !Password) {
+        if (!logEmail || !logPassword) {
           return true
           setLoader(false)
         }
@@ -69,7 +69,8 @@ const Login = ({ navigation }) => {
 
                 <TouchableOpacity><Text style={{ color: '#FFFFFF', fontSize: 14, alignSelf: 'flex-end', right: 20, opacity: 0.7 }}>Forgot your Password ?</Text></TouchableOpacity>
 
-                <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => { loginapi() }} style={{ backgroundColor: '#1E293B', width: '90%', height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
+                <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => { 
+                    loginapi() }} style={{ backgroundColor: '#1E293B', width: '90%', height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
                     <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontWeight: 'bold' }}>
                         Log in
                     </Text>

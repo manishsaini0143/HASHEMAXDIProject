@@ -115,7 +115,7 @@ const Home = ({ navigation }) => {
           <Image style={{ height: 20, width: 20, top: 5 }} source={require('../Image/arrow.png')} />
           <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
         </View>
-        <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 40, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
+        <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 17 ,fontFamily: 'Josefin-Sans'}}>Our Connections</Text>
         </TouchableOpacity>
       </View>
@@ -219,12 +219,12 @@ const Home = ({ navigation }) => {
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5, borderBottomWidth: 2, borderBottomColor: '#D2A784' }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>18</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Sun</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
             <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>19</Text>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Thu</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>Mon</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784' }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontWeight: 'bold', width: 70, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>

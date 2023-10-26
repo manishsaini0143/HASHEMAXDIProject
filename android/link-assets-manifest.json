@@ -6,8 +6,28 @@
       "sha1": "6f6b8977774fd4617bfa9a3853bdd48a6bd1412d"
     },
     {
+      "path": "assets/fonts/JosefinSans-Bold.ttf",
+      "sha1": "57aae89112d94e577486ffa80b64e6f68efad405"
+    },
+    {
+      "path": "assets/fonts/JosefinSans-SemiBold.ttf",
+      "sha1": "776fb7e3dd894383df9468a3b8c16cdc8654d439"
+    },
+    {
       "path": "assets/fonts/MaterialIcons.ttf",
       "sha1": "1943803d652750c8ec60415f1e57401c70e72d25"
+    },
+    {
+      "path": "assets/fonts/Mulish-Medium.ttf",
+      "sha1": "6201b3d5d10905f878860861d4e7ebcca6ca3936"
+    },
+    {
+      "path": "assets/fonts/Mulish-Regular.ttf",
+      "sha1": "65aa946a76999c7fe9a6b4478e9c35db9c80b137"
+    },
+    {
+      "path": "assets/fonts/Mulish-SemiBold.ttf",
+      "sha1": "0935586660615fe1c41fc1bc8aa3a5e0c8c744a8"
     },
     {
       "path": "assets/fonts/Nunito-Bold.ttf",
@@ -28,6 +48,14 @@
     {
       "path": "assets/fonts/Octicons.ttf",
       "sha1": "28875874413503bcc0810ea2a44dc1b8312c665a"
+    },
+    {
+      "path": "assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
     },
     {
       "path": "assets/fonts/SimpleLineIcons.ttf",

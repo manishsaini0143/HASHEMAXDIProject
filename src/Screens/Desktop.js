@@ -6,7 +6,7 @@ const Desktop = ({ navigation }) => {
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134', }}>
             <Image style={{ marginTop: 150, height: 180,width:'100%' }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
-            <Text style={{ fontSize: 32, color: '#FFFFFF', marginTop: 25, width: '80%', textAlign: 'center', fontFamily: 'Josefin-Sans',fontWeight:'bold',alignSelf:'center'}}>
+            <Text style={{ fontSize: 32, color: '#FFFFFF', marginTop: 25, width: '80%', textAlign: 'center', fontFamily: 'JosefinSans-Bold',alignSelf:'center'}}>
                 In Memory of blah blah
             </Text>
             <View style={{width: '100%', top: 100 }}>
