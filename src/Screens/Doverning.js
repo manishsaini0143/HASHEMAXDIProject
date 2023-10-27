@@ -237,104 +237,107 @@ const Doverning = ({ navigation }) => {
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', marginLeft: 10 }}>5 dollars a day </Text>
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 320, marginLeft: 10 }}>I am dedicating in memory of my
             mother.</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 3, width:'95%', borderRadius: 10, alignSelf: 'center',margin:20}}></View>
+          <View style={{ backgroundColor: '#D2A784', height: 3, width:'95%', borderRadius: 10, alignSelf: 'center',marginTop:20}}></View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20, bottom: 20 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>Group Goals</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('CreateGrouplist')}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', left: 60 }}>Create Group</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between',width:'87%',alignSelf:'center',margin:15}}>
+          <Text style={{ color: '#FFFFFF', fontSize: 22,fontFamily: 'JosefinSans-Bold',alignSelf:'center' }}>Group Goals</Text>
+          <TouchableOpacity style={{alignSelf:'center'}} onPress={() => navigation.navigate('CreateGrouplist')}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'JosefinSans-Bold', left: 20, }}>Create Group</Text>
           </TouchableOpacity>
-          <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, bottom: 5 }}>
+          <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30,alignSelf:'center'}}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
           </View>
         </View>
-        <View style={{ borderWidth: 2, borderColor: '#64748B', margin: 10, borderRadius: 10, bottom: 20 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>Group Name</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>bhala 0001</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'center', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>Connection</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>Bhala</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>Mission</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>45</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>Friends</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>30</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>  Today’s Total</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>200</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>All Time Total</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>200</Text>
-          </View>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>All Connections</Text>
-            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', width: '50%', textAlign: 'center' }}>30</Text>
-          </View>
-          <View>
+        <View style={{ borderWidth: 2, borderColor: '#64748B',alignSelf:'center',borderRadius: 10,width:'85%',backgroundColor:'#1E293B'}}>
+
+          <View style={{ flexDirection: 'row', justifyContent:'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center',marginTop:5}}>
+            <Image style={{left:20}} source={require('../Image/menpro.png')}/>
             <Switch
-              style={{ alignSelf: 'center' }}
+              style={{ alignSelf: 'center',right:30 }}
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
               thumbColor={onoff0 ? '#FFFFFF' : '#FFFFFF'}
               onValueChange={onoffSwitch0}
               value={onoff0}
             />
+
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'center', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Group Name</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center', }}>bhala 0001</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Connection</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center' }}>bhala</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Mission</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center' }}>45</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Friends</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14,fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center' }}>30</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Today’s Total</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center' }}>200</Text>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Total Connections</Text>
+            <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 14,fontFamily:'Poppins-SemiBold', width: '50%', textAlign: 'center' }}>30</Text>
           </View>
         </View>
-        <View style={{ backgroundColor: '#1E293B', margin: 10, height: 350, padding: 10, borderRadius: 15 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>Hashemandi</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', left: 30 }}>Conversations</Text>
-            <Image resizeMode='contain' style={{ height: 40, width: 40 }} source={require('../Image/Massage.jpg')} />
+        <View style={{ backgroundColor: '#1E293B', height: 410, borderRadius: 20,width:'100%',marginTop:30}}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between',margin:15}}>
+          <Image resizeMode='contain' style={{ height: 30, width:170,top:4}} source={require('../Image/hareshada.png')} />
+            {/* <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold' }}>HASHEM<Text>AND</Text>I</Text> */}
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold',}}>Conversations</Text>
+            <Image resizeMode='contain' style={{ height: 30, width: 30,right:10 }} source={require('../Image/Massage.jpg')} />
           </View>
-          <View style={{ backgroundColor: '#D2A784', height: 3, width: 350, borderRadius: 10, alignSelf: 'center' }}></View>
-          <View style={{ flexDirection: 'row', margin: 10 }}>
-            <Image resizeMode='contain' style={{ height: 60, width: 60, margin: 5 }} source={require('../Image/profiled.jpg')} />
-            <View>
-              <Text style={{ color: "#FFFFFF", fontSize: 18, fontWeight: 'bold', top: 5 }}> Com 1h ago</Text>
-              <Text style={{ color: "#FFFFFF", fontSize: 16, fontWeight: 'bold', width: 250, top: 10 }}>Lorem Ipsum is simply dummy text of the printing</Text>
+          <View style={{ backgroundColor: '#D2A784', height: 3, width: 380, borderRadius: 10, alignSelf: 'center' }}></View>
+          <View style={{ flexDirection: 'row', }}>
+            <View style={{margin:10,height:70,left:10}}>
+            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+            </View>
+            <View style={{margin:20}}> 
+              <Text style={{ color: "#FFFFFF", fontSize: 20, ontFamily: 'JosefinSans-Bold' }}>Com<Text style={{color:'#64748B'}}> 1h ago</Text></Text>
+              <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily:'Poppins-Medium', width: 250,}}>Lorem Ipsum is simply dummy text of the printing</Text>
             </View>
           </View>
-          <View style={{ backgroundColor: '#0F172A', height: 3, width: 330, borderRadius: 10, top: 10, alignSelf: 'center' }}></View>
-          <View style={{ flexDirection: 'row', margin: 10 }}>
-            <Image resizeMode='contain' style={{ height: 60, width: 60, margin: 5 }} source={require('../Image/profiled.jpg')} />
-            <View>
-              <Text style={{ color: "#FFFFFF", fontSize: 18, fontWeight: 'bold', top: 5 }}> Com 1h ago</Text>
-              <Text style={{ color: "#FFFFFF", fontSize: 16, fontWeight: 'bold', width: 250, top: 10 }}>Lorem Ipsum is simply dummy text of the printing</Text>
+          <View style={{ backgroundColor: '#0F172A', height: 3, width: 330, borderRadius: 10,alignSelf: 'center',margin:10}}></View>
+           <View style={{ flexDirection: 'row', }}>
+            <View style={{margin:10,height:70,left:10}}>
+            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+            </View>
+            <View style={{margin:20}}> 
+              <Text style={{ color: "#FFFFFF", fontSize: 20, ontFamily: 'JosefinSans-Bold' }}>Com<Text style={{color:'#64748B'}}> 1h ago</Text></Text>
+              <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily:'Poppins-Medium', width: 250,}}>Lorem Ipsum is simply dummy text of the printing</Text>
             </View>
           </View>
-          <View style={{ backgroundColor: '#0F172A', height: 50, borderRadius: 10, margin: 10, flexDirection: 'row', borderWidth: 2, borderColor: '#FFFFFF', width: 300, left: 15 }}>
-            <TextInput style={{ color: '#FFFFFFF', left: 20, fontSize: 18, fontWeight: 'bold', width: 120 }} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' />
-            <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 125, height: 45, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
+          <View style={{ backgroundColor: '#0F172A', height: 50, borderRadius: 10, margin: 10, flexDirection: 'row', borderWidth: 2, borderColor: '#FFFFFF', width: 350,alignSelf:'center'}}>
+            <TextInput style={{ color: '#FFFFFF', left: 20, fontSize: 12, fontFamily:'Roboto-Bold', width: 220,opacity:0.5}} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' />
+            <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 47, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
               <Image resizeMode='contain' style={{ height: 30, width: 30, left: 10 }} source={require('../Image/send.jpg')} />
             </View>
           </View>
         </View>
         <View style={{ alignItems: 'center' }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 25, fontWeight: 'bold', textAlign: 'center', margin: 10 }}> My History</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 3, width: 250, borderRadius: 10 }}></View>
+          <Text style={{ color: "#FFFFFF", fontSize: 22, fontFamily: 'JosefinSans-Bold', textAlign: 'center', margin: 10 }}> My History</Text>
+          <View style={{ backgroundColor: '#D2A784', height: 3, width: 250, borderRadius: 10,opacity:0.5}}></View>
         </View>
-        <Text style={{ color: "#FFFFFF", fontSize: 25, fontWeight: 'bold', margin: 15 }}> Past-Goals</Text>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, padding: 10, margin: 10, borderRadius: 10 }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: 'bold', }}> bla bla</Text>
-          <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: 'bold', }}> 12/45 Days</Text>
+        <Text style={{ color: "#FFFFFF", fontSize: 25,  fontFamily: 'JosefinSans-Bold', margin: 15 }}> Past-Goals</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10 ,margin:10,width:'90%',alignSelf:'center',padding:10}}>
+          <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily:'Poppins-Bold',alignSelf:'center'}}> bla bla</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily:'Poppins-Bold',alignSelf:'center' }}> 12/45 Days</Text>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, padding: 10, margin: 10, borderRadius: 10 }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: 'bold', }}> Dovining</Text>
-          <Text style={{ color: "#FFFFFF", fontSize: 20, fontWeight: 'bold', }}> 12/45 Days</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10,width:'90%',alignSelf:'center',padding:10 }}>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily:'Poppins-Bold',alignSelf:'center' }}> Dovining</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily:'Poppins-Bold',alignSelf:'center' }}> 12/45 Days</Text>
         </View>
         <Image style={{ margin: 20, height: 150, width: 350 }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
       </ScrollView>

@@ -32,6 +32,8 @@
 		0044E68E57B94D5791C26316 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76462B66580347BEB6F52B14 /* Poppins-SemiBold.ttf */; };
 		C89404E12D0F4795812C6ABC /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90D9066B1AEE4C7187BB05D0 /* Mulish-Bold.ttf */; };
 		9C0F6111B7714E8694EC50CE /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDED56BC5E54DA592C5A943 /* Poppins-Bold.ttf */; };
+		971CF39D9450460389FF67B7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72FD75B71E5B43F49C5317E6 /* Roboto-Bold.ttf */; };
+		147ABD88105241ABA4B35BB1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7BA4C9308439AB8CE11C4 /* Roboto-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		76462B66580347BEB6F52B14 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		90D9066B1AEE4C7187BB05D0 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; name = "Mulish-Bold.ttf"; path = "../assets/fonts/Mulish-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		6EDED56BC5E54DA592C5A943 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72FD75B71E5B43F49C5317E6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70B7BA4C9308439AB8CE11C4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 				76462B66580347BEB6F52B14 /* Poppins-SemiBold.ttf */,
 				90D9066B1AEE4C7187BB05D0 /* Mulish-Bold.ttf */,
 				6EDED56BC5E54DA592C5A943 /* Poppins-Bold.ttf */,
+				72FD75B71E5B43F49C5317E6 /* Roboto-Bold.ttf */,
+				70B7BA4C9308439AB8CE11C4 /* Roboto-Medium.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 				0044E68E57B94D5791C26316 /* Poppins-SemiBold.ttf in Resources */,
 				C89404E12D0F4795812C6ABC /* Mulish-Bold.ttf in Resources */,
 				9C0F6111B7714E8694EC50CE /* Poppins-Bold.ttf in Resources */,
+				971CF39D9450460389FF67B7 /* Roboto-Bold.ttf in Resources */,
+				147ABD88105241ABA4B35BB1 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
