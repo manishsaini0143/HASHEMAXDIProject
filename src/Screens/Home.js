@@ -112,14 +112,14 @@ const Home = ({ navigation }) => {
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-          <Image style={{ height: 20, width: 20, top: 5 }} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, top: 3 }}>500(2.36%)today</Text>
+          <Image style={{ height: 20, width: 20,alignSelf:'center'}} source={require('../Image/arrow.png')} />
+          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10,alignSelf:'center'}}>500(2.36%)today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Connections</Text>
         </TouchableOpacity>
       </View>
-      <ScrollView contentContainerStyle={{bottom:70}}>
+      <ScrollView contentContainerStyle={{ paddingBottom: 90 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
           <TouchableOpacity>
 
@@ -282,21 +282,21 @@ const Home = ({ navigation }) => {
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
         </ScrollView>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold' }}>My Gools</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-SemiBold', left: 80 }}>Add</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30, bottom: 5 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between',width:345,alignSelf:'center',margin:15}}>
+          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold',alignSelf:'center' }}>My Gools</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-SemiBold', left: 70 ,alignSelf:'center'}}>Add</Text>
+          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30,alignSelf:'center'}}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 17, zIndex: 1, left: 16 }} source={require('../Image/Pulse.jpg')} />
           </View>
         </View>
         <ScrollView style={{ position: 'relative', bottom: 15, padding: 10 }}>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10, borderWidth: 2, borderColor: '#D2A784' }}>
+          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10, borderWidth: 2, borderColor: '#D2A784' }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Davening  (40)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -304,36 +304,36 @@ const Home = ({ navigation }) => {
                 onValueChange={onoffSwitch}
                 value={onoff}
               />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
           </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
+          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Tzedkah  (30)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
                 thumbColor={onoff1 ? '#FFFFFF' : '#FFFFFF'}
                 onValueChange={onoffSwitch1}
                 value={onoff1} />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
           </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
+          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Respect   (45)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -341,20 +341,20 @@ const Home = ({ navigation }) => {
                 onValueChange={onoffSwitch2}
                 value={onoff2}
               />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
-              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 105, alignSelf: 'center' }}>Add Goals</Text>
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 100, alignSelf: 'center' }}>Add Goals</Text>
 
               <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/Pulse1.jpg')} />
             </View>
           </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 370, alignSelf: 'center', margin: 10 }}>
+          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Charity   (20)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
             <View style={{ padding: 5, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -362,20 +362,20 @@ const Home = ({ navigation }) => {
                 onValueChange={onoffSwitch3}
                 value={onoff3}
               />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/friends.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
           </View>
         </ScrollView>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, padding: 10, }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold' }}>My Groups</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 60 }}>Create</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30, bottom: 5, }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 340, alignSelf: 'center', margin: 10 }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold',alignSelf:'center'}}>My Groups</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 50,alignSelf:'center' }}>Create</Text>
+          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30,alignSelf:'center'}}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 17, zIndex: 1, left: 16 }} source={require('../Image/Pulse.jpg')} />
           </View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '82%', alignSelf: 'center', margin: 10 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 300, alignSelf: 'center', }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', color: '#D2A784' }}>Davening</Text>
           <View>
             <Switch
@@ -388,7 +388,7 @@ const Home = ({ navigation }) => {
           </View>
         </View>
 
-        <View style={{ backgroundColor: '#1E293B', margin: 20, borderRadius: 15, position: 'relative', bottom: 15 }}>
+        <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: 348, margin: 25 }}>
           <View style={{ margin: 10 }}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
@@ -434,12 +434,12 @@ const Home = ({ navigation }) => {
 
         </View>
         <View style={{ margin: 10 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center' }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 330, alignSelf: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold' }}>Connections </Text>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold' }}>Today</Text>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold' }}>All Time</Text>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: '95%', alignSelf: 'center' }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10 }}></View>
             <Switch
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -453,7 +453,7 @@ const Home = ({ navigation }) => {
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>40</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: '95%', alignSelf: 'center' }}>
+          <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10 }}></View>
             <Switch
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -467,7 +467,7 @@ const Home = ({ navigation }) => {
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>35</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: '95%', alignSelf: 'center' }}>
+          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10 }}></View>
             <Switch
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -481,7 +481,7 @@ const Home = ({ navigation }) => {
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>75</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: '95%', alignSelf: 'center' }}>
+          <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10 }}></View>
             <Switch
               trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -496,7 +496,7 @@ const Home = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>85</Text>
           </TouchableOpacity>
         </View>
-        <Image style={{ height: 150, width: 300 ,alignSelf:'center'}} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
+        <Image style={{ height: 80, width: 278, alignSelf: 'center' }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
       </ScrollView>
     </View>
   );

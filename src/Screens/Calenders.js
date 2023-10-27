@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 const Calenders = () => {
   return (
-    <View>
+    <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <Text></Text>
     </View>
   );

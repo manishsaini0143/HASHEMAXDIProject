@@ -47,7 +47,7 @@ const SingUp = ({ navigation }) => {
         </View>
         <ScrollView>
 
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, }} source={require('../Image/user.jpg')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7 }} onChangeText={(txt) => { setfullname(txt) }} keyboardType='Name-type' placeholder='Name' placeholderTextColor='#FFFFFF' />
           </View>
@@ -59,7 +59,7 @@ const SingUp = ({ navigation }) => {
               </Text>
             }
           </View>
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10 }} source={require('../Image/email.jpg')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7 }} onChangeText={(txt) => { setEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
           </View>
@@ -72,11 +72,11 @@ const SingUp = ({ navigation }) => {
                 Please Enter Valid Email
               </Text> : null
           }
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10 }} source={require('../Image/phonecall.jpg')} />
             <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '75%', fontSize: 16, opacity: 0.7 }} onChangeText={(txt) => { setPhone(txt) }} keyboardType='number-pad' placeholder='Phone number (optianal)' placeholderTextColor='#FFFFFF' />
           </View>
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10 }} source={require('../Image/lock.png')} />
             <TextInput secureTextEntry={true} maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7 }} onChangeText={(txt) => { setPassword(txt) }} keyboardType='Password-type' placeholder='Password' placeholderTextColor='#FFFFFF' />
           </View>
@@ -94,7 +94,7 @@ const SingUp = ({ navigation }) => {
             } else {
               singhapi()
             }
-          }} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 46, marginTop: 25 }}>
+          }} style={{ backgroundColor: '#1E293B', width: 340, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 46, marginTop: 25 }}>
             <Text style={{ textAlign: 'center', color: '#FFFFFF', margin: 10, textAlign: 'center', fontSize: 16,fontFamily:'Poppins-SemiBold'}}>
               Sign up
             </Text>
