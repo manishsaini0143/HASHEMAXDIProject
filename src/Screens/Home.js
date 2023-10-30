@@ -113,7 +113,7 @@ const Home = ({ navigation }) => {
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
           <Image style={{ height: 20, width: 20,alignSelf:'center'}} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10,alignSelf:'center'}}>500(2.36%)today</Text>
+          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10,alignSelf:'center'}}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Connections</Text>
@@ -496,7 +496,7 @@ const Home = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>85</Text>
           </TouchableOpacity>
         </View>
-        <Image style={{ height: 80, width: 278, alignSelf: 'center' }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
+        <Image style={{ height: 110, width: 278, alignSelf: 'center' }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />
       </ScrollView>
     </View>
   );
