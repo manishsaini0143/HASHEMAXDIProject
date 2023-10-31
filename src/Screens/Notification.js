@@ -4,7 +4,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 const Notification = ({ navigation }) => {
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+            {/* <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
 
                 <TouchableOpacity onPress={() => navigation.goBack()} style={{ flexDirection: 'row', margin: 20 }}>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, top: 5 }} source={require('../Image/Backerro.jpg')} />
@@ -13,6 +13,27 @@ const Notification = ({ navigation }) => {
                 <View style={{ flexDirection: 'row' }}>
                     <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/settings.png')} />
                     <Image resizeMode='contain' style={{ height: 35, width: 35, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
+                </View>
+            </View> */}
+             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 10 }}>
+                <View style={{ flexDirection: 'row' }}>
+
+                    <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
+                        <Image resizeMode='contain' style={{ height: 20, width: 20, top: 5 }} source={require('../Image/Backerro.jpg')} />
+                    </TouchableOpacity>
+                    <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold' }}>Notification</Text>
+                </View>
+                <View style={{ flexDirection: 'row' }}>
+                    <TouchableOpacity>
+                        <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/settings.png')} />
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        {/* <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/notification.jpg')} /> */}
+                        <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', right: 6, top: 9 }}></View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('profile')}>
+                        <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menphoto.png')} />
+                    </TouchableOpacity>
                 </View>
             </View>
 
