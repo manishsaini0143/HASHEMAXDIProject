@@ -96,24 +96,26 @@ const Home = ({ navigation }) => {
           <Image resizeMode='cover' style={{ height: 136, width: 180, }} source={require('../Image/Splash.png')} />
         </View>
         <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
-          <TouchableOpacity>
+          <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+            <TouchableOpacity>
 
-            <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/settings.png')} />
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/notification.jpg')} />
-            <View style={{ backgroundColor: 'red', height: 13, width: 13, borderRadius: 20, zIndex: 1, position: 'absolute', top: 25, right: 11 }}></View>
-          </TouchableOpacity>
+              <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Image resizeMode='contain' style={{ height: 27, width: 27, top: 15, margin: 5 }} source={require('../Image/notification.jpg')} />
+              <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 23, right: 7 }}></View>
+            </TouchableOpacity>
+          </View>
           <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
+            <Image resizeMode='contain' style={{ height: 50, width: 50, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
         </View>
       </View>
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-          <Image style={{ height: 20, width: 20,alignSelf:'center'}} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10,alignSelf:'center'}}>500(2.36%)Today</Text>
+          <Image style={{ height: 20, width: 20, alignSelf: 'center' }} source={require('../Image/arrow.png')} />
+          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Connections</Text>
@@ -282,15 +284,15 @@ const Home = ({ navigation }) => {
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
         </ScrollView>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between',width:345,alignSelf:'center',margin:15}}>
-          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold',alignSelf:'center' }}>My Gools</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-SemiBold', left: 70 ,alignSelf:'center'}}>Add</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30,alignSelf:'center'}}>
-            <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 17, zIndex: 1, left: 16 }} source={require('../Image/Pulse.jpg')} />
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 345, alignSelf: 'center', margin: 15 }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold', alignSelf: 'center' }}>My Gools</Text>
+          <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Add</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </View>
         </View>
         <ScrollView style={{ position: 'relative', bottom: 15, padding: 10 }}>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10, borderWidth: 2, borderColor: '#D2A784' }}>
+          <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10, borderWidth: 2, borderColor: '#D2A784' }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Davening  (40)</Text>
@@ -308,8 +310,8 @@ const Home = ({ navigation }) => {
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
-          </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Tzedkah  (30)</Text>
@@ -326,8 +328,8 @@ const Home = ({ navigation }) => {
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
-          </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Respect   (45)</Text>
@@ -345,10 +347,10 @@ const Home = ({ navigation }) => {
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 100, alignSelf: 'center' }}>Add Goals</Text>
 
-              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/Pulse1.jpg')} />
+              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/plus.png')} />
             </View>
-          </View>
-          <View style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
+          </TouchableOpacity>
+          <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
             <View style={{ flexDirection: 'row', padding: 5 }}>
               <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, marginLeft: 10, alignSelf: 'center' }}></View>
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Charity   (20)</Text>
@@ -366,13 +368,13 @@ const Home = ({ navigation }) => {
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
             </View>
-          </View>
+          </TouchableOpacity>
         </ScrollView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 340, alignSelf: 'center', margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold',alignSelf:'center'}}>My Groups</Text>
-          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 50,alignSelf:'center' }}>Create</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 46, width: 46, borderRadius: 30,alignSelf:'center'}}>
-            <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 17, zIndex: 1, left: 16 }} source={require('../Image/Pulse.jpg')} />
+          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>My Groups</Text>
+          <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Create</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </View>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 300, alignSelf: 'center', }}>
@@ -440,58 +442,31 @@ const Home = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold' }}>All Time</Text>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: 341, alignSelf: 'center' }}>
-            <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10 }}></View>
-            <Switch
-              trackColor={{ false: '#0F172A', true: '#D1A684' }}
-              thumbColor={onoff9 ? '#FFFFFF' : '#FFFFFF'}
-              onValueChange={onoffSwitch9}
-              value={onoff9}
-            />
-
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>Davening</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>28</Text>
+            <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 }}>Davening</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>28</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>40</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
-            <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10 }}></View>
-            <Switch
-              trackColor={{ false: '#0F172A', true: '#D1A684' }}
-              thumbColor={onoff10 ? '#FFFFFF' : '#FFFFFF'}
-              onValueChange={onoffSwitch10}
-              value={onoff10}
-            />
-
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>Tzedkah</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>67</Text>
+            <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 }}>Tzedkah</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>67</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>35</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
-            <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10 }}></View>
-            <Switch
-              trackColor={{ false: '#0F172A', true: '#D1A684' }}
-              thumbColor={onoff11 ? '#FFFFFF' : '#FFFFFF'}
-              onValueChange={onoffSwitch11}
-              value={onoff11}
-            />
+            <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
 
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>Respect</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>86</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 }}>Respect</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>86</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>75</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
-            <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10 }}></View>
-            <Switch
-              trackColor={{ false: '#0F172A', true: '#D1A684' }}
-              thumbColor={onoff12 ? '#FFFFFF' : '#FFFFFF'}
-              onValueChange={onoffSwitch12}
-              value={onoff12}
-            />
-
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>Charity</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>32</Text>
+            <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 }}>Charity</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>32</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>85</Text>
           </TouchableOpacity>

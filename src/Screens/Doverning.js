@@ -46,7 +46,7 @@ const Doverning = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', }}>My Connections 2000</Text>
+      <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', }}>My Doverning 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
           <Image style={{ height: 20, width: 20, alignSelf: 'center' }} source={require('../Image/arrow.png')} />
@@ -222,17 +222,22 @@ const Doverning = ({ navigation }) => {
 
         <Text style={{ color: '#FFFFFF', fontSize: 25, fontFamily: 'JosefinSans-Bold', marginLeft: 30, marginTop: 20, width: 220 }}>My Current Gool</Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 20 }}>
-          <View style={{ backgroundColor: '#1E293B', width: 126, justifyContent: 'center', borderRadius: 10, }}>
+          <View style={{ backgroundColor: '#1E293B', width: 126, justifyContent: 'center', borderRadius: 10,height:40,alignSelf:'center' }}>
 
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Bold', textAlign: 'center' }}>15/45 Days</Text>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('Addgoal')}>
+          {/* <TouchableOpacity onPress={() => navigation.navigate('Addgoal')}>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 50 }}>Add Gool</Text>
           </TouchableOpacity>
           <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, alignSelf: 'center' }}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
-          </View>
+          </View> */}
+           <TouchableOpacity  onPress={() => navigation.navigate('Addgoal')} style={{ flexDirection: 'row', alignSelf: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Add Gool</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
+          </TouchableOpacity>
         </View>
+        
         <View style={{ width: '90%', alignSelf: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', marginLeft: 10 }}>5 dollars a day </Text>
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 320, marginLeft: 10 }}>I am dedicating in memory of my
@@ -241,12 +246,16 @@ const Doverning = ({ navigation }) => {
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '87%', alignSelf: 'center', margin: 15 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>Group Goals</Text>
-          <TouchableOpacity style={{ alignSelf: 'center' }} onPress={() => navigation.navigate('CreateGrouplist')}>
+          {/* <TouchableOpacity style={{ alignSelf: 'center' }} onPress={() => navigation.navigate('CreateGrouplist')}>
             <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 20, }}>Create Group</Text>
           </TouchableOpacity>
           <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, alignSelf: 'center' }}>
             <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
-          </View>
+          </View> */}
+           <TouchableOpacity  onPress={() => navigation.navigate('CreateGrouplist')} style={{ flexDirection: 'row', alignSelf: 'center' }}>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center',left:10}}>Create Group</Text>
+            <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
+          </TouchableOpacity>
         </View>
         <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', borderRadius: 10, width: '85%', backgroundColor: '#1E293B' }}>
 

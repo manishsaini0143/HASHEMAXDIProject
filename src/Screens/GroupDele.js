@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, Switch ,Slider} from 'react-native';
-
+import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, Switch,Share } from 'react-native';
+import Slider from 'react-native-slider';
 import { LineChart } from 'react-native-chart-kit';
 const data = {
     labels: ['1D', '5D', '1M', '3M', '6M', 'YTD'],
@@ -26,6 +26,23 @@ const GroupDele = ({ navigation }) => {
     const onoffSwitcho1 = () => {
         setonoffo1((previousState) => !previousState);
     };
+    // const openShareDialog = () => {
+    //     Share.share({
+    //         message: 'Check out my profile!',
+    //         // You can specify more share options like title and URL here
+    //     });
+    // };
+    const handleShare = async () => {
+        try {
+          await Share.share({
+            message: 'Check out this awesome content!',
+            url: 'https://example.com',
+            title: 'Share Content',
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      };
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
 
@@ -52,9 +69,10 @@ const GroupDele = ({ navigation }) => {
                     <Image resizeMode='contain' style={{ height: 80, width: 80, }} source={require('../Image/profile1.png')} />
                     <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'JosefinSans-Bold', left: 20, bottom: 5 }}>ABC GROUP</Text>
                 </View>
-                <View style={{ alignSelf: 'center', borderRadius: 10, width: 40, backgroundColor: '#1E293B', height: 40 }}>
+                {/* //onPress={openShareDialog} // */}
+                <TouchableOpacity   onPress={handleShare} style={{ alignSelf: 'center', borderRadius: 10, width: 40, backgroundColor: '#1E293B', height: 40 }}>
                     <Image resizeMode='contain' style={{ height: 30, width: 30, justifyContent: 'center', alignSelf: 'center', top: 5 }} source={require('../Image/share.jpg')} />
-                </View>
+                </TouchableOpacity>
             </View>
             {/* <View style={{ alignItems: 'center', backgroundColor: '#1E293B', margin: 10, padding: 10, borderRadius: 10 }}>
                 <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 20, margin: 5 }}>Group Connections - 500</Text>
@@ -74,9 +92,9 @@ const GroupDele = ({ navigation }) => {
                     <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Connection ABC</Text>
                 </TouchableOpacity>
             </View>
-            <ScrollView contentContainerStyle={{paddingBottom:30}}>
-            <View style={{ backgroundColor: '#D2A784', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.7, marginTop: 15 }}></View>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-around',marginTop:20}}>
+            <ScrollView contentContainerStyle={{ paddingBottom: 30 }}>
+                <View style={{ backgroundColor: '#D2A784', height: 3, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.7, marginTop: 15 }}></View>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-around', marginTop: 20 }}>
                     <TouchableOpacity>
 
                         <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Jan</Text>
@@ -266,10 +284,20 @@ const GroupDele = ({ navigation }) => {
                 </View>
                 <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>Add Participants</Text>
-                    <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/Pulse1.png')} />
+                    <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
                 </View>
-                <View style={{ backgroundColor: '#1E293B',width:'905'}}>
-                <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>35 completed out of 50</Text>
+                <View style={{ backgroundColor: '#1E293B', width: '905' }}>
+                    <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>35 completed out of 50</Text>
+                    <Slider
+                        style={{ height: 20 }}
+                        trackStyle={{ backgroundColor: '#EEEFFB' }}
+                        thumbTintColor={'red'}
+                        thumbStyle={{ backgroundColor: '#3844B4' }}
+                        minimumValue={0}
+                        maximumValue={8}
+                        step={1}
+                        minimumTrackTintColor="#3844B4"
+                    />
                 </View>
                 <View style={{ backgroundColor: '#1E293B', height: 410, borderRadius: 20, width: '100%', marginTop: 30 }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', margin: 10, alignItems: 'center' }}>
@@ -298,38 +326,38 @@ const GroupDele = ({ navigation }) => {
                     </View>
                     <View style={{ backgroundColor: '#0F172A', height: 50, borderRadius: 10, margin: 10, flexDirection: 'row', borderWidth: 2, borderColor: '#FFFFFF', width: 350, alignSelf: 'center' }}>
                         <TextInput style={{ color: '#FFFFFF', left: 20, fontSize: 12, fontFamily: 'Roboto-Bold', width: 220, opacity: 0.5 }} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' />
-                        <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 47, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
-                            <Image resizeMode='contain' style={{ height: 28, width: 30, left: 10 }} source={require('../Image/send.jpg')} />
+                        <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 45, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
+                            <Image resizeMode='contain' style={{ height: 28, width: 30, left: 10 }} source={require('../Image/Dots1.jpg')} />
                         </View>
                     </View>
                 </View>
                 <Text style={{ color: "#FFFFFF", fontSize: 25, fontFamily: 'JosefinSans-Bold', margin: 15 }}> Participants</Text>
                 <View>
-                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10,width:'90%',alignSelf:'center',padding:5,margin:10}}>
-                        <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10,alignSelf:'center',marginLeft:15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20,fontFamily: 'Poppins-SemiBold', left: 10,}}>Dovid</Text>
+                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
+                        <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Dovid</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10,width:'90%',alignSelf:'center',padding:5,margin:10}}>
-                        <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10,alignSelf:'center',marginLeft:15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20,fontFamily: 'Poppins-SemiBold', left: 10,}}>Yaakov</Text>
+                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
+                        <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Yaakov</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10,width:'90%',alignSelf:'center',padding:5,margin:10}}>
-                        <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10,alignSelf:'center',marginLeft:15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20,fontFamily: 'Poppins-SemiBold', left: 10,}}>Raj</Text>
+                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
+                        <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Raj</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10,width:'90%',alignSelf:'center',padding:5,margin:10}}>
-                        <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10,alignSelf:'center',marginLeft:15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20,fontFamily: 'Poppins-SemiBold', left: 10,}}>Dovid</Text>
+                    <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
+                        <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Dovid</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center',margin:15 }}>
+                <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', }}>More</Text>
-                    <Image style={{ height: 10, width: 18,marginLeft:5}} resizeMode='contain' source={require('../Image/arrowdown.jpg')} />
-                </View>
-                <Image style={{ alignSelf:'center', height: 80, width: 278 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
+                    <Image style={{ height: 10, width: 18, marginLeft: 5 }} resizeMode='contain' source={require('../Image/arrowdown.jpg')} />
+                </TouchableOpacity>
+                <Image style={{ alignSelf: 'center', height: 80, width: 278 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
                 <TouchableOpacity style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 30, justifyContent: 'center', alignSelf: 'center', marginTop: 20, height: 46, flexDirection: 'row' }}>
                     <Image style={{ alignSelf: 'center', height: 20, width: 20 }} resizeMode='contain' source={require('../Image/Exit1.png')} />
-                    <Text style={{ textAlign: 'center', color: '#CC2929', margin: 10, textAlign: 'center', fontSize: 16,fontFamily: 'Poppins-SemiBold' }}>
+                    <Text style={{ textAlign: 'center', color: '#CC2929', margin: 10, textAlign: 'center', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>
                         Exit group
                     </Text>
                 </TouchableOpacity>

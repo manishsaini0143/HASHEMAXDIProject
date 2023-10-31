@@ -51,7 +51,7 @@ export default function BottomTab() {
 
                 tabBarIcon: ({ focused }) => (
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, marginTop: 10 }} source={require('../Image/calendar1.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 30, width: 30, marginTop: 10 }} source={require('../Image/calendarbottem.png')} />
                         : <Image resizeMode='contain' style={{ height: 30, width: 30, marginTop: 10 }} source={require('../Image/calendar.jpg')} />
                 )
             }} />

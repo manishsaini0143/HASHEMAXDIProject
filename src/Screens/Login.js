@@ -44,7 +44,7 @@ const Login = ({ navigation }) => {
             <ScrollView>
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/email.jpg')} />
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, }} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7,fontFamily:'Poppins-SemiBold',top:4}} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
                 </View>
                 {
                     logEmail == '' ?
@@ -57,7 +57,7 @@ const Login = ({ navigation }) => {
                 }
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/lock.png')} />
-                    <TextInput maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, }} onChangeText={(txt) => { setlogPassword(txt) }} keyboardType='Password-type' placeholder='Password'
+                    <TextInput maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7,fontFamily:'Poppins-SemiBold',top:4 }} onChangeText={(txt) => { setlogPassword(txt) }} keyboardType='Password-type' placeholder='Password'
                         placeholderTextColor='#FFFFFF' secureTextEntry={true} />
                 </View>
                 {
@@ -67,7 +67,7 @@ const Login = ({ navigation }) => {
                     </Text>
                 }
 
-                <TouchableOpacity><Text style={{ color: '#FFFFFF', fontSize: 14, alignSelf: 'flex-end', right: 20, opacity: 0.7, fontFamily: 'Poppins-Medium' }}>Forgot your Password ?</Text></TouchableOpacity>
+                <TouchableOpacity><Text style={{ color: '#FFFFFF', fontSize: 14, alignSelf: 'flex-end', right: 35, opacity: 0.7, fontFamily: 'Poppins-Medium' }}>Forgot your Password ?</Text></TouchableOpacity>
 
                 <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => {
                     loginapi()
