@@ -157,11 +157,11 @@ const Home = ({ navigation }) => {
             })}
             <View style={{ flexDirection: 'row' }}>
 
-              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 120, height: 25, alignItems: 'center', justifyContent: 'center' }}>
-                <Image resizeMode='contain' style={{ height: 15, width: 20 }} source={require('../Image/tared.png')} />
-                <Text style={{ color: '#BDBDBD', left: 10, fontFamily: 'Poppins-SemiBold', fontSize: 12 }}>Data Range</Text>
+              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 28, alignItems: 'center', justifyContent: 'center',borderRadius:5}}>
+                <Image resizeMode='contain' style={{ height: 20, width:20,right:5}} source={require('../Image/tared.png')} />
+                <Text style={{ color: '#FFFFFF', left: 7, fontFamily: 'Poppins-SemiBold', fontSize: 12,top:1 }}>Data Range</Text>
               </View>
-              <View style={{ flexDirection: 'row', width: 200, height: 25, left: 30 }}>
+              <View style={{ flexDirection: 'row', width: 200, height: 25, left:18 }}>
                 <TouchableOpacity>
 
                   <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1D</Text>
@@ -208,82 +208,114 @@ const Home = ({ navigation }) => {
         </View>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25, marginTop: 20 }}>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>15</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Thu</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>16</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
-            <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>17</Text>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 110, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.9 }}>
+            <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}>Jan </Text>
+            </View>
+            <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' ,padding:8}}>17</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5, borderBottomWidth: 2, borderBottomColor: '#D2A784' }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>18</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>19</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Mon</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>20</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Tus</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>21</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Wed</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>22</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>23</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>24</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>25</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Mon</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>26</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', fontWeight: 'bold', color: '#FFFFFF' }}>Tus</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>27</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Wed</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>28</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>29</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-            <Text style={{ backgroundColor: '#D2A784', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
+          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
+            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>30</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
