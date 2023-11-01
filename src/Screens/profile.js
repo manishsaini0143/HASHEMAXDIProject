@@ -6,42 +6,49 @@ const profile = ({ navigation }) => {
     const [onchange, setonchange] = useState();
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-            
-            <TouchableOpacity onPress={() => navigation.goBack()}>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 20 }}>
-                    <Image resizeMode='contain' style={{ height: 30, width: 30 }} source={require('../Image/Backerro.jpg')} />
-                    <View >
-                        <Image resizeMode='contain' style={{ height: 35, width: 35 }} source={require('../Image/notification.jpg')} />
-                        <View style={{ backgroundColor: 'red', height: 13, width: 13, borderRadius: 20, zIndex: 1, position: 'relative', bottom: 35, left: 20 }}></View>
+            <View style={{ flexDirection: 'row', justifyContent:'space-between',width:'90%',alignSelf:'center'}}>
+                    <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
+                        <Image resizeMode='contain' style={{ height: 25, width: 25,}} source={require('../Image/Backerro.jpg')} />
+                    </TouchableOpacity>
+                <View style={{ flexDirection: 'row', height: 70, justifyContent: 'center', }}>
+                    <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+                        <TouchableOpacity>
+
+                            <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 5 }} source={require('../Image/settings.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
+                            <Image resizeMode='contain' style={{ height: 27, width: 27, margin: 5 }} source={require('../Image/notification.jpg')} />
+                            <View style={{ backgroundColor: 'red', height: 8, width: 8, borderRadius: 20, zIndex: 1, position: 'absolute', top: 8, right: 9 }}></View>
+                        </TouchableOpacity>
                     </View>
                 </View>
-            </TouchableOpacity>
+            </View>
             <View style={{ alignItems: 'center' }}>
-                <Image resizeMode='contain' style={{ height: 60, width: 60 }} source={require('../Image/Myprofile.jpg')} />
-                <View style={{ height: 50, width: 50, alignItems: 'center', position: 'relative', bottom: 40, borderRadius: 30, }}>
+                <Image resizeMode='contain' style={{ height: 76, width: 76 }} source={require('../Image/profilepicture.png')} />
+                <View style={{ height: 45, width: 45, alignItems: 'center', position: 'relative', bottom: 45, borderRadius: 30, }}>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, }} source={require('../Image/Edit.jpg')} />
                 </View>
-                <Text style={{ color: '#FFFFFF', fontSize: 30, fontWeight: 'bold', bottom: 35 }}>Upload Pic</Text>
+                <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'JosefinSans-Bold', bottom: 35 }}>Upload Pic</Text>
             </View>
-            <View>
+            <View style={{width:'90%',alignSelf:'center'}}>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 20, left: 20 }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 20, left: 20 }} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 20, left: 20 }} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
+                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 20, left: 20 }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
                 </View>
             </View>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 20 }}>
-                <TouchableOpacity onPress={()=>{setonchange(true)}} style={{ alignSelf: 'center', backgroundColor:onchange==true? '#1E293B':'#0F172A', width: 150, justifyContent: 'center', height: 50, borderRadius: 15 }}>
+            <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-around',alignSelf:'center',marginTop:40}}>
+                <TouchableOpacity onPress={() => { setonchange(true) }} style={{ alignSelf: 'center', backgroundColor: onchange == true ? '#1E293B' : '#0F172A', width: '40%', justifyContent: 'center', height: 50, borderRadius: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 5, textAlign: 'center' }}>Edit</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={()=>{setonchange(false)}} style={{ alignSelf: 'center', backgroundColor:onchange ==false?'#1E293B': '#0F172A', width: 150, justifyContent: 'center', height: 50, borderRadius: 15 }}>
+                <TouchableOpacity onPress={() => { setonchange(false) }} style={{ alignSelf: 'center', backgroundColor: onchange == false ? '#1E293B' : '#0F172A', width: '40%', justifyContent: 'center', height: 50, borderRadius: 15, borderWidth: 1, borderColor: '#FFFFFF' }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 5, textAlign: 'center' }}>Save</Text>
                 </TouchableOpacity>
             </View>

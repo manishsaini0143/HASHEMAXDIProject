@@ -85,8 +85,8 @@ const GroupDele = ({ navigation }) => {
             <Text style={{ width: 220, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>Total Connections 500</Text>
             <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
                 <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-                    <Image style={{ height: 20, width: 20, alignSelf: 'center' }} source={require('../Image/arrow.png')} />
-                    <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
+                    <Image style={{ height: 20, width: 20, alignSelf: 'center',top:2}} source={require('../Image/arrow.png')} />
+                    <Text style={{ color: '#4CE364', fontSize: 17, fontFamily:'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
                 </View>
                 <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Connection ABC</Text>
@@ -286,17 +286,17 @@ const GroupDele = ({ navigation }) => {
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>Add Participants</Text>
                     <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
                 </View>
-                <View style={{ backgroundColor: '#1E293B', width: '905' }}>
+                <View style={{ backgroundColor: '#1E293B', width: '90%',alignSelf:'center',borderRadius:10,padding:10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>35 completed out of 50</Text>
                     <Slider
-                        style={{ height: 20 }}
-                        trackStyle={{ backgroundColor: '#EEEFFB' }}
+                        style={{ height: 20,width:'95%' }}
+                        trackStyle={{ backgroundColor: '#0F172A' }}
                         thumbTintColor={'red'}
-                        thumbStyle={{ backgroundColor: '#3844B4' }}
-                        minimumValue={0}
-                        maximumValue={8}
+                        thumbStyle={{ backgroundColor: '#D2A784' }}
+                        minimumValue={1}
+                        maximumValue={6}
                         step={1}
-                        minimumTrackTintColor="#3844B4"
+                        minimumTrackTintColor="#D2A784"
                     />
                 </View>
                 <View style={{ backgroundColor: '#1E293B', height: 410, borderRadius: 20, width: '100%', marginTop: 30 }}>

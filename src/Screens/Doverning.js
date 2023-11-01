@@ -37,7 +37,7 @@ const Doverning = ({ navigation }) => {
           <TouchableOpacity>
             <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/settings.png')} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
             <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/notification.jpg')} />
             <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', right: 6, top: 9 }}></View>
           </TouchableOpacity>
@@ -49,8 +49,8 @@ const Doverning = ({ navigation }) => {
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', }}>My Doverning 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-          <Image style={{ height: 20, width: 20, alignSelf: 'center' }} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
+          <Image style={{ height: 20, width: 20, alignSelf: 'center',top:2 }} source={require('../Image/arrow.png')} />
+          <Text style={{ color: '#4CE364', fontSize: 17,fontFamily:'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Devening</Text>
@@ -330,7 +330,7 @@ const Doverning = ({ navigation }) => {
           </View>
           <View style={{ backgroundColor: '#0F172A', height: 50, borderRadius: 10, margin: 10, flexDirection: 'row', borderWidth: 2, borderColor: '#FFFFFF', width: 350, alignSelf: 'center' }}>
             <TextInput style={{ color: '#FFFFFF', left: 20, fontSize: 12, fontFamily: 'Roboto-Bold', width: 220, opacity: 0.5 }} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' />
-            <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 47, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
+            <View style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 45, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
               <Image resizeMode='contain' style={{ height: 28, width: 30, left: 10 }} source={require('../Image/send.jpg')} />
             </View>
           </View>
@@ -342,7 +342,7 @@ const Doverning = ({ navigation }) => {
         <Text style={{ color: "#FFFFFF", fontSize: 25, fontFamily: 'JosefinSans-Bold', margin: 15 }}> Past-Goals</Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, margin: 10, width: '90%', alignSelf: 'center', padding: 10 }}>
           <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'Poppins-Bold', alignSelf: 'center' }}> bla bla</Text>
-          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'Poppins-Bold', alignSelf: 'center' }}> 12/45 Days</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'Poppins-Bold', alignSelf: 'center' }}> 13/45 Days</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, width: '90%', alignSelf: 'center', padding: 10 }}>
           <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'Poppins-Bold', alignSelf: 'center' }}> Dovining</Text>

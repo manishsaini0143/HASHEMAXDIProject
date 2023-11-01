@@ -16,7 +16,7 @@ const CreateGrouplist = ({ navigation }) => {
                     <TouchableOpacity>
                         <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/settings.png')} />
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
                         <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/notification.jpg')} />
                         <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', right: 6, top: 9 }}></View>
                     </TouchableOpacity>

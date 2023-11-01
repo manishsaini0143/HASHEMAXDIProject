@@ -101,7 +101,7 @@ const Home = ({ navigation }) => {
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
               <Image resizeMode='contain' style={{ height: 27, width: 27, top: 15, margin: 5 }} source={require('../Image/notification.jpg')} />
               <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 23, right: 7 }}></View>
             </TouchableOpacity>
@@ -114,8 +114,8 @@ const Home = ({ navigation }) => {
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-          <Image style={{ height: 20, width: 20, alignSelf: 'center' }} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17, fontWeight: 'bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
+          <Image style={{ height: 20, width: 20, alignSelf: 'center',top:2 }} source={require('../Image/arrow.png')} />
+          <Text style={{ color: '#4CE364', fontSize: 17,fontFamily:'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Connections</Text>
@@ -285,7 +285,7 @@ const Home = ({ navigation }) => {
           </View>
         </ScrollView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 345, alignSelf: 'center', margin: 15 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold', alignSelf: 'center' }}>My Gools</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-SemiBold', alignSelf: 'center' }}>My Connection</Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Add</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
@@ -347,7 +347,7 @@ const Home = ({ navigation }) => {
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 100, alignSelf: 'center' }}>Add Goals</Text>
 
-              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/plus.png')} />
+              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/puls1.png')} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
