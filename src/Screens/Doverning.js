@@ -6,7 +6,7 @@ const data = {
   labels: ['1D', '5D', '1M', '3M', '6M', 'YTD'],
   datasets: [
     {
-      data: [15, 25, 8, 45, 65, 35, 70, 65],
+      data: [15, 25, 8, 45, 55, 65, 35, 70, 80, 60, 60],//pink//
       color: (opacity = 1) => `rgba(210, 167, 132, ${opacity = 1})`,
       strokeWidth: 2,
     },
@@ -29,23 +29,26 @@ const Doverning = ({ navigation }) => {
   };
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 10 }}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={{ top: 10, left: 10 }}>
-          <Image resizeMode='contain' style={{ height: 20, width: 20 }} source={require('../Image/Backerro.jpg')} />
-        </TouchableOpacity>
-        <View style={{ flexDirection: 'row' }}>
-          <TouchableOpacity>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/settings.png')} />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/notification.jpg')} />
-            <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', right: 6, top: 9 }}></View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menphoto.png')} />
-          </TouchableOpacity>
-        </View>
-      </View>
+       <View style={{ flexDirection: 'row',justifyContent:'space-between',width:'90%',alignSelf:'center',margin:15}}>
+                    <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
+                        <Image resizeMode='contain' style={{ height: 20, width: 20, }} source={require('../Image/Backerro.jpg')} />
+                    </TouchableOpacity>
+                <View style={{ flexDirection: 'row' }}>
+                    <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+                        <TouchableOpacity>
+
+                            <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 10 }} source={require('../Image/settings.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
+                            <Image resizeMode='contain' style={{ height: 27, width: 27, margin: 10 }} source={require('../Image/notification.jpg')} />
+                            <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 10, right: 12 }}></View>
+                        </TouchableOpacity>
+                    </View>
+                    <TouchableOpacity onPress={() => navigation.navigate('profile')}>
+                        <Image resizeMode='contain' style={{ height: 50, width: 50, }} source={require('../Image/menphoto.png')} />
+                    </TouchableOpacity>
+                </View>
+            </View>
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', }}>My Doverning 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
@@ -136,6 +139,10 @@ const Doverning = ({ navigation }) => {
           withHorizontalLines={false}
         />
       </View>
+      <View>
+        <Image resizeMode='contain' style={{ height: 50, width: 50,position:'absolute',zIndex:1,bottom:190,left:195}} source={require('../Image/trend.png')} />
+        <Image resizeMode='contain' style={{ height: 40, width: 50,position:'absolute',zIndex:1,bottom:160,left:210}} source={require('../Image/dot.png')} />
+        </View>
       <ScrollView contentContainerStyle={{ paddingBottom: 40 }}>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25, marginTop: 20 }}>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
@@ -148,7 +155,7 @@ const Doverning = ({ navigation }) => {
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>16</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
-          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
+          <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.9 }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF' }}>jan </Text>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>17</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
@@ -222,22 +229,15 @@ const Doverning = ({ navigation }) => {
 
         <Text style={{ color: '#FFFFFF', fontSize: 25, fontFamily: 'JosefinSans-Bold', marginLeft: 30, marginTop: 20, width: 220 }}>My Current Gool</Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 20 }}>
-          <View style={{ backgroundColor: '#1E293B', width: 126, justifyContent: 'center', borderRadius: 10, height: 40, alignSelf: 'center' }}>
+          <View style={{ backgroundColor: '#1E293B', width: 126, justifyContent: 'center', borderRadius: 10, height: 40, alignSelf: 'center',top:4}}>
 
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Bold', textAlign: 'center' }}>15/45 Days</Text>
           </View>
-          {/* <TouchableOpacity onPress={() => navigation.navigate('Addgoal')}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 50 }}>Add Gool</Text>
-          </TouchableOpacity>
-          <View style={{ backgroundColor: '#D2A784', height: 35, width: 35, borderRadius: 30, alignSelf: 'center' }}>
-            <Image resizeMode='contain' style={{ height: 15, width: 15, position: 'absolute', top: 10, zIndex: 1, left: 10 }} source={require('../Image/Pulse.jpg')} />
-          </View> */}
           <TouchableOpacity onPress={() => navigation.navigate('Addgoal')} style={{ flexDirection: 'row', alignSelf: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Add Gool</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </TouchableOpacity>
         </View>
-
         <View style={{ width: '90%', alignSelf: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', marginLeft: 10 }}>5 dollars a day </Text>
           <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', width: 320, marginLeft: 10 }}>I am dedicating in memory of my

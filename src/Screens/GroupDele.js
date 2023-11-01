@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, Switch,Share } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView, TextInput, Switch, Share } from 'react-native';
 import Slider from 'react-native-slider';
 import { LineChart } from 'react-native-chart-kit';
 const data = {
     labels: ['1D', '5D', '1M', '3M', '6M', 'YTD'],
     datasets: [
         {
-            data: [15, 25, 8, 45, 65, 35, 70, 65],
+            data: [15, 25, 8, 35, 55, 65, 35, 80, 70, 60, 60],//pink//
             color: (opacity = 1) => `rgba(210, 167, 132, ${opacity = 1})`,
             strokeWidth: 2,
-        },
+          },
     ],
 };
 const chartConfig = {
@@ -34,32 +34,34 @@ const GroupDele = ({ navigation }) => {
     // };
     const handleShare = async () => {
         try {
-          await Share.share({
-            message: 'Check out this awesome content!',
-            url: 'https://example.com',
-            title: 'Share Content',
-          });
+            await Share.share({
+                message: 'Check out this awesome content!',
+                url: 'https://example.com',
+                title: 'Share Content',
+            });
         } catch (error) {
-          console.error(error);
+            console.error(error);
         }
-      };
+    };
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 10 }}>
-                <TouchableOpacity onPress={() => navigation.goBack()} style={{ top: 10, left: 10 }}>
-                    <Image resizeMode='contain' style={{ height: 20, width: 20 }} source={require('../Image/Backerro.jpg')} />
-                </TouchableOpacity>
+            <View style={{ flexDirection: 'row',justifyContent:'space-between',width:'90%',alignSelf:'center',margin:15}}>
+                    <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
+                        <Image resizeMode='contain' style={{ height: 20, width: 20, }} source={require('../Image/Backerro.jpg')} />
+                    </TouchableOpacity>
                 <View style={{ flexDirection: 'row' }}>
-                    <TouchableOpacity>
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/settings.png')} />
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/notification.jpg')} />
-                        <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', right: 6, top: 9 }}></View>
-                    </TouchableOpacity>
+                    <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
+                        <TouchableOpacity>
+
+                            <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 10 }} source={require('../Image/settings.png')} />
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
+                            <Image resizeMode='contain' style={{ height: 27, width: 27, margin: 10 }} source={require('../Image/notification.jpg')} />
+                            <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 10, right: 12 }}></View>
+                        </TouchableOpacity>
+                    </View>
                     <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menphoto.png')} />
+                        <Image resizeMode='contain' style={{ height: 50, width: 50, }} source={require('../Image/menphoto.png')} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -70,23 +72,15 @@ const GroupDele = ({ navigation }) => {
                     <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'JosefinSans-Bold', left: 20, bottom: 5 }}>ABC GROUP</Text>
                 </View>
                 {/* //onPress={openShareDialog} // */}
-                <TouchableOpacity   onPress={handleShare} style={{ alignSelf: 'center', borderRadius: 10, width: 40, backgroundColor: '#1E293B', height: 40 }}>
+                <TouchableOpacity onPress={handleShare} style={{ alignSelf: 'center', borderRadius: 10, width: 40, backgroundColor: '#1E293B', height: 40 }}>
                     <Image resizeMode='contain' style={{ height: 30, width: 30, justifyContent: 'center', alignSelf: 'center', top: 5 }} source={require('../Image/share.jpg')} />
                 </TouchableOpacity>
             </View>
-            {/* <View style={{ alignItems: 'center', backgroundColor: '#1E293B', margin: 10, padding: 10, borderRadius: 10 }}>
-                <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 20, margin: 5 }}>Group Connections - 500</Text>
-                <Text style={{ color: '#FFFFFF', fontWeight: 'bold', fontSize: 20, margin: 5 }}>Connection -ABC  </Text>
-                <View style={{ flexDirection: 'row', width: 190, height: 40 }}>
-                    <Image style={{ height: 20, width: 20, }} source={require('../Image/arrow.png')} />
-                    <Text style={{ color: '#4CE364', fontSize: 18, fontWeight: 'bold', }}>500(2.36%)today</Text>
-                </View>
-            </View> */}
             <Text style={{ width: 220, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>Total Connections 500</Text>
             <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
                 <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-                    <Image style={{ height: 20, width: 20, alignSelf: 'center',top:2}} source={require('../Image/arrow.png')} />
-                    <Text style={{ color: '#4CE364', fontSize: 17, fontFamily:'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
+                    <Image style={{ height: 20, width: 20, alignSelf: 'center', top: 2 }} source={require('../Image/arrow.png')} />
+                    <Text style={{ color: '#4CE364', fontSize: 17, fontFamily: 'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
                 </View>
                 <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Connection ABC</Text>
@@ -172,6 +166,10 @@ const GroupDele = ({ navigation }) => {
 
                     />
                 </View>
+                <View>
+        <Image resizeMode='contain' style={{ height: 50, width: 50,position:'absolute',zIndex:1,bottom:190,left:195}} source={require('../Image/trend.png')} />
+        <Image resizeMode='contain' style={{ height: 40, width: 50,position:'absolute',zIndex:1,bottom:160,left:210}} source={require('../Image/dot.png')} />
+        </View>
                 <View style={{ padding: 15, backgroundColor: '#1E293B', borderRadius: 30, marginTop: 20 }}>
 
                     <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', justifyContent: 'space-between', width: '90%', alignSelf: 'center' }}>
@@ -286,16 +284,16 @@ const GroupDele = ({ navigation }) => {
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>Add Participants</Text>
                     <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
                 </View>
-                <View style={{ backgroundColor: '#1E293B', width: '90%',alignSelf:'center',borderRadius:10,padding:10 }}>
+                <View style={{ backgroundColor: '#1E293B', width: '90%', alignSelf: 'center', borderRadius: 10, padding: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>35 completed out of 50</Text>
                     <Slider
-                        style={{ height: 20,width:'95%' }}
+                        style={{ height: 20, width: '95%' }}
                         trackStyle={{ backgroundColor: '#0F172A' }}
                         thumbTintColor={'red'}
                         thumbStyle={{ backgroundColor: '#D2A784' }}
-                        minimumValue={1}
-                        maximumValue={6}
-                        step={1}
+                        minimumValue={0}
+                        maximumValue={4}
+                        step={0}
                         minimumTrackTintColor="#D2A784"
                     />
                 </View>

@@ -49,7 +49,7 @@ const Notification = ({ navigation }) => {
                     <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
                         <Image resizeMode='contain' style={{ height: 20, width: 20, top: 5 }} source={require('../Image/Backerro.jpg')} />
                     </TouchableOpacity>
-                    <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold' }}>Notification</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 20, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold' }}>Notification</Text>
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                     <TouchableOpacity>

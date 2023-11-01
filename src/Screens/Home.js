@@ -10,7 +10,7 @@ const data = {
       strokeWidth: 2,
     },
     {
-      data: [40, 50, 30, 50, 70, 75, 77, 79, 77, 78, 80],//green//
+      data: [40, 50, 30, 49, 64, 70, 73, 75, 77, 80, 80],//green//
       color: (opacity = 1) => `rgba(34, 197, 94, ${opacity = 1})`,
       strokeWidth: 2,
     },
@@ -202,6 +202,10 @@ const Home = ({ navigation }) => {
             withHorizontalLines={false}
           />
         </View>
+        <View>
+        <Image resizeMode='contain' style={{ height: 60, width: 60,position:'absolute',zIndex:1,bottom:190,left:190}} source={require('../Image/trend.png')} />
+        <Image resizeMode='contain' style={{ height: 40, width: 50,position:'absolute',zIndex:1,bottom:160,left:210}} source={require('../Image/dot.png')} />
+        </View>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25, marginTop: 20 }}>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
             <Text style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 67, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.5 }}> </Text>
@@ -373,7 +377,7 @@ const Home = ({ navigation }) => {
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 340, alignSelf: 'center', margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>My Groups</Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center' }}>Create</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center',left:5}}>Create</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </View>
         </View>
@@ -389,7 +393,6 @@ const Home = ({ navigation }) => {
             />
           </View>
         </View>
-
         <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: '90%',margin:25}}>
           <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
 
@@ -456,7 +459,6 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
-
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 }}>Respect</Text>
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>86</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />

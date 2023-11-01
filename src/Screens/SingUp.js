@@ -48,7 +48,7 @@ const SingUp = ({ navigation }) => {
         <ScrollView>
 
           <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
-            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, }} source={require('../Image/user.jpg')} />
+            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, }} source={require('../Image/nameusre.png')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7,fontFamily:'Poppins-SemiBold',top:4}} onChangeText={(txt) => { setfullname(txt) }} keyboardType='Name-type' placeholder='Name' placeholderTextColor='#FFFFFF' />
           </View>
           <View>
@@ -73,7 +73,7 @@ const SingUp = ({ navigation }) => {
               </Text> : null
           }
           <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
-            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10 }} source={require('../Image/phonecall.jpg')} />
+            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10 }} source={require('../Image/phonecall.png')} />
             <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '75%', fontSize: 16, opacity: 0.7,fontFamily:'Poppins-SemiBold',top:4 }} onChangeText={(txt) => { setPhone(txt) }} keyboardType='number-pad' placeholder='Phone number  (optianal)' placeholderTextColor='#FFFFFF' />
           </View>
           <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >

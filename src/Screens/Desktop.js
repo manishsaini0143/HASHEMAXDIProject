@@ -58,7 +58,7 @@ const Desktop = ({ navigation }) => {
                         Log in
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#1E293B', width: 313, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44,borderWidth:1,borderColor:'#FFFFFF',justifyContent:'center' }}>
+                <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#0F172A', width: 313, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44,borderWidth:1,borderColor:'#FFFFFF',justifyContent:'center' }}>
                     <Text style={{ color: '#FFFFFF',alignSelf:'center', fontSize: 16,fontFamily:'Poppins-SemiBold',top:2}}>
                         Sign up
                     </Text>
