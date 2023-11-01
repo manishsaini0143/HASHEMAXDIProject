@@ -72,7 +72,7 @@ const Login = ({ navigation }) => {
                 <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => {
                     loginapi()
                 }} style={{ backgroundColor: '#1E293B', width: 340, height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
-                    <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', }}>
+                    <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontFamily: 'Poppins-SemiBold',top:2}}>
                         Log in
                     </Text>
                 </TouchableOpacity>

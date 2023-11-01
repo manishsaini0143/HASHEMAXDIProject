@@ -377,7 +377,7 @@ const Home = ({ navigation }) => {
             <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 300, alignSelf: 'center', }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width:'79%', alignSelf: 'center', }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', color: '#D2A784' }}>Davening</Text>
           <View>
             <Switch
@@ -390,8 +390,8 @@ const Home = ({ navigation }) => {
           </View>
         </View>
 
-        <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: 348, margin: 25 }}>
-          <View style={{ margin: 10 }}>
+        <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: '90%',margin:25}}>
+          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1</Text>
@@ -403,9 +403,9 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', margin: 5, width: '95%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today:200 Total Connection:200</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
           </View>
-          <View style={{ margin: 10 }}>
+          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1.1</Text>
@@ -417,9 +417,9 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', margin: 5, width: '95%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today:200 Total Connection:200</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
           </View>
-          <View style={{ margin: 10 }}>
+          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1.2</Text>
@@ -431,9 +431,8 @@ const Home = ({ navigation }) => {
               />
             </View>
             <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', margin: 5, width: '95%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today:200 Total Connection:200</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
           </View>
-
         </View>
         <View style={{ margin: 10 }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 330, alignSelf: 'center' }}>

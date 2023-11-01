@@ -42,24 +42,24 @@ const Desktop = ({ navigation }) => {
             <AppIntroSlider
             showDoneButton={false}
             showNextButton={false}
-            dotStyle={{ backgroundColor: 'white',opacity:0.4,bottom: 30 }}
+            dotStyle={{ backgroundColor: 'white',opacity:0.4,bottom: 40 }}
             // dotStyle={{ backgroundColor: 'white', bottom: 120,opacity:0.5 }} // Move the inactive dots 40 units up from the bottom
-            activeDotStyle={{ backgroundColor: '#FFFFFF', bottom: 30 }}
+            activeDotStyle={{ backgroundColor: '#FFFFFF', bottom: 40 }}
       data={slides}
       renderItem={RenderItem}
     />
-            <Text style={{ fontSize: 32, color: '#FFFFFF', marginTop: 25, width: '80%', textAlign: 'center', fontFamily: 'JosefinSans-Bold',alignSelf:'center',bottom:240}}>
+            <Text style={{ fontSize: 32, color: '#FFFFFF', marginTop: 25, width: '80%', textAlign: 'center', fontFamily: 'JosefinSans-Bold',alignSelf:'center',bottom:270}}>
                 In Memory of blah blah
             </Text>
-            <View style={{width: '100%',bottom:110}}>
+            <View style={{width: '100%',bottom:120}}>
 
                 <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ backgroundColor: '#1E293B', width:313, borderRadius: 15, alignSelf: 'center', marginTop: 18, height: 44,borderWidth:1,borderColor:'#000000' ,justifyContent:'center'}}>
-                    <Text style={{ textAlign: 'center', color: '#FFFFFF', fontSize: 16,fontFamily:'Poppins-SemiBold',}}>
+                    <Text style={{ textAlign: 'center', color: '#FFFFFF', fontSize: 16,fontFamily:'Poppins-SemiBold',top:2}}>
                         Log in
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#1E293B', width: 313, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44,borderWidth:1,borderColor:'#FFFFFF',justifyContent:'center' }}>
-                    <Text style={{ color: '#FFFFFF',alignSelf:'center', fontSize: 16,fontFamily:'Poppins-SemiBold',}}>
+                    <Text style={{ color: '#FFFFFF',alignSelf:'center', fontSize: 16,fontFamily:'Poppins-SemiBold',top:2}}>
                         Sign up
                     </Text>
                 </TouchableOpacity>
