@@ -16,14 +16,14 @@ const CreateGrouplist = ({ navigation }) => {
                     <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
                         <TouchableOpacity>
 
-                            <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 5 }} source={require('../Image/settings.png')} />
+                            <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 5,top:5 }} source={require('../Image/settings.png')} />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
+                        <TouchableOpacity style={{top:5}} onPress={() => navigation.navigate('Notification')}>
                             <Image resizeMode='contain' style={{ height: 27, width: 27, margin: 5 }} source={require('../Image/notification.jpg')} />
-                            <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 8, right: 8 }}></View>
+                            <View style={{ backgroundColor: 'red', height: 8, width: 8, borderRadius: 20, zIndex: 1, position: 'absolute', top: 8, right: 8 }}></View>
                         </TouchableOpacity>
                     </View>
-                    <TouchableOpacity onPress={() => navigation.navigate('profile')}>
+                    <TouchableOpacity style={{top:5}} onPress={() => navigation.navigate('profile')}>
                         <Image resizeMode='contain' style={{ height: 45, width: 45, }} source={require('../Image/menphoto.png')} />
                     </TouchableOpacity>
                 </View>
@@ -50,7 +50,9 @@ const CreateGrouplist = ({ navigation }) => {
                     <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '95%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
 
                         <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10, fontFamily: 'Poppins-Medium', top: 5 }} keyboardType='Email-type' placeholder='Goals Time eg. Twice a day' placeholderTextColor='#FFFFFF' />
-                        <Text style={{ color: '#FFFFFF', fontSize: 14, backgroundColor: '#0F172A', borderLeftWidth: 1, borderLeftColor: '#FFFFFF', height: 44, width: 60, borderTopRightRadius: 15, borderBottomRightRadius: 15, left: 45, textAlign: 'center', lineHeight: 45 }}>Days</Text>
+                        <View style={{ backgroundColor: '#0F172A', borderWidth: 1, borderColor: '#FFFFFF', height: 44, width: 60, borderTopRightRadius: 15, borderBottomRightRadius: 15,justifyContent:'center',left:45}}>
+                        <Text style={{ color: '#FFFFFF', fontSize: 14,textAlign:'center',}}>Days</Text>
+                        </View>
 
                     </View>
                     {/* //Days// */}
@@ -124,7 +126,7 @@ const CreateGrouplist = ({ navigation }) => {
                     </ScrollView>
                 </View>
                 <View style={{ alignSelf: 'center', backgroundColor: '#1E293B', width: 130, justifyContent: 'center', height: 40, borderRadius: 20, borderWidth: 1, borderColor: '#FFFFFF', marginTop: 10 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', textAlign: 'center', }}>Create</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', textAlign: 'center',top:2.5}}>Create</Text>
                 </View>
                 <Image style={{ alignSelf: 'center', height: 80, width: 278, marginTop: 20 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
             </ScrollView>

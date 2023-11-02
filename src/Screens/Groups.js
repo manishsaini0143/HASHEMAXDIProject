@@ -18,7 +18,7 @@ const Groups = ({navigation}) => {
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
               <Image resizeMode='contain' style={{ height: 27, width: 27, top: 15, margin: 5 }} source={require('../Image/notification.jpg')} />
               <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 23, right: 7 }}></View>
             </TouchableOpacity>
@@ -28,15 +28,15 @@ const Groups = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 10 }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '85%', alignSelf: 'center', margin: 10 }}>
         <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>Groups</Text>
         <Image resizeMode='contain' style={{ height: 35, width: 35, alignSelf: 'center' }} source={require('../Image/plus.png')} />
       </View>
-      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '90%', alignSelf: 'center' }}>
+      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '88%', alignSelf: 'center' }}>
         <Image resizeMode='contain' style={{ height: 20, width: 30, margin: 10, left: 5 }} source={require('../Image/search.jpg')} />
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>
-      <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '90%', backgroundColor: '#1E293B',margin:25,borderBottomRightRadius:10,borderBottomLeftRadius:10}}>
+      <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '86%', backgroundColor: '#1E293B',margin:25,borderBottomRightRadius:10,borderBottomLeftRadius:10}}>
 
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
           <Image style={{ left: 20 }} source={require('../Image/menpro.png')} />

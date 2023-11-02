@@ -66,8 +66,8 @@ const Addgoal = ({ navigation }) => {
                     </View>
                 </View>
             </View>
-            <View style={{ alignSelf: 'center', backgroundColor: '#1E293B', width: 150, justifyContent: 'center', height: 40, borderRadius: 15,marginTop:20 }}>
-                <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily:'Poppins-SemiBold', textAlign: 'center'}}>Add Gool</Text>
+            <View style={{ alignSelf: 'center', backgroundColor: '#1E293B', width: 150, justifyContent: 'center', height: 45, borderRadius: 10,marginTop:20 }}>
+                <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily:'Poppins-SemiBold', textAlign: 'center',top:2.5}}>Add Gool</Text>
             </View>
 
             <Image style={{ alignSelf: 'center', height: 80, width: 290, marginTop: 40 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />

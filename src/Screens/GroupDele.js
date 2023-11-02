@@ -78,12 +78,12 @@ const GroupDele = ({ navigation }) => {
             </View>
             <Text style={{ width: 220, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>Total Connections 500</Text>
             <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
-                <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
+                <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5,bottom:3 }}>
                     <Image style={{ height: 20, width: 20, alignSelf: 'center', top: 2 }} source={require('../Image/arrow.png')} />
                     <Text style={{ color: '#4CE364', fontSize: 17, fontFamily: 'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
                 </View>
                 <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Connection ABC</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold',bottom:2}}>Connection ABC</Text>
                 </TouchableOpacity>
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 30 }}>
@@ -304,7 +304,7 @@ const GroupDele = ({ navigation }) => {
                 </View>
                 <View style={{ alignItems: 'center', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontFamily: 'JosefinSans-Bold', fontSize: 22, }}>Description</Text>
-                    <View style={{ backgroundColor: '#D2A784', height: 3, width: '80%', borderRadius: 10, opacity: 0.7, marginTop: 5 }}></View>
+                    <View style={{ backgroundColor: '#D2A784', height: 1, width: '80%', borderRadius: 10, opacity: 0.7, marginTop: 5 }}></View>
                     <Text style={{ color: '#FFFFFF', fontFamily: 'JosefinSans-Bold', fontSize: 16, marginTop: 5 }}>Lorem ipsum dolor sit amet, consectetur </Text>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', }}>adipiscingelit</Text>
                 </View>
@@ -319,7 +319,7 @@ const GroupDele = ({ navigation }) => {
                 <View style={{ backgroundColor: '#1E293B', width: '90%', alignSelf: 'center', borderRadius: 10, padding: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10 }}>35 completed out of 50</Text>
                     <Slider
-                        style={{ height: 20, width: '95%' }}
+                        style={{ height: 20, width: '95%',marginLeft:7 }}
                         trackStyle={{ backgroundColor: '#0F172A' }}
                         thumbTintColor={'red'}
                         thumbStyle={{ backgroundColor: '#D2A784' }}
@@ -332,9 +332,9 @@ const GroupDele = ({ navigation }) => {
                 <View style={{ backgroundColor: '#1E293B', height: 410, borderRadius: 20, width: '100%', marginTop: 30 }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', margin: 10, alignItems: 'center' }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold' }}>Chat</Text>
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, left: 10 }} source={require('../Image/Massage.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 25, width: 25, left: 10,top:5}} source={require('../Image/Massage.jpg')} />
                     </View>
-                    <View style={{ backgroundColor: '#D2A784', height: 3, width: 380, borderRadius: 10, alignSelf: 'center', opacity: 0.7 }}></View>
+                    <View style={{ backgroundColor: '#D2A784', height: 2, width: 380, borderRadius: 10, alignSelf: 'center', opacity: 0.7 }}></View>
                     <View style={{ flexDirection: 'row', }}>
                         <View style={{ margin: 10, height: 70, left: 10 }}>
                             <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
@@ -365,19 +365,19 @@ const GroupDele = ({ navigation }) => {
                 <View>
                     <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
                         <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Dovid</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10,top:2}}>Dovid</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
                         <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Yaakov</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10,top:2 }}>Yaakov</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
                         <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Raj</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10,top:2 }}>Raj</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderRadius: 10, width: '90%', alignSelf: 'center', padding: 5, margin: 10 }}>
                         <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, alignSelf: 'center', marginLeft: 15 }}></View>
-                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10, }}>Dovid</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'Poppins-SemiBold', left: 10,top:2 }}>Dovid</Text>
                     </TouchableOpacity>
                 </View>
                 <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 15 }}>

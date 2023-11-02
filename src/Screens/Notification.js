@@ -26,18 +26,18 @@ const Notification = ({ navigation }) => {
         },
     ];
     const renderItem1 = ({ item }) => (
-        <View style={{ backgroundColor: '#1E293B', borderRadius: 15, flexDirection: 'row', width: '90%', alignSelf: 'center',margin:10 }}>
-            <View>
-                <Image resizeMode='contain' style={{ height: 40, width: 40, margin: 10 }} source={require('../Image/parsnal.jpg')} />
+        <View style={{ backgroundColor: '#1E293B', borderRadius: 15, flexDirection: 'row',width:'85%',height:85,margin:10,alignSelf:'center'}}>
+            <View style={{margin:10}}>
+                <Image resizeMode='contain' style={{ height: 33, width: 33, }} source={require('../Image/parsnal.jpg')} />
             </View>
-            <View style={{ width: 200, margin: 10 }}>
+            <View style={{ width: 200,top:5,marginLeft:5}}>
 
                 <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 18, }}>{item.name}</Text>
                 <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 12, }}>{item.text}
                 </Text>
             </View>
-            <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20,width:80,justifyContent:'center',borderWidth:1,borderColor:'#D2A784',opacity:0.9}}>
-                <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center'}}>{item.add}</Text>
+            <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20,width:91,justifyContent:'center',borderWidth:1,borderColor:'#D2A784',opacity:0.9,height:85}}>
+                <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 14, textAlign: 'center', alignSelf: 'center'}}>{item.add}</Text>
             </View>
         </View>
     );
@@ -61,7 +61,7 @@ const Notification = ({ navigation }) => {
                 </View>
             </View>
              <FlatList
-     contentContainerStyle={{paddingBottom:100,margin:10}}
+     contentContainerStyle={{paddingBottom:100}}
         data={data}
         renderItem={renderItem1}
       />

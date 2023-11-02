@@ -39,16 +39,16 @@ const Setup = ({ navigation }) => {
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'center', }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <TouchableOpacity>
+            <TouchableOpacity  style={{top:5}}>
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('Notification')}>
+            <TouchableOpacity style={{top:5}} onPress={() => navigation.navigate('Notification')}>
               <Image resizeMode='contain' style={{ height: 27, width: 27, margin: 5 }} source={require('../Image/notification.jpg')} />
               <View style={{ backgroundColor: 'red', height: 10, width: 10, borderRadius: 20, zIndex: 1, position: 'absolute', top: 8, right: 8 }}></View>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('profile')}>
+          <TouchableOpacity  style={{top:5}} onPress={() => navigation.navigate('profile')}>
             <Image resizeMode='contain' style={{ height: 45, width: 45, }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
         </View>
@@ -63,7 +63,7 @@ const Setup = ({ navigation }) => {
         />
       </TouchableOpacity>
       <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 55, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', width: '90%', alignSelf: 'center', padding: 10, opacity: 0.7 }}>
-        <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', fontFamily: 'JosefinSans-Bold' }}>Connection Setup</Text>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', fontFamily: 'JosefinSans-Bold',bottom:2}}>Connection Setup</Text>
         <Image resizeMode='contain' style={{ height: 15, width: 15 }} source={require('../Image/arrowdown.jpg')} />
       </TouchableOpacity>
       <View style={{ backgroundColor: '#141C2A', width: '90%', alignSelf: 'center', margin: 15, borderRadius: 15 }}>
@@ -72,7 +72,7 @@ const Setup = ({ navigation }) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>Davening</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2 }}>Davening</Text>
           </View>
           <Switch
             trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -85,7 +85,7 @@ const Setup = ({ navigation }) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>Tzedkah</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2}}>Tzedkah</Text>
           </View>
           <Switch
             trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -98,7 +98,7 @@ const Setup = ({ navigation }) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>Respect</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2}}>Respect</Text>
           </View>
           <Switch
             trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -111,7 +111,7 @@ const Setup = ({ navigation }) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>Charity</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2}}>Charity</Text>
           </View>
           <Switch
             trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -124,7 +124,7 @@ const Setup = ({ navigation }) => {
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
 
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10 }}>Lorem</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2}}>Lorem</Text>
           </View>
           <Switch
             trackColor={{ false: '#0F172A', true: '#D1A684' }}
