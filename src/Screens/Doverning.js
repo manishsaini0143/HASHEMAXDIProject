@@ -18,7 +18,7 @@ const chartConfig = {
   backgroundGradientTo: '#0D1134',
   color: (opacity = 1) => `rgba(222, 444, 555, ${opacity})`,
 
-  decimalPlaces: 0, // Number of decimal places for Y-axis labels
+  decimalPlaces: 0,
 };
 const dataList = [90, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 

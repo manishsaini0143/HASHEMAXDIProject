@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, ScrollView, Switch } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, Image, TouchableOpacity, ScrollView, Switch, Alert, BackHandler } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 // let labels = ['1D', '5D', '1M', '3M', '6M', 'YTD']
 const data = {
@@ -89,6 +89,28 @@ const Home = ({ navigation }) => {
   const onoffSwitch12 = () => {
     setonoff12((previousState) => !previousState);
   };
+  useEffect(() => {
+    const handleBackButton = () => {
+      // Add your desired behavior here
+ 
+        // Show an alert to confirm the exit action
+        Alert.alert(
+          'Exit App',
+          'Do you want to exit the app?',
+          [
+            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
+            { text: 'OK', onPress: () => BackHandler.exitApp() },
+          ]
+        );
+        return true;
+    };
+
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackButton);
+
+    return () => {
+      backHandler.remove(); // Clean up the event listener when the component unmounts
+    };
+  }, []);
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>

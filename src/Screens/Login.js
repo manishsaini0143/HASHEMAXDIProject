@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { View, Text, Image, TextInput, TouchableOpacity, KeyboardAvoidingView, ScrollView } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, KeyboardAvoidingView, ScrollView, BackHandler, Alert  } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from '../Components/Loader';
 
@@ -9,25 +9,27 @@ const Login = ({ navigation }) => {
     const [logEmail, setlogEmail] = useState();
     const [logPassword, setlogPassword] = useState();
     const [loader, setLoader] = useState(false)
+
     const loginapi = async () => {
         setLoader(true)
         if (!logEmail || !logPassword) {
             return true
-            setLoader(false)
-        }
-        let body = new FormData;
-        body.append('email', logEmail)
-        body.append('password', logPassword)
+        }else{
 
-        await axios.post('https://schema.getpostman.com/json/collection/v2.1.0/collection.json', body).then(res => {
-            if (res.status == 200) {
-                AsyncStorage.setItem('userToken', res.data.token);
-                setLoader(false)
-                navigation.navigate('Home'),
-                    console.log('hghg', res)
-            }
-        })
-            .catch(err => { console.log('loginapi', err), setLoader(false) })
+            let body = new FormData;
+            body.append('email', logEmail)
+            body.append('password', logPassword)
+    
+            await axios.post('https://schema.getpostman.com/json/collection/v2.1.0/collection.json', body).then(res => {
+                if (res.status == 200) {
+                    AsyncStorage.setItem('userToken', res.data.token);
+                    setLoader(false)
+                    navigation.navigate('Home'),
+                        console.log('hghg', res)
+                }
+            })
+                .catch(err => { console.log('loginapi', err), setLoader(false) })
+        }
     };
 
     return (
