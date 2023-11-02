@@ -114,8 +114,8 @@ const Home = ({ navigation }) => {
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5 }}>
-          <Image style={{ height: 20, width: 20, alignSelf: 'center',top:2 }} source={require('../Image/arrow.png')} />
-          <Text style={{ color: '#4CE364', fontSize: 17,fontFamily:'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
+          <Image style={{ height: 20, width: 20, alignSelf: 'center', top: 2 }} source={require('../Image/arrow.png')} />
+          <Text style={{ color: '#4CE364', fontSize: 17, fontFamily: 'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', }}>Our Connections</Text>
@@ -157,11 +157,11 @@ const Home = ({ navigation }) => {
             })}
             <View style={{ flexDirection: 'row' }}>
 
-              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 28, alignItems: 'center', justifyContent: 'center',borderRadius:5}}>
-                <Image resizeMode='contain' style={{ height: 20, width:20,right:5}} source={require('../Image/tared.png')} />
-                <Text style={{ color: '#FFFFFF', left: 7, fontFamily: 'Poppins-SemiBold', fontSize: 12,top:1 }}>Data Range</Text>
+              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 5 }}>
+                <Image resizeMode='contain' style={{ height: 20, width: 20, right: 5 }} source={require('../Image/tared.png')} />
+                <Text style={{ color: '#FFFFFF', left: 7, fontFamily: 'Poppins-SemiBold', fontSize: 12, top: 1 }}>Data Range</Text>
               </View>
-              <View style={{ flexDirection: 'row', width: 200, height: 25, left:18 }}>
+              <View style={{ flexDirection: 'row', width: 200, height: 25, left: 18 }}>
                 <TouchableOpacity>
 
                   <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1D</Text>
@@ -203,118 +203,118 @@ const Home = ({ navigation }) => {
           />
         </View>
         <View>
-        <Image resizeMode='contain' style={{ height: 60, width: 60,position:'absolute',zIndex:1,bottom:190,left:190}} source={require('../Image/trend.png')} />
-        <Image resizeMode='contain' style={{ height: 40, width: 50,position:'absolute',zIndex:1,bottom:160,left:210}} source={require('../Image/dot.png')} />
+          <Image resizeMode='contain' style={{ height: 60, width: 60, position: 'absolute', zIndex: 1, bottom: 190, left: 190 }} source={require('../Image/trend.png')} />
+          <Image resizeMode='contain' style={{ height: 40, width: 50, position: 'absolute', zIndex: 1, bottom: 160, left: 210 }} source={require('../Image/dot.png')} />
         </View>
         <ScrollView horizontal style={{ flexDirection: 'row', backgroundColor: '#1E293B', height: 157, borderRadius: 25, marginTop: 20 }}>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>15</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Thu</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>16</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 110, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.9 }}>
-            <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}>Jan </Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}>Jan </Text>
             </View>
-            <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' ,padding:8}}>17</Text>
+            <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF', padding: 8 }}>17</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>18</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>19</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Mon</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>20</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Tus</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>21</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Wed</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>22</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>23</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>24</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>25</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Mon</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>26</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', fontWeight: 'bold', color: '#FFFFFF' }}>Tus</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>27</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Wed</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>28</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Fri</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>29</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Set</Text>
           </View>
           <View style={{ width: 70, backgroundColor: '#0F172A', borderRadius: 10, alignItems: 'center', margin: 18, height: 90, alignSelf: 'center', borderWidth: 2, borderColor: '#D2A784', opacity: 0.8 }}>
-          <View  style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF',opacity:0.8 }}>
-            <Text style={{fontSize: 16, fontFamily: 'JosefinSans-Bold',textAlign: 'center', color: '#FFFFFF',bottom:3 }}></Text>
+            <View style={{ backgroundColor: '#D2A784', fontSize: 16, fontFamily: 'JosefinSans-Bold', width: 69, borderTopLeftRadius: 10, borderTopRightRadius: 10, textAlign: 'center', color: '#FFFFFF', opacity: 0.8 }}>
+              <Text style={{ fontSize: 16, fontFamily: 'JosefinSans-Bold', textAlign: 'center', color: '#FFFFFF', bottom: 3 }}></Text>
             </View>
             <Text style={{ fontSize: 22, fontFamily: 'Mulish-Bold', color: '#FFFFFF' }}>30</Text>
             <Text style={{ fontSize: 15, fontFamily: 'Mulish-Regular', color: '#FFFFFF' }}>Sun</Text>
@@ -334,8 +334,8 @@ const Home = ({ navigation }) => {
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Davening  (40)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
-            <View style={{ padding: 5, flexDirection: 'row' }}>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: 315, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ margin: 10, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
                 thumbColor={onoff ? '#FFFFFF' : '#FFFFFF'}
@@ -343,8 +343,8 @@ const Home = ({ navigation }) => {
                 value={onoff}
               />
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
-              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/frend.png')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 30, alignSelf: 'center' }}>My Goal - 15/45 Days</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
@@ -353,16 +353,16 @@ const Home = ({ navigation }) => {
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Tzedkah  (30)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
-            <View style={{ padding: 5, flexDirection: 'row' }}>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: 315, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ margin: 10, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
                 thumbColor={onoff1 ? '#FFFFFF' : '#FFFFFF'}
                 onValueChange={onoffSwitch1}
                 value={onoff1} />
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
-              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/frend.png')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 30, alignSelf: 'center' }}>My Goal - 15/45 Days</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
@@ -371,8 +371,8 @@ const Home = ({ navigation }) => {
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Respect   (45)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
-            <View style={{ padding: 5, flexDirection: 'row' }}>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: 315, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ margin: 10, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
                 thumbColor={onoff2 ? '#FFFFFF' : '#FFFFFF'}
@@ -380,10 +380,10 @@ const Home = ({ navigation }) => {
                 value={onoff2}
               />
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
-              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 100, alignSelf: 'center' }}>Add Goals</Text>
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/frend.png')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 85, alignSelf: 'center' }}>Add Goals</Text>
 
-              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 110, alignSelf: 'center', top: 3 }} source={require('../Image/puls1.png')} />
+              <Image resizeMode='contain' style={{ height: 16, width: 17, left: 95, alignSelf: 'center', top: 3 }} source={require('../Image/puls1.png')} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity style={{ backgroundColor: '#1E293B', borderRadius: 10, width: 350, alignSelf: 'center', margin: 10 }}>
@@ -392,8 +392,8 @@ const Home = ({ navigation }) => {
               <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'Poppins-SemiBold', marginLeft: 10, alignSelf: 'center' }}>Charity   (20)</Text>
               <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
-            <View style={{ padding: 5, flexDirection: 'row' }}>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: 315, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
+            <View style={{ margin: 10, flexDirection: 'row' }}>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
                 thumbColor={onoff3 ? '#FFFFFF' : '#FFFFFF'}
@@ -401,19 +401,19 @@ const Home = ({ navigation }) => {
                 value={onoff3}
               />
               <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/Massage.jpg')} />
-              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/friends.jpg')} />
-              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 40, alignSelf: 'center' }}>My Goals -15/45 Days</Text>
+              <Image resizeMode='contain' style={{ height: 30, width: 40 }} source={require('../Image/frend.png')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'JosefinSans-Bold', left: 30, alignSelf: 'center' }}>My Goal - 15/45 Days</Text>
             </View>
           </TouchableOpacity>
         </ScrollView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 340, alignSelf: 'center', margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>My Groups</Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center',left:5}}>Create</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center', left: 5 }}>Create</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
           </View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width:'79%', alignSelf: 'center', }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '79%', alignSelf: 'center', }}>
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', color: '#D2A784' }}>Davening</Text>
           <View>
             <Switch
@@ -425,10 +425,10 @@ const Home = ({ navigation }) => {
             />
           </View>
         </View>
-        <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: '90%',margin:25}}>
-          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
+        <View style={{ backgroundColor: '#1E293B', alignSelf: 'center', borderRadius: 15, position: 'relative', bottom: 10, width: '90%', margin: 25 }}>
+          <View style={{ margin: 10, width: '95%', alignSelf: 'center' }}>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 5, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1</Text>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -437,24 +437,30 @@ const Home = ({ navigation }) => {
                 value={onoff5}
               />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.7, margin: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}>/</Text> Friend:30 <Text style={{ color: '#D1A684' }}>/</Text> Today: 200</Text>
+            <View>
+              <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 20 }}>Total Connection: 200</Text>
+            </View>
           </View>
-          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
+          <View style={{ margin: 10, width: '95%', alignSelf: 'center' }}>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 5, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1.1</Text>
               <Switch
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
-                thumbColor={onoff8 ? '#FFFFFF' : '#FFFFFF'}
-                onValueChange={onoffSwitch8}
-                value={onoff8}
+                thumbColor={onoff7 ? '#FFFFFF' : '#FFFFFF'}
+                onValueChange={onoffSwitch7}
+                value={onoff7}
               />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.7, margin: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}>/</Text> Friend:30 <Text style={{ color: '#D1A684' }}>/</Text> Today: 200</Text>
+            <View>
+              <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 20 }}>Total Connection: 200</Text>
+            </View>
           </View>
-          <View style={{ margin: 10,width:'95%',alignSelf:'center'}}>
+          <View style={{ margin: 10, width: '95%', alignSelf: 'center' }}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', marginTop: 10, }}>
               <Text style={{ color: '#FFFFFF', fontSize: 19, fontFamily: 'Poppins-Bold' }}>Bhala 1.2</Text>
@@ -465,8 +471,11 @@ const Home = ({ navigation }) => {
                 value={onoff8}
               />
             </View>
-            <View style={{ backgroundColor: '#FFFFFF', height: 3, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', margin: 5, width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}> / </Text> Friend:30 <Text style={{ color: '#D1A684' }}> / </Text> Today: 200 Total Connection: 200</Text>
+            <View style={{ backgroundColor: '#FFFFFF', height: 1, width: '90%', alignSelf: 'center', borderRadius: 10, opacity: 0.7, margin: 5 }}></View>
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '90%', marginLeft: 20 }}>Mission:45 <Text style={{ color: '#D1A684' }}>/</Text> Friend:30 <Text style={{ color: '#D1A684' }}>/</Text> Today: 200</Text>
+            <View>
+              <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', left: 20 }}>Total Connection: 200</Text>
+            </View>
           </View>
         </View>
         <View style={{ margin: 10 }}>
