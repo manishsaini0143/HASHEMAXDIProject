@@ -1,7 +1,129 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TextInput, TouchableOpacity, Switch } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, Switch, FlatList } from 'react-native';
 
-const Groups = ({navigation}) => {
+const Groups = ({ navigation }) => {
+  const data = [
+    {
+      id: '1',
+      image1: require('../Image/menpro.png'),
+      name1: 'Group Name',
+      name2: 'Connection',
+      name3: 'Mission',
+      name4: 'Friends',
+      name5: 'Today’s Total ',
+      name6: 'All Time Total ',
+      name7: 'All Connections ',
+      number1: 'bhala 0001',
+      number2: 'bhala',
+      number3: '45',
+      number4: '30',
+      number5: '200',
+      number6: '200',
+      number7: '30',
+      image2: require('../Image/Exit1.png'),
+      button:'Exit Group'
+
+    },
+    {
+      id: '1',
+      image1: require('../Image/menpro.png'),
+      name1: 'Group Name',
+      name2: 'Connection',
+      name3: 'Mission',
+      name4: 'Friends',
+      name5: 'Today’s Total ',
+      name6: 'All Time Total ',
+      name7: 'All Connections ',
+      number1: 'bhala 0001',
+      number2: 'bhala',
+      number3: '45',
+      number4: '30',
+      number5: '200',
+      number6: '200',
+      number7: '30',
+      image2: require('../Image/Exit1.png'),
+      button:'Exit Group'
+
+    },
+    {
+      id: '1',
+      image1: require('../Image/menpro.png'),
+      name1: 'Group Name',
+      name2: 'Connection',
+      name3: 'Mission',
+      name4: 'Friends',
+      name5: 'Today’s Total ',
+      name6: 'All Time Total ',
+      name7: 'All Connections ',
+      number1: 'bhala 0001',
+      number2: 'bhala',
+      number3: '45',
+      number4: '30',
+      number5: '200',
+      number6: '200',
+      number7: '30',
+      image2: require('../Image/Exit1.png'),
+      button:'Exit Group'
+
+    },
+  ];
+  const renderItem5 = ({ item }) => (
+    <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '86%', backgroundColor: '#1E293B', margin:15, borderBottomRightRadius: 10, borderBottomLeftRadius: 10 }}>
+
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
+        <Image style={{ left: 20 }} source={item.image1}  />
+        <Switch
+          style={{ alignSelf: 'center', right: 30 }}
+          trackColor={{ false: '#0F172A', true: '#D1A684' }}
+          thumbColor={onoff0 ? '#FFFFFF' : '#FFFFFF'}
+          onValueChange={onoffSwitch0}
+          value={onoff0}
+        />
+
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'center', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name1}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number1}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name2}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number2}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name3}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number3}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name4}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number4}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name5}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number5}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name6}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number6}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>{item.name7}</Text>
+        <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
+        <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>{item.number7}</Text>
+      </View>
+      <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', margin: 5 }}>
+        <Image style={{ height: 20, width: 20, margin: 10 }} resizeMode='contain' source={item.image2}/>
+        <Text style={{ color: '#CC2929', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>
+        {item.button}
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
   const [onoff0, setonoff0] = useState(true);
   const onoffSwitch0 = () => {
     setonoff0((previousState) => !previousState);
@@ -36,7 +158,12 @@ const Groups = ({navigation}) => {
         <Image resizeMode='contain' style={{ height: 20, width: 30, margin: 10, left: 5 }} source={require('../Image/search.jpg')} />
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>
-      <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '86%', backgroundColor: '#1E293B',margin:25,borderBottomRightRadius:10,borderBottomLeftRadius:10}}>
+      <FlatList
+        contentContainerStyle={{ paddingBottom: 70 }}
+        data={data}
+        renderItem={renderItem5}
+      />
+      {/* <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '86%', backgroundColor: '#1E293B', margin: 25, borderBottomRightRadius: 10, borderBottomLeftRadius: 10 }}>
 
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
           <Image style={{ left: 20 }} source={require('../Image/menpro.png')} />
@@ -52,45 +179,45 @@ const Groups = ({navigation}) => {
         <View style={{ flexDirection: 'row', justifyContent: 'center', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Group Name</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>bhala 0001</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>bhala 0001</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Connection</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2 }}>bhala</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>bhala</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Mission</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>45</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>45</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Friends</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>30</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>30</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>Today’s Total</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>200</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>200</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>All Time Total</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>200</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>200</Text>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'JosefinSans-Bold', width: '50%', textAlign: 'center' }}>All Connections</Text>
           <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center',top:2}}>30</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'Poppins-SemiBold', width: '50%', textAlign: 'center', top: 2 }}>30</Text>
         </View>
-        <TouchableOpacity style={{ flexDirection: 'row',alignItems:'center',alignSelf:'center',margin:5}}>
-          <Image style={{height: 20, width: 20,margin:10}} resizeMode='contain' source={require('../Image/Exit1.png')} />
+        <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center', margin: 5 }}>
+          <Image style={{ height: 20, width: 20, margin: 10 }} resizeMode='contain' source={require('../Image/Exit1.png')} />
           <Text style={{ color: '#CC2929', fontSize: 16, fontFamily: 'Poppins-SemiBold' }}>
             Exit group
           </Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 }

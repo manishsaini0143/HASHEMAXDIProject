@@ -36,6 +36,16 @@ const chartConfig = {
 };
 const dataList = [90, 80, 70, 60, 50, 40, 30, 20, 10, 0]
 const Home = ({ navigation }) => {
+  const [selectedMonth, setSelectedMonth] = useState(null);
+
+  const handleMonthPress = (month) => {
+    setSelectedMonth(month);
+  };
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionPress = (option) => {
+    setSelectedOption(option);
+  };
 
   const [onoff, setonoff] = useState(true);
   const [onoff1, setonoff1] = useState(true);
@@ -92,17 +102,17 @@ const Home = ({ navigation }) => {
   useEffect(() => {
     const handleBackButton = () => {
       // Add your desired behavior here
- 
-        // Show an alert to confirm the exit action
-        Alert.alert(
-          'Exit App',
-          'Do you want to exit the app?',
-          [
-            { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-            { text: 'OK', onPress: () => BackHandler.exitApp() },
-          ]
-        );
-        return true;
+
+      // Show an alert to confirm the exit action
+      Alert.alert(
+        'Exit App',
+        'Do you want to exit the app?',
+        [
+          { text: 'Cancel', onPress: () => { }, style: 'cancel' },
+          { text: 'OK', onPress: () => BackHandler.exitApp() },
+        ]
+      );
+      return true;
     };
 
     const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackButton);
@@ -135,39 +145,81 @@ const Home = ({ navigation }) => {
       </View>
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'JosefinSans-Bold', marginTop: 20 }}>My Connections 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
-        <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5,bottom:2 }}>
+        <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5, bottom: 2 }}>
           <Image style={{ height: 20, width: 20, alignSelf: 'center', top: 2 }} source={require('../Image/arrow.png')} />
           <Text style={{ color: '#4CE364', fontSize: 17, fontFamily: 'JosefinSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold',bottom:2 }}>Our Connections</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 17, fontFamily: 'JosefinSans-Bold', bottom: 2 }}>Our Connections</Text>
         </TouchableOpacity>
       </View>
       <ScrollView contentContainerStyle={{ paddingBottom: 90 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-          <TouchableOpacity>
-
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Jan</Text>
+          <TouchableOpacity onPress={() => handleMonthPress('Jan')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Jan' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Jan
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Feb</Text>
+          <TouchableOpacity onPress={() => handleMonthPress('Feb')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Feb' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Feb
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Mar</Text>
-
+          <TouchableOpacity onPress={() => handleMonthPress('Mar')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Mar' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Mar
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Apr</Text>
-
+          <TouchableOpacity onPress={() => handleMonthPress('Apr')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Apr' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Apr
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Jun</Text>
-
+          <TouchableOpacity onPress={() => handleMonthPress('Jun')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Jun' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Jun
+            </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
-
-            <Text style={{ color: '#BDBDBD', fontSize: 14, fontFamily: 'Poppins-Medium' }}>Jul</Text>
+          <TouchableOpacity onPress={() => handleMonthPress('Jul')}>
+            <Text
+              style={{
+                color: selectedMonth === 'Jul' ? 'blue' : '#FFFFFF',
+                fontSize: 14,
+                fontFamily: 'Poppins-Medium',
+              }}
+            >
+              Jul
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={{ flexDirection: 'row', }}>
@@ -179,34 +231,34 @@ const Home = ({ navigation }) => {
             })}
             <View style={{ flexDirection: 'row' }}>
 
-              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 5,right:10}}>
+              <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 28, alignItems: 'center', justifyContent: 'center', borderRadius: 5, right: 10 }}>
                 <Image resizeMode='contain' style={{ height: 20, width: 20, right: 5 }} source={require('../Image/tared.png')} />
                 <Text style={{ color: '#FFFFFF', left: 7, fontFamily: 'Poppins-SemiBold', fontSize: 12, top: 1 }}>Data Range</Text>
               </View>
               <View style={{ flexDirection: 'row', width: 200, height: 25, left: 12 }}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('!D')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#D2A784', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1D</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === '!D' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1D</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('5D')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>5D</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === '5D' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>5D</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('1M')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1M</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === '1M' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>1M</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('3M')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>3M</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === '3M' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>3M</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('6M')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>6M</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === '6M' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>6M</Text>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => handleOptionPress('Y1D')}>
 
-                  <Text style={{ color: '#FFFFFF', backgroundColor: '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>Y1D</Text>
+                  <Text style={{ color: '#FFFFFF', backgroundColor: selectedOption === 'Y1D' ? '#D2A784' : '#1E293B', textAlign: 'center', lineHeight: 25, width: 35, marginLeft: 2, marginRight: 5, borderRadius: 5, fontFamily: 'Poppins-SemiBold', fontSize: 14 }}>Y1D</Text>
                 </TouchableOpacity>
 
               </View>
@@ -432,7 +484,7 @@ const Home = ({ navigation }) => {
           <Text style={{ color: '#FFFFFF', fontSize: 22, fontFamily: 'JosefinSans-Bold', alignSelf: 'center' }}>My Groups</Text>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 20, fontFamily: 'JosefinSans-Bold', margin: 10, alignSelf: 'center', left: 5 }}>Create</Text>
-            <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center', margin: 10 }} source={require('../Image/plus.png')} />
+            <Image resizeMode='contain' style={{ height: 35, width: 35, alignSelf: 'center', margin: 10,top:3 }} source={require('../Image/plus.png')} />
           </View>
         </View>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '79%', alignSelf: 'center', }}>
@@ -508,31 +560,31 @@ const Home = ({ navigation }) => {
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25,top:2}}>Davening</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2.5}}>28</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25, top: 2 }}>Davening</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10, top: 2.5 }}>28</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Davening.png')} />
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold',top:2.5}}>40</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', top: 2.5 }}>40</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('GroupDele')} style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#4CE364', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25 ,top:2}}>Tzedkah</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2.5}}>67</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25, top: 2 }}>Tzedkah</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10, top: 2.5 }}>67</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Tzedkah.png')} />
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold',top:2.5 }}>35</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', top: 2.5 }}>35</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#86363F', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25,top:2}}>Respect</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2.5}}>86</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25, top: 2 }}>Respect</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10, top: 2.5 }}>86</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Charity.png')} />
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold',top:2.5}}>75</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', top: 2.5 }}>75</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-around', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, alignItems: 'center', width: 341, alignSelf: 'center' }}>
             <View style={{ backgroundColor: '#4A51E2', height: 25, width: 5, borderRadius: 10, right: 5 }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25,top:2 }}>Charity</Text>
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10,top:2.5 }}>32</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', right: 25, top: 2 }}>Charity</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 10, top: 2.5 }}>32</Text>
             <Image resizeMode='contain' style={{ height: 40, width: 50 }} source={require('../Image/Respect.png')} />
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold',top:2.5 }}>85</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', top: 2.5 }}>85</Text>
           </TouchableOpacity>
         </View>
         <Image style={{ height: 110, width: 278, alignSelf: 'center' }} resizeMode='contain' source={require('../Image/Splash1.jpg')} />

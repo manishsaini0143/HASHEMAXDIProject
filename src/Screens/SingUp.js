@@ -55,7 +55,7 @@ const SingUp = ({ navigation }) => {
             {
               fullname == '' &&
               <Text style={{ color: 'red', marginLeft: 10 }}>
-                Please Enter Full Name
+               Enter your full name
               </Text>
             }
           </View>
@@ -66,10 +66,14 @@ const SingUp = ({ navigation }) => {
           {
             Email == '' ?
               <Text style={{ color: 'red', marginLeft: 10 }}>
-                Please Enter Email
+             Enter your email address.
               </Text>
               : Email && !Email.includes('@') ? <Text style={{ color: 'red', marginLeft: 10 }}>
-                Please Enter Valid Email
+               Enter a valid email address.
+              </Text> :Email && !Email.includes('.') ? <Text style={{ color: 'red', marginLeft: 10 }}>
+               Enter a valid email Character (.)
+              </Text> :Email && !Email.includes('com') ? <Text style={{ color: 'red', marginLeft: 10 }}>
+               Enter a valid email  Character (com)
               </Text> : null
           }
           <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >

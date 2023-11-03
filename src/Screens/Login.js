@@ -51,10 +51,14 @@ const Login = ({ navigation }) => {
                 {
                     logEmail == '' ?
                         <Text style={{ color: 'red', alignSelf: 'center' }}>
-                            Please Enter Email
+                          Enter your email address
                         </Text>
                         : logEmail && !logEmail.includes('@') ? <Text style={{ color: 'red', marginLeft: 10 }}>
-                            Please Enter Valid Email
+                           Enter a valid email address(@)
+                        </Text> :logEmail && !logEmail.includes('.') ? <Text style={{ color: 'red', marginLeft: 10 }}>
+                        Enter a valid email Character (.)
+                        </Text> :logEmail && !logEmail.includes('com') ? <Text style={{ color: 'red', marginLeft: 10 }}>
+                        Enter a valid email  Character (com)
                         </Text> : null
                 }
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
