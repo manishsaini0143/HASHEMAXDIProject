@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
+import { Calendar } from 'react-native-calendars';
 
 const Addgoal = ({ navigation }) => {
+    const [selected, setSelected] = useState('');
+    const [CalendarOpen, setCalendarOpen] = useState(false)
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 10 }}>
@@ -65,8 +68,15 @@ const Addgoal = ({ navigation }) => {
                 </TouchableOpacity>
                 <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', margin: 10, height: 46 }}>
 
-                    <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
-                        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text>
+                    <TouchableOpacity onPress={() => {
+                        setCalendarOpen(true)
+                    }} style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
+                        {
+                            !selected ?
+
+                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text> :
+                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{selected}</Text>
+                        }
                         <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                     </TouchableOpacity>
                     <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderLeftWidth: 1, borderColor: '#FFFFFF', borderTopRightRadius: 20, borderBottomRightRadius: 20 }}>
@@ -74,11 +84,28 @@ const Addgoal = ({ navigation }) => {
                         <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                     </TouchableOpacity>
                 </View>
+
             </View>
             <View style={{ alignSelf: 'center', backgroundColor: '#1E293B', width: 150, justifyContent: 'center', height: 45, borderRadius: 10, marginTop: 20 }}>
                 <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', textAlign: 'center', top: 2.5 }}>Add Gool</Text>
-            </View>
 
+            </View>
+            {
+                CalendarOpen == true ?
+
+                    <View style={{ width: 400, height: 500 }}>
+                        <Calendar
+                            onDayPress={day => {
+                                setSelected(day.dateString);
+                                setCalendarOpen(false)
+                            }}
+                            markedDates={{
+                                [selected]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
+                            }}
+                        />
+                    </View>
+                    : null
+            }
             <Image style={{ alignSelf: 'center', height: 80, width: 290, marginTop: 40 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
         </View>
     );

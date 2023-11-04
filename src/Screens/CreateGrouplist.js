@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView, TextInput } from 'react-native';
+import { Calendar } from 'react-native-calendars';
 const CreateGrouplist = ({ navigation }) => {
+    const [showdate, setshowdate] = useState(false);
+    const [detefix, setdetefix] = useState();
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 15 }}>
@@ -64,8 +67,15 @@ const CreateGrouplist = ({ navigation }) => {
                     </TouchableOpacity>
                     <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', margin: 10, height: 46 }}>
 
-                        <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
-                            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text>
+                        <TouchableOpacity
+                        onPress={()=>{
+                            setshowdate(true)
+                        }}
+                         style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
+                            {
+                                !showdate ?
+                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text> : <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{detefix}</Text> 
+                            }
                             <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                         </TouchableOpacity>
                         <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderLeftWidth: 1, borderColor: '#FFFFFF', borderTopRightRadius: 20, borderBottomRightRadius: 20 }}>
@@ -73,6 +83,22 @@ const CreateGrouplist = ({ navigation }) => {
                             <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                         </TouchableOpacity>
                     </View>
+                    {
+                showdate == true ?
+
+                    <View style={{ width: 400, height: 400,alignSelf:'center'}}>
+                        <Calendar
+                            onDayPress={day => {
+                                setdetefix (day.dateString);
+                                setshowdate(false)
+                            }}
+                            markedDates={{
+                                [detefix]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
+                            }}
+                        />
+                    </View>
+                    : null
+            }
                     <View style={{ backgroundColor: '#1E293B', height: 150, borderRadius: 15, margin: 7, borderWidth: 2, borderColor: '#FFFFFF', width: '95%', alignSelf: 'center', opacity: 0.7 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, opacity: 0.9, margin: 15 }}>Group Description</Text>
                     </View>
