@@ -1,7 +1,23 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Image, ScrollView, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, Image, ScrollView, TextInput, FlatList } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 const CreateGrouplist = ({ navigation }) => {
+    //drop down//
+    const [showDropdown, setShowDropdown] = useState(false);
+    const [selectedValue, setSelectedValue] = useState('Connections');
+
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+
+    const handleDropdownItemPress = (item) => {
+        setSelectedValue(item);
+        setShowDropdown(false);
+    };
+
+    const dropdownItems = ['Connections', 'Option 1', 'Option 2', 'Option 3'];
+    //drop down//
+
     const [showdate, setshowdate] = useState(false);
     const [detefix, setdetefix] = useState();
     return (
@@ -36,14 +52,65 @@ const CreateGrouplist = ({ navigation }) => {
             <ScrollView contentContainerStyle={{ paddingBottom: 20 }}>
 
                 <View style={{ margin: 10, padding: 10 }}>
-                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
+                    {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Connections</Text>
                         <Image resizeMode='contain' style={{ height: 20, width: 20, right: 15, top: 2 }} source={require('../Image/arrowdown.jpg')} />
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                     {/* <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '95%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
 
                         <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10, fontFamily: 'Poppins-Medium', top: 5 }} keyboardType='Email-type' placeholder='Group Name' placeholderTextColor='#FFFFFF' />
                     </View> */}
+                    <TouchableOpacity
+                        style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between',
+                            backgroundColor: '#1E293B',
+                            borderRadius: 15,
+                            height: 46,
+                            alignItems: 'center',
+                            borderWidth: 2,
+                            borderColor: '#FFFFFF',
+                            margin: 10,
+                            opacity: 0.9,
+                        }}
+                        onPress={toggleDropdown} // Handle press to toggle dropdown
+                    >
+                        <Text
+                            style={{
+                                color: '#FFFFFF',
+                                fontSize: 16,
+                                fontFamily: 'Poppins-Medium',
+                                left: 10,
+                                top: 2,
+                            }}
+                        >
+                            {selectedValue}
+                        </Text>
+                        <Image
+                            resizeMode='contain'
+                            style={{ height: 20, width: 20, right: 15, top: 2 }}
+                            source={require('../Image/arrowdown.jpg')}
+                        />
+                    </TouchableOpacity>
+
+                    {showDropdown && (
+                        <View style={{ backgroundColor: '#1E293B', margin: 10, borderRadius: 5 }}>
+                            <FlatList
+                                data={dropdownItems}
+                                keyExtractor={(item) => item}
+                                renderItem={({ item }) => (
+                                    <TouchableOpacity
+                                        style={{ padding: 10 }}
+                                        onPress={() => handleDropdownItemPress(item)}
+                                    >
+                                        <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium' }}>
+                                            {item}
+                                        </Text>
+                                    </TouchableOpacity>
+                                )}
+                            />
+                        </View>
+                    )}
                     <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Group Name</Text>
                     </TouchableOpacity>
@@ -68,13 +135,13 @@ const CreateGrouplist = ({ navigation }) => {
                     <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', margin: 10, height: 46 }}>
 
                         <TouchableOpacity
-                        onPress={()=>{
-                            setshowdate(true)
-                        }}
-                         style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
+                            onPress={() => {
+                                setshowdate(true)
+                            }}
+                            style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
                             {
                                 !showdate ?
-                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text> : <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{detefix}</Text> 
+                                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text> : <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{detefix}</Text>
                             }
                             <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                         </TouchableOpacity>
@@ -84,21 +151,21 @@ const CreateGrouplist = ({ navigation }) => {
                         </TouchableOpacity>
                     </View>
                     {
-                showdate == true ?
+                        showdate == true ?
 
-                    <View style={{ width: 400, height: 400,alignSelf:'center'}}>
-                        <Calendar
-                            onDayPress={day => {
-                                setdetefix (day.dateString);
-                                setshowdate(false)
-                            }}
-                            markedDates={{
-                                [detefix]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
-                            }}
-                        />
-                    </View>
-                    : null
-            }
+                            <View style={{ width: 400, height: 400, alignSelf: 'center' }}>
+                                <Calendar
+                                    onDayPress={day => {
+                                        setdetefix(day.dateString);
+                                        setshowdate(false)
+                                    }}
+                                    markedDates={{
+                                        [detefix]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
+                                    }}
+                                />
+                            </View>
+                            : null
+                    }
                     <View style={{ backgroundColor: '#1E293B', height: 150, borderRadius: 15, margin: 7, borderWidth: 2, borderColor: '#FFFFFF', width: '95%', alignSelf: 'center', opacity: 0.7 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, opacity: 0.9, margin: 15 }}>Group Description</Text>
                     </View>

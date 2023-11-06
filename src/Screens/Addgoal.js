@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Image, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, Image, TextInput, FlatList } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 
 const Addgoal = ({ navigation }) => {
+    //drop down//
+    const [showDropdown, setShowDropdown] = useState(false);
+    const [selectedValue, setSelectedValue] = useState('On behalf of');
+
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+
+    const handleDropdownItemPress = (item) => {
+        setSelectedValue(item);
+        setShowDropdown(false);
+    };
+
+    const dropdownItems = ['On behalf of', 'stap 1', 'stap 2', 'stap 3'];
+    //drop down//
+
     const [selected, setSelected] = useState('');
     const [CalendarOpen, setCalendarOpen] = useState(false)
     return (
@@ -11,7 +27,7 @@ const Addgoal = ({ navigation }) => {
                 <View style={{ flexDirection: 'row' }}>
 
                     <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
-                        <Image resizeMode='contain' style={{ height: 20, width: 20, top: 5 }} source={require('../Image/Backerro.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 25, width: 25, top: 5 }} source={require('../Image/Backerro.jpg')} />
                     </TouchableOpacity>
                     <Text style={{ color: '#FFFFFF', fontSize: 20, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold' }}>Add Personal Goals</Text>
                 </View>
@@ -52,10 +68,61 @@ const Addgoal = ({ navigation }) => {
                     <Image resizeMode='cover' style={{ height: 20, width: 20, alignSelf: 'center', left: 60 }} source={require('../Image/arrowdown.jpg')} />
                     </TouchableOpacity>
                 </View> */}
-                <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
+                {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>On behalf of</Text>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, right: 15, top: 2 }} source={require('../Image/arrowdown.jpg')} />
+                </TouchableOpacity> */}
+                <TouchableOpacity
+                    style={{
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        backgroundColor: '#1E293B',
+                        borderRadius: 15,
+                        height: 46,
+                        alignItems: 'center',
+                        borderWidth: 2,
+                        borderColor: '#FFFFFF',
+                        margin: 10,
+                        opacity: 0.9,
+                    }}
+                    onPress={toggleDropdown} // Handle press to toggle dropdown
+                >
+                    <Text
+                        style={{
+                            color: '#FFFFFF',
+                            fontSize: 16,
+                            fontFamily: 'Poppins-Medium',
+                            left: 10,
+                            top: 2,
+                        }}
+                    >
+                        {selectedValue}
+                    </Text>
+                    <Image
+                        resizeMode='contain'
+                        style={{ height: 20, width: 20, right: 15, top: 2 }}
+                        source={require('../Image/arrowdown.jpg')}
+                    />
                 </TouchableOpacity>
+
+                {showDropdown && (
+                    <View style={{ backgroundColor: '#1E293B', margin: 10, borderRadius: 5 }}>
+                        <FlatList
+                            data={dropdownItems}
+                            keyExtractor={(item) => item}
+                            renderItem={({ item }) => (
+                                <TouchableOpacity
+                                    style={{ padding: 10 }}
+                                    onPress={() => handleDropdownItemPress(item)}
+                                >
+                                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', borderRadius: 20, alignSelf: 'center' }}>
+                                        {item}
+                                    </Text>
+                                </TouchableOpacity>
+                            )}
+                        />
+                    </View>
+                )}
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Mother</Text>
                 </TouchableOpacity>
