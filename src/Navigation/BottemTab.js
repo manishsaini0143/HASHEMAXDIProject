@@ -10,8 +10,9 @@ const Tab = createBottomTabNavigator();
 export default function BottomTab() {
     return (
         <Tab.Navigator screenOptions={({ route }) => ({
-            headerShown: false ,
+            headerShown: false,
             tabBarStyle: {
+
                 height: 70,
                 paddingHorizontal: 5,
                 paddingTop: 0,
@@ -26,31 +27,31 @@ export default function BottomTab() {
                 tabBarIcon: ({ focused }) => (
 
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 35, width: 35, position: 'absolute', top: 20 }} source={require('../Image/home1.jpg')} />
-                        : <Image resizeMode='contain' style={{ height: 35, width: 35, position: 'absolute', top: 20 }} source={require('../Image/home.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 28, width: 28, position: 'absolute', top: 20 }} source={require('../Image/home1.jpg')} />
+                        : <Image resizeMode='contain' style={{ height: 28, width: 28, position: 'absolute', top: 20 }} source={require('../Image/home.jpg')} />
                 )
             }} />
             <Tab.Screen name="Groups" component={Groups} options={{
                 tabBarIcon: ({ focused }) => (
 
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 40, width: 40, position: 'absolute', top: 18 }} source={require('../Image/Groups.png')} />
-                        : <Image resizeMode='contain' style={{ height: 40, width: 40, position: 'absolute', top: 18 }} source={require('../Image/group.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/Groups.png')} />
+                        : <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/group.jpg')} />
                 )
             }} />
             <Tab.Screen name="Buddies" component={Buddies} options={{
                 tabBarIcon: ({ focused }) => (
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 35, width: 35, marginTop: 27 }} source={require('../Image/friends1.png')} />
-                        : <Image resizeMode='contain' style={{ height: 35, width: 35,marginTop:27 }} source={require('../Image/friends.png')} />
+                        <Image resizeMode='contain' style={{ height: 27, width: 27, marginTop: 19 }} source={require('../Image/friends1.png')} />
+                        : <Image resizeMode='contain' style={{ height: 27, width: 27, marginTop: 19 }} source={require('../Image/friends.png')} />
                 )
             }} />
             <Tab.Screen name="Calenders" component={Calenders} options={{
 
                 tabBarIcon: ({ focused }) => (
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 35, width: 35, marginTop: 20 }} source={require('../Image/calendarbottem.png')} />
-                        : <Image resizeMode='contain' style={{ height: 35, width: 35, marginTop: 20 }} source={require('../Image/calendar.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendarbottem.png')} />
+                        : <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendar.jpg')} />
                 )
             }} />
         </Tab.Navigator>

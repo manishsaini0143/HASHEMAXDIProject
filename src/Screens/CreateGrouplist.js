@@ -51,7 +51,7 @@ const CreateGrouplist = ({ navigation }) => {
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 20 }}>
 
-                <View style={{ margin: 10, padding: 10 }}>
+                <View>
                     {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Connections</Text>
                         <Image resizeMode='contain' style={{ height: 20, width: 20, right: 15, top: 2 }} source={require('../Image/arrowdown.jpg')} />
@@ -70,7 +70,7 @@ const CreateGrouplist = ({ navigation }) => {
                             alignItems: 'center',
                             borderWidth: 2,
                             borderColor: '#FFFFFF',
-                            margin: 10,
+                            width:'93%',alignSelf:'center',margin:5,
                             opacity: 0.9,
                         }}
                         onPress={toggleDropdown} // Handle press to toggle dropdown
@@ -112,10 +112,10 @@ const CreateGrouplist = ({ navigation }) => {
                             />
                         </View>
                     )}
-                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
+                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.9,width:'93%',alignSelf:'center',margin:5}}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, justifyContent: 'center' }}>Group Name</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
+                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.9,width:'93%',alignSelf:'center',margin:5 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, justifyContent: 'center' }}>Mission eg. 30 days I davend</Text>
                     </TouchableOpacity>
                     {/* <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '95%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
@@ -126,14 +126,14 @@ const CreateGrouplist = ({ navigation }) => {
                         </View>
 
                     </View> */}
-                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF', margin: 10, width: '95%', opacity: 0.8 }}>
+                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 1, borderColor: '#FFFFFF',  opacity: 0.8,width:'93%',alignSelf:'center',margin:5 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 13, justifyContent: 'center' }}>Goals Time  eg. Twice a day</Text>
                         <View style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', backgroundColor: '#0F172A', borderLeftWidth: 1, borderLeftColor: '#FFFFFF', height: 43, width: 90, borderTopRightRadius: 20, borderBottomRightRadius: 20, textAlign: 'center', justifyContent: 'center' }}>
 
                             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center' }}>Days</Text>
                         </View>
                     </TouchableOpacity>
-                    <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', margin: 10, height: 46 }}>
+                    <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', height: 46,width:'93%',alignSelf:'center',margin:5}}>
 
                         <TouchableOpacity
                             onPress={() => {
@@ -167,15 +167,15 @@ const CreateGrouplist = ({ navigation }) => {
                             </View>
                             : null
                     }
-                    <View style={{ backgroundColor: '#1E293B', height: 150, borderRadius: 15, margin: 7, borderWidth: 2, borderColor: '#FFFFFF', width: '95%', alignSelf: 'center', opacity: 0.7 }}>
+                    <View style={{ backgroundColor: '#1E293B', height: 150, borderRadius: 15, margin: 7, borderWidth: 2, borderColor: '#FFFFFF',  alignSelf: 'center', opacity: 0.7,width:'93%',alignSelf:'center',margin:5}}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, opacity: 0.9, margin: 15, fontFamily: 'DMSans-Bold' }}>Group Description</Text>
                     </View>
-                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 12, opacity: 0.8 }}>
+                    <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.8,width:'93%',alignSelf:'center',margin:5}}>
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, justifyContent: 'center' }}>Invite Friends</Text>
                         <Image resizeMode='contain' style={{ height: 17, width: 17, right: 15, justifyContent: 'center' }} source={require('../Image/arrowdown.jpg')} />
                     </TouchableOpacity>
-                    <ScrollView style={{ backgroundColor: '#1E293B', padding: 10, borderRadius: 15, width: '90%', alignSelf: 'center', marginTop: 10 }}>
-                        <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin: 5 }}>
+                    <ScrollView style={{ backgroundColor: '#1E293B', padding: 10, borderRadius: 15,alignSelf: 'center', marginTop: 10,width:'93%',alignSelf:'center',margin:5}}>
+                        <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15,}}>
                             <View style={{ flexDirection: 'row', }}>
 
                                 <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/parsnal.jpg')} />

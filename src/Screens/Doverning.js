@@ -124,11 +124,11 @@ const Doverning = ({ navigation }) => {
       <Text style={{ width: 200, fontSize: 24, color: '#FFFFFF', left: 30, fontFamily: 'DMSans-Bold', }}>My Doverning 2000</Text>
       <View style={{ flexDirection: 'row', bottom: 10, justifyContent: 'space-around' }}>
         <View style={{ flexDirection: 'row', width: 163, height: 46, margin: 10, padding: 5, bottom: 2 }}>
-          <Image style={{ height: 15, width: 15, alignSelf: 'center',justifyContent:'center' }} source={require('../Image/arrow.png')} />
+          <Image style={{ height: 15, width: 15, alignSelf: 'center', justifyContent: 'center' }} source={require('../Image/arrow.png')} />
           <Text style={{ color: '#4CE364', fontSize: 14, fontFamily: 'DMSans-Bold', left: 10, alignSelf: 'center' }}>500(2.36%)Today</Text>
         </View>
         <TouchableOpacity style={{ backgroundColor: '#1E293B', height: 46, alignItems: 'center', width: '40%', justifyContent: 'center', borderRadius: 10, margin: 10 }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 15, fontFamily: 'DMSans-Bold',justifyContent:'center'}}>Our Devening</Text>
+          <Text style={{ color: '#FFFFFF', fontSize: 15, fontFamily: 'DMSans-Bold', justifyContent: 'center' }}>Our Devening</Text>
         </TouchableOpacity>
       </View>
       {/* <Text>line chart staet</Text> */}
@@ -237,6 +237,10 @@ const Doverning = ({ navigation }) => {
 
                 <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y1D</Text>
               </TouchableOpacity>
+              <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y2D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y2D')}>
+
+                <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y2D</Text>
+              </TouchableOpacity>
 
             </View>
           </View>
@@ -280,7 +284,7 @@ const Doverning = ({ navigation }) => {
                     backgroundColor: '#D2A784',
                     fontSize: 16,
                     fontFamily: 'JosefinSans-Bold',
-                    width: 74,
+                    width: 75,
                     borderTopLeftRadius: 10,
                     borderTopRightRadius: 10,
                     textAlign: 'center',
@@ -309,31 +313,31 @@ const Doverning = ({ navigation }) => {
           )}
         </ScrollView>
 
-        <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', marginLeft: 30, marginTop: 20, width: 220 }}>My Current Gool</Text>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 20 }}>
+        <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', margin: 15 }}>My Current Gool</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center', margin: 10 }}>
           <View style={{ backgroundColor: '#1E293B', width: 126, justifyContent: 'center', borderRadius: 10, height: 40, alignSelf: 'center', top: 3 }}>
 
-            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center',justifyContent:'center'}}>15/45 Days</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center', justifyContent: 'center' }}>15/45 Days</Text>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('Addgoal')} style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', margin: 10, alignSelf: 'center' }}>Add Gool</Text>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center', margin: 10,justifyContent:'center' }} source={require('../Image/plus.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', margin: 10, alignSelf: 'center' }}>Add Gool</Text>
+            <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center', justifyContent: 'center' }} source={require('../Image/plus.png')} />
           </TouchableOpacity>
         </View>
-        <View style={{ width: '90%', alignSelf: 'center' }}>
-          <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'DMSans-Bold', marginLeft: 10 }}>5 dollars a day </Text>
+        <View style={{ width: '93%', alignSelf: 'center' }}>
+          <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', marginLeft: 10 }}>5 dollars a day </Text>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Medium', width: 320, marginLeft: 10 }}>I am dedicating in memory of my
             mother.</Text>
-          <View style={{ backgroundColor: '#D2A784', height: 3, width: '95%', borderRadius: 10, alignSelf: 'center', marginTop: 20 }}></View>
+          <View style={{ backgroundColor: '#D2A784', height: 3, width: '94%', borderRadius: 10, alignSelf: 'center', marginTop: 20 }}></View>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '87%', alignSelf: 'center', margin: 15 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center', margin: 10 }}>
           <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}>Group Goals</Text>
           <TouchableOpacity onPress={() => navigation.navigate('CreateGrouplist')} style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 10, alignSelf: 'center', left: 10 }}>Create Group</Text>
-            <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center', margin: 10,justifyContent:'center'}} source={require('../Image/plus.png')} />
+            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 10, alignSelf: 'center', }}>Create Group</Text>
+            <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center', justifyContent: 'center' }} source={require('../Image/plus.png')} />
           </TouchableOpacity>
         </View>
-        <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', borderRadius: 10, width: '85%', backgroundColor: '#1E293B' }}>
+        <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', borderRadius: 10, width: '93%', backgroundColor: '#1E293B' }}>
 
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
             <Image style={{ left: 20 }} source={require('../Image/menpro.png')} />
@@ -347,24 +351,24 @@ const Doverning = ({ navigation }) => {
 
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'center', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Group Name</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Group Name</Text>
             <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
             <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center', }}>bhala 0001</Text>
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Connection</Text>
             <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 14,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>bhala</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>bhala</Text>
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Mission</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Mission</Text>
             <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 14,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>75 Minutes</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>75 Minutes</Text>
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
-            <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Friends</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Friends</Text>
             <View style={{ backgroundColor: "#1E293B", borderRightWidth: 2, height: 40, borderColor: '#64748B' }}></View>
-            <Text style={{ color: '#FFFFFF', fontSize: 14,fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>30</Text>
+            <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>30</Text>
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'space-around', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center' }}>
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>Today’s Total</Text>
@@ -377,14 +381,14 @@ const Doverning = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', width: '50%', textAlign: 'center' }}>30</Text>
           </View>
         </View>
-        <View style={{ backgroundColor: '#1E293B', height: 450, borderRadius: 20, width: '100%', marginTop: 30 }}>
+        <View style={{ backgroundColor: '#1E293B', height: 430, borderRadius: 20, width: '100%', marginTop: 30 }}>
 
           <View style={{ justifyContent: 'space-between', alignSelf: 'center', margin: 15 }}>
             <Image resizeMode='contain' style={{ height: 42, width: 273, }} source={require('../Image/hareshada.png')} />
             <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
 
-              <Text style={{ color: '#FFFFFF', fontSize: 18,fontFamily: 'DMSans-Bold' }}>Conversations</Text>
-              <Image resizeMode='contain' style={{ height: 25, width: 25, marginLeft: 10,  }} source={require('../Image/Massage.jpg')} />
+              <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Conversations</Text>
+              <Image resizeMode='contain' style={{ height: 25, width: 25, marginLeft: 10, }} source={require('../Image/Massage.jpg')} />
             </View>
           </View>
           <View style={{ backgroundColor: '#D2A784', height: 2, width: 380, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
@@ -393,7 +397,7 @@ const Doverning = ({ navigation }) => {
               <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
             </View>
             <View style={{ margin: 20 }}>
-              <Text style={{ color: "#FFFFFF", fontSize: 18,fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B',fontFamily: 'DMSans-Bold'}}> 1h ago</Text></Text>
+              <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B', fontFamily: 'DMSans-Bold' }}> 1h ago</Text></Text>
               <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', width: 230, }}>Lorem Ipsum is simply dummy text of the printing</Text>
             </View>
           </View>
@@ -404,11 +408,11 @@ const Doverning = ({ navigation }) => {
             </View>
             <View style={{ margin: 20 }}>
               <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B' }}> 1h ago</Text></Text>
-              <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily: 'DMSans-Bold', width: 230, }}>Lorem Ipsum is simply dummy text of the printing</Text>
+              <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', width: 230, }}>Lorem Ipsum is simply dummy text of the printing</Text>
             </View>
           </View>
           <View style={{ backgroundColor: '#0F172A', height: 50, borderRadius: 10, margin: 10, flexDirection: 'row', borderWidth: 2, borderColor: '#FFFFFF', width: 350, alignSelf: 'center' }}>
-            <TextInput style={{ color: '#FFFFFF', left: 20, fontSize: 12,fontFamily: 'DMSans-Bold', width: 220, opacity: 0.5 }} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' onChangeText={handleTextInputChange} />
+            <TextInput style={{ color: '#FFFFFF', left: 20, fontSize: 12, fontFamily: 'DMSans-Bold', width: 220, opacity: 0.5 }} placeholder='Type' placeholderTextColor='#FFFFFF' keyboardType='text' onChangeText={handleTextInputChange} />
             <TouchableOpacity onPress={openModal} style={{ backgroundColor: '#1E293B', justifyContent: 'center', position: 'relative', left: 75, height: 45, width: 50, borderBottomRightRadius: 10, borderTopRightRadius: 10, borderLeftWidth: 2, borderColor: '#FFFFFF' }}>
               <Image resizeMode='contain' style={{ height: 28, width: 30, left: 10 }} source={require('../Image/send.jpg')} />
             </TouchableOpacity>
@@ -427,17 +431,17 @@ const Doverning = ({ navigation }) => {
           </Modal>
         </View>
         <View style={{ alignItems: 'center' }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold', textAlign: 'center', margin:5 }}> My History</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold', textAlign: 'center', margin: 10 }}> My History</Text>
           <View style={{ backgroundColor: '#D2A784', height: 1, width: 250, borderRadius: 10, opacity: 0.7 }}></View>
         </View>
-        <Text style={{ color: "#FFFFFF", fontSize: 18,fontFamily: 'DMSans-Bold', margin: 15 }}> Past-Goals</Text>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, margin: 10, width: '90%', alignSelf: 'center', padding: 10 }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> bla bla</Text>
-          <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> 13/45 Days</Text>
+        <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold', margin: 15 }}> Past-Goals</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, margin: 10, width: '93%', alignSelf: 'center', padding: 10 }}>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> bla bla</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> 13/45 Days</Text>
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, width: '90%', alignSelf: 'center', padding: 10 }}>
-          <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> Dovining</Text>
-          <Text style={{ color: "#FFFFFF", fontSize: 16,fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> 12/45 Days</Text>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', height: 50, borderRadius: 10, width: '93%', alignSelf: 'center', padding: 10 }}>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> Dovining</Text>
+          <Text style={{ color: "#FFFFFF", fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}> 12/45 Days</Text>
         </View>
         {/* <Image style={{ margin: 20, height: 150, width: 350 }} resizeMode='contain' source={require('../Image/Splash1.jpg')} /> */}
       </ScrollView>

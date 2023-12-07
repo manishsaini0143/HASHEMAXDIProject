@@ -300,15 +300,15 @@ const Public = ({ navigation }) => {
                     </ScrollView>
                 </View>
 
-                <View style={{ margin: 10 }}>
+                
 
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: 330, alignSelf: 'center' }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '92%', alignSelf: 'center',margin:10 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Connections </Text>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Today</Text>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>All Time</Text>
                     </View>
-                </View>
-                <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: 341, alignSelf: 'center' }}>
+            
+                <TouchableOpacity onPress={() => navigation.navigate('Doverning')} style={{ flexDirection: 'row', justifyContent: 'space-between', margin: 10, backgroundColor: '#1E293B', padding: 5, borderRadius: 10, borderWidth: 2, borderColor: '#D2A784', alignItems: 'center', width: '93%', alignSelf: 'center' }}>
                     {/* <View style={{ backgroundColor: '#D2A784', height: 25, width: 5, borderRadius: 10, right: 5 }}></View> */}
                     <View style={{ left: 10 }}>
 

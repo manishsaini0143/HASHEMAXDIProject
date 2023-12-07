@@ -54,15 +54,15 @@ const Buddies = ({ navigation }) => {
   ];
 
   const renderItem = ({ item }) => (
-    <View style={{ backgroundColor: '#1E293B', width: '90%', padding: 10, alignSelf: 'center', borderRadius: 10, height: 105, marginTop: 20 }}>
+    <View style={{ backgroundColor: '#1E293B', width: '93%', alignSelf: 'center', borderRadius: 10, height: 105, padding: 10, margin: 5 }}>
 
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ flexDirection: 'row' }}>
 
-          <Image resizeMode='contain' style={{ height: 50, width: 50, alignSelf: 'center' }} source={item.image} />
+          <Image resizeMode='contain' style={{ height: 32, width: 32, alignSelf: 'center' }} source={item.image} />
           <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 18, alignSelf: 'center', marginLeft: 15 }}>{item.name}</Text>
         </View>
-        <TouchableOpacity style={{ alignSelf: 'center', backgroundColor: '#D2A784', width: 110, alignItems: 'center', height: 30, borderRadius: 5 ,justifyContent:'center'}}>
+        <TouchableOpacity style={{ alignSelf: 'center', backgroundColor: '#D2A784', width: 122, alignItems: 'center', height: 30, borderRadius: 5, justifyContent: 'center' }}>
 
           <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 16, }}>{item.add}</Text>
         </TouchableOpacity>
@@ -70,7 +70,7 @@ const Buddies = ({ navigation }) => {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
 
         <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 16, margin: 10 }}>{item.text}</Text>
-        <View style={{ backgroundColor: '#1E293B', height: 25, width: 50, borderRadius: 5, borderWidth: 1, borderColor: '#D2A784', right: 20, top: 10 }}>
+        <View style={{ backgroundColor: '#1E293B', height: 25, width: 50, borderRadius: 5, borderWidth: 1, borderColor: '#D2A784', top: 10 }}>
 
           <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', }}>{item.find}</Text>
         </View>
@@ -81,11 +81,11 @@ const Buddies = ({ navigation }) => {
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
         <View >
-          <Image resizeMode='cover' style={{ height: 136, width: 180, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
-        <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
+        <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <TouchableOpacity>
+            <TouchableOpacity >
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>
@@ -95,7 +95,7 @@ const Buddies = ({ navigation }) => {
             </TouchableOpacity>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-            <Image resizeMode='contain' style={{ height: 50, width: 50, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
+            <Image resizeMode='contain' style={{ height: 50, width: 50, top: 15, margin: 7 }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
         </View>
       </View>
@@ -107,7 +107,7 @@ const Buddies = ({ navigation }) => {
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>
       <FlatList
-        contentContainerStyle={{ paddingBottom: 100, margin: 10 }}
+        contentContainerStyle={{ paddingBottom: 100, }}
         data={data}
         renderItem={renderItem}
       />

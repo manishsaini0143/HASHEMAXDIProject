@@ -6,10 +6,10 @@ const profile = ({ navigation }) => {
     const [onchange, setonchange] = useState();
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-            <View style={{ flexDirection: 'row', justifyContent:'space-between',width:'90%',alignSelf:'center'}}>
-                    <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
-                        <Image resizeMode='contain' style={{ height: 25, width: 25,}} source={require('../Image/Backerro.jpg')} />
-                    </TouchableOpacity>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center' }}>
+                <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
+                    <Image resizeMode='contain' style={{ height: 25, width: 25, }} source={require('../Image/Backerro.jpg')} />
+                </TouchableOpacity>
                 <View style={{ flexDirection: 'row', height: 70, justifyContent: 'center', }}>
                     <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
                         <TouchableOpacity>
@@ -30,21 +30,21 @@ const profile = ({ navigation }) => {
                 </View>
                 <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', bottom: 35 }}>Upload Pic</Text>
             </View>
-            <View style={{width:'90%',alignSelf:'center'}}>
-                <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20,fontFamily: 'DMSans-Bold', }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
+            <View style={{ width: '93%', alignSelf: 'center' }}>
+                <View style={{ borderRadius: 20, backgroundColor: '#1E293B', margin: 5 }} >
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold', }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
                 </View>
-                <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold',}} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
+                <View style={{ borderRadius: 20, backgroundColor: '#1E293B', margin: 5 }} >
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold', }} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
                 </View>
-                <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold'}} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
+                <View style={{ borderRadius: 20, backgroundColor: '#1E293B', margin: 5 }} >
+                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold' }} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
                 </View>
-                <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20,fontFamily: 'DMSans-Bold' }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
+                <View style={{ borderRadius: 20, backgroundColor: '#1E293B', margin: 5 }} >
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold' }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
                 </View>
             </View>
-            <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-around',alignSelf:'center',marginTop:40}}>
+            <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-around', alignSelf: 'center', marginTop: 40 }}>
                 <TouchableOpacity onPress={() => { setonchange(true) }} style={{ alignSelf: 'center', backgroundColor: onchange == true ? '#1E293B' : '#0F172A', width: '40%', justifyContent: 'center', height: 50, borderRadius: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', margin: 5, textAlign: 'center' }}>Edit</Text>
                 </TouchableOpacity>

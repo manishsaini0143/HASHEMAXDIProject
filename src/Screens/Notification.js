@@ -26,7 +26,7 @@ const Notification = ({ navigation }) => {
         },
     ];
     const renderItem1 = ({ item }) => (
-        <View style={{ flexDirection: 'row', width: '90%', height: 85, margin: 10, justifyContent: 'center', alignSelf: 'center' }}>
+        <View style={{ flexDirection: 'row',height: 85, margin: 10, justifyContent: 'center', alignSelf: 'center' }}>
             <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderTopLeftRadius: 15, borderBottomLeftRadius: 15 }}>
 
                 <View style={{ margin: 10 }}>

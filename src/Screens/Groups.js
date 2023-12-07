@@ -68,10 +68,10 @@ const Groups = ({ navigation }) => {
     },
   ];
   const renderItem5 = ({ item }) => (
-    <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '86%', backgroundColor: '#1E293B', margin: 15, borderRadius: 10 }}>
+    <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', width: '93%', backgroundColor: '#1E293B', margin: 10, borderRadius: 10 }}>
 
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
-        <Image style={{ left: 20 }} source={item.image1} />
+        <Image style={{ left: 20, height: 51, width: 51 }} source={item.image1} />
         <Switch
           style={{ alignSelf: 'center', right: 30 }}
           trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -132,11 +132,11 @@ const Groups = ({ navigation }) => {
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
         <View >
-          <Image resizeMode='cover' style={{ height: 136, width: 180, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
-        <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
+        <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <TouchableOpacity>
+            <TouchableOpacity >
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>
@@ -146,7 +146,7 @@ const Groups = ({ navigation }) => {
             </TouchableOpacity>
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('profile')}>
-            <Image resizeMode='contain' style={{ height: 50, width: 50, top: 15, margin: 10 }} source={require('../Image/menphoto.png')} />
+            <Image resizeMode='contain' style={{ height: 50, width: 50, top: 15, margin: 7 }} source={require('../Image/menphoto.png')} />
           </TouchableOpacity>
         </View>
       </View>
