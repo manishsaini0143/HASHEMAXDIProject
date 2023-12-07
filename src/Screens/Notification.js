@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity,FlatList } from 'react-native';
+import { View, Text, Image, TouchableOpacity, FlatList } from 'react-native';
 
 const Notification = ({ navigation }) => {
     const data = [
@@ -26,18 +26,21 @@ const Notification = ({ navigation }) => {
         },
     ];
     const renderItem1 = ({ item }) => (
-        <View style={{ backgroundColor: '#1E293B', borderRadius: 15, flexDirection: 'row',width:'85%',height:85,margin:10,alignSelf:'center'}}>
-            <View style={{margin:10}}>
-                <Image resizeMode='contain' style={{ height: 33, width: 33, }} source={require('../Image/parsnal.jpg')} />
-            </View>
-            <View style={{ width: 200,top:5,marginLeft:5}}>
+        <View style={{ flexDirection: 'row', width: '90%', height: 85, margin: 10, justifyContent: 'center', alignSelf: 'center' }}>
+            <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderTopLeftRadius: 15, borderBottomLeftRadius: 15 }}>
 
-                <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 18, }}>{item.name}</Text>
-                <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 12, }}>{item.text}
-                </Text>
+                <View style={{ margin: 10 }}>
+                    <Image resizeMode='contain' style={{ height: 33, width: 33, }} source={require('../Image/parsnal.jpg')} />
+                </View>
+                <View style={{ width: 180, top: 10, marginLeft: 5 }}>
+
+                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 16, }}>{item.name}</Text>
+                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Regular', fontSize: 12, }}>{item.text}
+                    </Text>
+                </View>
             </View>
-            <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20,width:91,justifyContent:'center',borderWidth:1,borderColor:'#D2A784',opacity:0.9,height:85}}>
-                <Text style={{ color: '#FFFFFF',fontFamily:'Poppins-SemiBold', fontSize: 14, textAlign: 'center', alignSelf: 'center'}}>{item.add}</Text>
+            <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20, width: 91, justifyContent: 'center', borderWidth: 1, borderColor: '#D2A784', opacity: 0.9, height: 85 }}>
+                <Text style={{ color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center' }}>{item.add}</Text>
             </View>
         </View>
     );
@@ -47,10 +50,9 @@ const Notification = ({ navigation }) => {
                 <View style={{ flexDirection: 'row' }}>
 
                     <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
-                        <Image resizeMode='contain' style={{ height: 25, width: 25, top: 5 }} source={require('../Image/Backerro.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 22, width: 22, }} source={require('../Image/Backerro.jpg')} />
                     </TouchableOpacity>
-                    <Text style={{ color: '#FFFFFF', fontSize: 20, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold',top
-                :2 }}>Notification</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 20, alignSelf: 'center', marginLeft: 10, fontFamily: 'DMSans-Bold' }}>Notification</Text>
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                     <TouchableOpacity>
@@ -61,11 +63,11 @@ const Notification = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
             </View>
-             <FlatList
-     contentContainerStyle={{paddingBottom:100}}
-        data={data}
-        renderItem={renderItem1}
-      />
+            <FlatList
+                contentContainerStyle={{ paddingBottom: 100 }}
+                data={data}
+                renderItem={renderItem1}
+            />
 
         </View>
     );

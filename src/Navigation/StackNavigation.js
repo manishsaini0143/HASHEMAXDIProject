@@ -14,6 +14,8 @@ import Setup from '../Screens/Setup';
 import profile from '../Screens/profile';
 import Notification from '../Screens/Notification';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Public from '../Screens/Public';
+import Forgetpasword from '../Screens/Forgetpasword';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +41,8 @@ const StackNavigation = () => {
         <Stack.Screen name="Setup" component={Setup} />
         <Stack.Screen name="profile" component={profile} />
         <Stack.Screen name="Notification" component={Notification} />
+        <Stack.Screen name="Public" component={Public} />
+        <Stack.Screen name="Forgetpasword" component={Forgetpasword} />
 
       </Stack.Navigator>
     </NavigationContainer>

@@ -28,28 +28,28 @@ const profile = ({ navigation }) => {
                 <View style={{ height: 45, width: 45, alignItems: 'center', position: 'relative', bottom: 45, borderRadius: 30, }}>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, }} source={require('../Image/Edit.jpg')} />
                 </View>
-                <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'JosefinSans-Bold', bottom: 35 }}>Upload Pic</Text>
+                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', bottom: 35 }}>Upload Pic</Text>
             </View>
             <View style={{width:'90%',alignSelf:'center'}}>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20,fontFamily: 'DMSans-Bold', }} keyboardType='name' placeholder='Deva' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold',}} keyboardType='Email-type' placeholder='Dave@gamil.com' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
+                    <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'DMSans-Bold'}} keyboardType='Number-type' placeholder='8740891056' placeholderTextColor='#FFFFFF' />
                 </View>
                 <View style={{ margin: 10, borderRadius: 20, backgroundColor: '#1E293B' }} >
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20, fontFamily: 'Poppins-SemiBold', top: 4 }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, left: 20,fontFamily: 'DMSans-Bold' }} keyboardType='Password' placeholder='******************' placeholderTextColor='#FFFFFF' />
                 </View>
             </View>
             <View style={{ flexDirection: 'row', width: '90%', justifyContent: 'space-around',alignSelf:'center',marginTop:40}}>
                 <TouchableOpacity onPress={() => { setonchange(true) }} style={{ alignSelf: 'center', backgroundColor: onchange == true ? '#1E293B' : '#0F172A', width: '40%', justifyContent: 'center', height: 50, borderRadius: 15 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 5, textAlign: 'center' }}>Edit</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', margin: 5, textAlign: 'center' }}>Edit</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => { setonchange(false) }} style={{ alignSelf: 'center', backgroundColor: onchange == false ? '#1E293B' : '#0F172A', width: '40%', justifyContent: 'center', height: 50, borderRadius: 15, borderWidth: 1, borderColor: '#FFFFFF' }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 'bold', margin: 5, textAlign: 'center' }}>Save</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', margin: 5, textAlign: 'center' }}>Save</Text>
                 </TouchableOpacity>
             </View>
 

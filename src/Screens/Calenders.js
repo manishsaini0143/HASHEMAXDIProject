@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text ,TouchableOpacity,Image} from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 
-const Calenders = ({navigation}) => {
+const Calenders = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
@@ -10,7 +10,7 @@ const Calenders = ({navigation}) => {
         </View>
         <View style={{ flexDirection: 'row', width: '60%', height: 70, top: 20, justifyContent: 'center', left: 10 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
 
               <Image resizeMode='contain' style={{ height: 25, width: 25, top: 15, margin: 5 }} source={require('../Image/settings.png')} />
             </TouchableOpacity>

@@ -27,9 +27,9 @@ const Addgoal = ({ navigation }) => {
                 <View style={{ flexDirection: 'row' }}>
 
                     <TouchableOpacity onPress={() => navigation.goBack()} style={{ alignSelf: 'center' }}>
-                        <Image resizeMode='contain' style={{ height: 25, width: 25, top: 5 }} source={require('../Image/Backerro.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 23, width: 23,}} source={require('../Image/Backerro.jpg')} />
                     </TouchableOpacity>
-                    <Text style={{ color: '#FFFFFF', fontSize: 20, alignSelf: 'center', marginLeft: 10, fontFamily: 'JosefinSans-Bold' }}>Add Personal Goals</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', marginLeft: 10, fontFamily: 'DMSans-Bold',}}>Add Personal Goals</Text>
                 </View>
                 <View style={{ flexDirection: 'row' }}>
                     <TouchableOpacity>
@@ -51,14 +51,14 @@ const Addgoal = ({ navigation }) => {
                     <Image resizeMode='contain' style={{ height: 15, width: 15 }} source={require('../Image/arrowdown.jpg')} />
                 </TouchableOpacity> */}
                 <TouchableOpacity onPress={() => navigation.navigate('Setup')} style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Connections</Text>
-                    <Image resizeMode='contain' style={{ height: 20, width: 20, right: 15, top: 2 }} source={require('../Image/arrowdown.jpg')} />
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10,}}>Connections</Text>
+                    <Image resizeMode='contain' style={{ height: 17, width: 17, right: 15, }} source={require('../Image/arrowdown.jpg')} />
                 </TouchableOpacity>
                 {/* <TouchableOpacity  style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, borderWidth: 2, borderColor: '#FFFFFF', marginBottom: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium',opacity:0.5}}>Mission eg. 5 dollars a day</Text>
                 </TouchableOpacity> */}
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Mission eg. 5 dollars a day</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, }}>Mission eg. 5 dollars a day</Text>
                 </TouchableOpacity>
                 {/* //Text input// */}
                 {/* <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '95%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
@@ -91,16 +91,16 @@ const Addgoal = ({ navigation }) => {
                         style={{
                             color: '#FFFFFF',
                             fontSize: 16,
-                            fontFamily: 'Poppins-Medium',
+                            fontFamily: 'DMSans-Bold',
                             left: 10,
-                            top: 2,
+                            
                         }}
                     >
                         {selectedValue}
                     </Text>
                     <Image
                         resizeMode='contain'
-                        style={{ height: 20, width: 20, right: 15, top: 2 }}
+                        style={{ height: 17, width: 17, right: 15,  }}
                         source={require('../Image/arrowdown.jpg')}
                     />
                 </TouchableOpacity>
@@ -115,7 +115,7 @@ const Addgoal = ({ navigation }) => {
                                     style={{ padding: 10 }}
                                     onPress={() => handleDropdownItemPress(item)}
                                 >
-                                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', borderRadius: 20, alignSelf: 'center' }}>
+                                    <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', borderRadius: 20, alignSelf: 'center' }}>
                                         {item}
                                     </Text>
                                 </TouchableOpacity>
@@ -124,13 +124,13 @@ const Addgoal = ({ navigation }) => {
                     </View>
                 )}
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>Mother</Text>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16,fontFamily: 'DMSans-Bold', left: 10, }}>Mother</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, width: '95%', opacity: 0.8 }}>
-                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', left: 13, top: 2 }}>Total Time</Text>
-                    <View style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, textAlign: 'center', }}>
+                    <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 13, }}>Total Time</Text>
+                    <View style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, justifyContent:'center' }}>
 
-                        <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', textAlign: 'center', top: 10 }}>Days</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center',  }}>Days</Text>
                     </View>
                 </TouchableOpacity>
                 <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', margin: 10, height: 46 }}>
@@ -141,20 +141,20 @@ const Addgoal = ({ navigation }) => {
                         {
                             !selected ?
 
-                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>Start  Date</Text> :
-                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{selected}</Text>
+                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, }}>Start  Date</Text> :
+                                <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5,}}>{selected}</Text>
                         }
                         <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                     </TouchableOpacity>
                     <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderLeftWidth: 1, borderColor: '#FFFFFF', borderTopRightRadius: 20, borderBottomRightRadius: 20 }}>
-                        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>End  Date</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, }}>End  Date</Text>
                         <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                     </TouchableOpacity>
                 </View>
 
             </View>
             <View style={{ alignSelf: 'center', backgroundColor: '#1E293B', width: 150, justifyContent: 'center', height: 45, borderRadius: 10, marginTop: 20 }}>
-                <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', textAlign: 'center', top: 2.5 }}>Add Gool</Text>
+                <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold',textAlign: 'center', }}>Add Gool</Text>
 
             </View>
             {
