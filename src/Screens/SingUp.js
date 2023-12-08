@@ -47,7 +47,7 @@ const SingUp = ({ navigation }) => {
         </View>
         <ScrollView>
 
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, top: 3 }} source={require('../Image/nameusre.png')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, fontFamily: 'DMSans-Medium', justifyContent: 'center' }} onChangeText={(txt) => { setfullname(txt) }} keyboardType='Name-type' placeholder='Name' placeholderTextColor='#FFFFFF' />
           </View>
@@ -59,7 +59,7 @@ const SingUp = ({ navigation }) => {
               </Text>
             }
           </View>
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, top: 4 }} source={require('../Image/email.jpg')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, fontFamily: 'DMSans-Medium', justifyContent: 'center' }} onChangeText={(txt) => { setEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
           </View>
@@ -76,11 +76,11 @@ const SingUp = ({ navigation }) => {
                 Enter a valid email  Character (com)
               </Text> : null
           }
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, top: 3 }} source={require('../Image/phonecall.png')} />
             <TextInput maxLength={10} style={{ color: '#FFFFFF', width: '75%', fontSize: 16, opacity: 0.7, fontFamily: 'DMSans-Medium', justifyContent: 'center' }} onChangeText={(txt) => { setPhone(txt) }} keyboardType='number-pad' placeholder='Phone number  (optianal)' placeholderTextColor='#FFFFFF' />
           </View>
-          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', alignSelf: 'center' }} >
+          <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
             <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, top: 2 }} source={require('../Image/lock.png')} />
             <TextInput secureTextEntry={true} maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, fontFamily: 'DMSans-Medium', justifyContent: 'center' }} onChangeText={(txt) => { setPassword(txt) }} keyboardType='Password-type' placeholder='Password' placeholderTextColor='#FFFFFF' />
           </View>
@@ -100,7 +100,7 @@ const SingUp = ({ navigation }) => {
             } else {
               singhapi()
             }
-          }} style={{ backgroundColor: '#1E293B', width: 340, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 46, marginTop: 25 }}>
+          }} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 46, marginTop: 25 }}>
             <Text style={{ textAlign: 'center', color: '#FFFFFF', margin: 10, textAlign: 'center', fontSize: 16, fontFamily: 'DMSans-Bold', }}>
               Sign up
             </Text>
@@ -116,13 +116,13 @@ const SingUp = ({ navigation }) => {
               </Text>
             </TouchableOpacity>
           </View> */}
-          <View style={{ flexDirection: 'row', alignSelf: 'center',marginTop:15 }}>
+          <View style={{ flexDirection: 'row', alignSelf: 'center', marginTop: 15 }}>
             <Text style={{ fontSize: 14, color: '#FFFFFF', opacity: 0.7, fontFamily: 'DMSans-Medium' }}>
-            Already have an account?
+              Already have an account?
             </Text>
             <TouchableOpacity onPress={() => navigation.navigate('Login')} >
               <Text style={{ fontFamily: 'DMSans-Medium', color: '#CF3939', fontSize: 14, marginLeft: 5, opacity: 0.8, fontFamily: 'DMSans-Medium' }}>
-              Login
+                Login
               </Text>
             </TouchableOpacity>
           </View>

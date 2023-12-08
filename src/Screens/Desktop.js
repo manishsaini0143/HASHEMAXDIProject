@@ -64,12 +64,12 @@ const Desktop = ({ navigation }) => {
 
       <View style={{ width: '100%', marginBottom: 110 }}>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ backgroundColor: '#1E293B', width: 313, borderRadius: 15, alignSelf: 'center', marginTop: 18, height: 44, borderWidth: 1, borderColor: '#000000', justifyContent: 'center' }}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')} style={{ backgroundColor: '#1E293B', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 18, height: 44, borderWidth: 1, borderColor: '#000000', justifyContent: 'center' }}>
           <Text style={{ textAlign: 'center', color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', justifyContent: 'center' }}>
             Log in
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#0F172A', width: 313, borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44, borderWidth: 1, borderColor: '#FFFFFF', justifyContent: 'center' }}>
+        <TouchableOpacity onPress={() => navigation.navigate('SingUp')} style={{ backgroundColor: '#0F172A', width: '90%', borderRadius: 15, alignSelf: 'center', marginTop: 20, height: 44, borderWidth: 1, borderColor: '#FFFFFF', justifyContent: 'center' }}>
           <Text style={{ color: '#FFFFFF', alignSelf: 'center', fontSize: 16, fontFamily: 'DMSans-Bold', justifyContent: 'center' }}>
             Sign up
           </Text>

@@ -54,7 +54,7 @@ const Buddies = ({ navigation }) => {
   ];
 
   const renderItem = ({ item }) => (
-    <View style={{ backgroundColor: '#1E293B', width: '93%', alignSelf: 'center', borderRadius: 10, height: 105, padding: 10, margin: 5 }}>
+    <View style={{ backgroundColor: '#1E293B', width: '93%', alignSelf: 'center', borderRadius: 10, height: 90, padding: 10, margin: 5 }}>
 
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ flexDirection: 'row' }}>
@@ -102,7 +102,7 @@ const Buddies = ({ navigation }) => {
       <View style={{ margin: 15, left: 10 }}>
         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Friends</Text>
       </View>
-      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '90%', alignSelf: 'center' }}>
+      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '93%', alignSelf: 'center',margin:10 }}>
         <Image resizeMode='contain' style={{ height: 20, width: 30, margin: 10, left: 5 }} source={require('../Image/search.jpg')} />
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>

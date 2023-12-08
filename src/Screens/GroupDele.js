@@ -162,14 +162,16 @@ const GroupDele = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 30 }}>
-                <View style={{ backgroundColor: '#D2A784', height: 2, width: 350, borderRadius: 10, alignSelf: 'center', opacity: 0.7, margin: 15 }}></View>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
+                <View style={{ backgroundColor: '#D2A784', height: 2, width: '93%', borderRadius: 10, alignSelf: 'center', opacity: 0.7, margin: 15 }}></View>
+                <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={{ flexDirection: 'row', }}>
                     <TouchableOpacity onPress={() => handleMonthPress('Jan')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Jan' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Jan' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                fontFamily: 'DMSans-Medium',
+                                width: 40,
+                                marginLeft: 15
                             }}
                         >
                             Jan
@@ -178,9 +180,10 @@ const GroupDele = ({ navigation }) => {
                     <TouchableOpacity onPress={() => handleMonthPress('Feb')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Feb' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Feb' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                width: 40,
+                                fontFamily: 'DMSans-Medium'
                             }}
                         >
                             Feb
@@ -189,9 +192,10 @@ const GroupDele = ({ navigation }) => {
                     <TouchableOpacity onPress={() => handleMonthPress('Mar')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Mar' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Mar' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                width: 40,
+                                fontFamily: 'DMSans-Medium'
                             }}
                         >
                             Mar
@@ -200,9 +204,10 @@ const GroupDele = ({ navigation }) => {
                     <TouchableOpacity onPress={() => handleMonthPress('Apr')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Apr' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Apr' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                width: 40,
+                                fontFamily: 'DMSans-Medium'
                             }}
                         >
                             Apr
@@ -211,9 +216,10 @@ const GroupDele = ({ navigation }) => {
                     <TouchableOpacity onPress={() => handleMonthPress('Jun')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Jun' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Jun' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
                             }}
                         >
                             Jun
@@ -222,16 +228,77 @@ const GroupDele = ({ navigation }) => {
                     <TouchableOpacity onPress={() => handleMonthPress('Jul')}>
                         <Text
                             style={{
-                                color: selectedMonth === 'Jul' ? 'blue' : '#FFFFFF',
+                                color: selectedMonth === 'Jul' ? '#D2A784' : '#FFFFFF',
                                 fontSize: 14,
-                                fontFamily: 'DMSans-Bold',
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
                             }}
                         >
                             Jul
                         </Text>
                     </TouchableOpacity>
-                </View>
-                <View style={{ flexDirection: 'row', }}>
+                    <TouchableOpacity onPress={() => handleMonthPress('Aug')}>
+                        <Text
+                            style={{
+                                color: selectedMonth === 'Aug' ? '#D2A784' : '#FFFFFF',
+                                fontSize: 14,
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
+                            }}
+                        >
+                            Aug
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleMonthPress('Sep')}>
+                        <Text
+                            style={{
+                                color: selectedMonth === 'Sep' ? '#D2A784' : '#FFFFFF',
+                                fontSize: 14,
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
+                            }}
+                        >
+                            Sep
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleMonthPress('Oct')}>
+                        <Text
+                            style={{
+                                color: selectedMonth === 'Oct' ? '#D2A784' : '#FFFFFF',
+                                fontSize: 14,
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
+                            }}
+                        >
+                            Oct
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleMonthPress('Nom')}>
+                        <Text
+                            style={{
+                                color: selectedMonth === 'Nom' ? '#D2A784' : '#FFFFFF',
+                                fontSize: 14,
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
+                            }}
+                        >
+                            Nom
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => handleMonthPress('Dec')}>
+                        <Text
+                            style={{
+                                color: selectedMonth === 'Dec' ? '#D2A784' : '#FFFFFF',
+                                fontSize: 14,
+                                width: 40,
+                                fontFamily: 'DMSans-Medium',
+                            }}
+                        >
+                            Dec
+                        </Text>
+                    </TouchableOpacity>
+                </ScrollView>
+                <View >
                     <View style={{ position: 'absolute', zIndex: 100, left: 15, margin: 5 }}>
                         {dataList.map(i => {
                             return (
@@ -240,41 +307,69 @@ const GroupDele = ({ navigation }) => {
                         })}
                         <View style={{ flexDirection: 'row', bottom: 15 }}>
 
-                            <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 33, alignItems: 'center', justifyContent: 'center', borderRadius: 5, right: 10 }}>
+                            <TouchableOpacity style={{ flexDirection: 'row', backgroundColor: '#1E293B', width: 130, height: 33, alignItems: 'center', justifyContent: 'center', borderRadius: 5, right: 15 }}>
                                 <Image resizeMode='contain' style={{ height: 20, width: 20, right: 5 }} source={require('../Image/tared.png')} />
                                 <Text style={{ color: '#FFFFFF', left: 7, fontFamily: 'DMSans-Bold', fontSize: 12, justifyContent: 'center' }}>Data Range</Text>
-                            </View>
-                            <View style={{ flexDirection: 'row', width: 200, }}>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === '1D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('1D')}>
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>1D</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === '5D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('5D')}>
+                            </TouchableOpacity>
+                            <ScrollView showsHorizontalScrollIndicator={false}  horizontal={true} contentContainerStyle={{paddingRight:140}} >
+                                <View style={{ flexDirection: 'row' }}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>5D</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === '1M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('1M')}>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === '1D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('1D')}>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>1D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === '5D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('5D')}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>1M</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === '3M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('3M')}>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>5D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === '1M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('1M')}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>3M</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === '6M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('6M')}>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>1M</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === '3M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('3M')}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>6M</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y1D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y1D')}>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>3M</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === '6M' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('6M')}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y1D</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y2D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y2D')}>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>6M</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y1D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y1D')}>
 
-                                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y2D</Text>
-                                </TouchableOpacity>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y1D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y2D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y2D')}>
 
-                            </View>
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y2D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y3D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y3D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y3D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y4D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y4D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y4D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y5D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y5D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y5D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y6D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y6D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y6D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y7D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y7D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y7D</Text>
+                                    </TouchableOpacity>
+                                    <TouchableOpacity style={{ backgroundColor: selectedOption === 'Y8D' ? '#D2A784' : '#1E293B', width: 38, borderRadius: 5, height: 30, justifyContent: 'center', marginLeft: 2, marginRight: 2 }} onPress={() => handleOptionPress('Y8D')}>
+
+                                        <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, textAlign: 'center', }}>Y8D</Text>
+                                    </TouchableOpacity>
+                                </View>
+
+                            </ScrollView>
                         </View>
+
                     </View>
                     <LineChart
                         // horizontal
@@ -366,7 +461,7 @@ const GroupDele = ({ navigation }) => {
                     <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 14, marginTop: 5 }}>Lorem ipsum dolor sit amet, consectetur </Text>
                     <Text style={{ color: '#FFFFFF', fontSize: 14, fontFamily: 'DMSans-Bold', }}>adipiscingelit</Text>
                 </View>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center',padding:10 }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center', padding: 10 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>50 Participants</Text>
                     <Image resizeMode='contain' style={{ height: 25, width: 20, alignSelf: 'center' }} source={require('../Image/search.jpg')} />
                 </View>
@@ -389,7 +484,7 @@ const GroupDele = ({ navigation }) => {
                 </View>
                 <View>
 
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '92%', alignSelf: 'center',margin:10 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '92%', alignSelf: 'center', margin: 10 }}>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Connections </Text>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Today</Text>
                         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>All Time</Text>
@@ -479,12 +574,12 @@ const GroupDele = ({ navigation }) => {
                 </View>
                 <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', }}>More</Text>
-                    <Image style={{ height: 10, width: 18, marginLeft: 5, justifyContent: 'center' }} resizeMode='contain' source={require('../Image/arrowdown.jpg')} />
+                    <Image style={{ height: 15, width: 20, marginLeft: 5, justifyContent: 'center' }} resizeMode='contain' source={require('../Image/arrowdown.jpg')} />
                 </TouchableOpacity>
                 <Image style={{ alignSelf: 'center', height: 80, width: 278 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
-                <TouchableOpacity style={{ backgroundColor: '#1E293B', width: '93%', borderRadius: 30, justifyContent: 'center', alignSelf: 'center', height: 46, flexDirection: 'row',margin:15 }}>
-                    <Image style={{ alignSelf: 'center', height: 20, width: 20 }} resizeMode='contain' source={require('../Image/Exit1.png')} />
-                    <Text style={{ textAlign: 'center', color: '#CC2929', margin: 10, textAlign: 'center', fontSize: 16, fontFamily: 'DMSans-Bold', }}>
+                <TouchableOpacity style={{ backgroundColor: '#1E293B', width: '93%', borderRadius: 30, justifyContent: 'center', alignSelf: 'center', height: 46, flexDirection: 'row', margin: 15,alignItems:'center'}}>
+                    <Image style={{ height: 20, width: 20 }} resizeMode='contain' source={require('../Image/Exit1.png')} />
+                    <Text style={{ textAlign: 'center', color: '#CC2929', fontSize: 16, fontFamily: 'DMSans-Bold',left:10 }}>
                         Exit group
                     </Text>
                 </TouchableOpacity>

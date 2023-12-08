@@ -53,7 +53,7 @@ const Setup = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <TouchableOpacity onPress={() => navigation.navigate('Notification')} style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 30 }}>
+      <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', width: '92%', alignSelf: 'center', margin: 30 }}>
         <Text style={{ color: '#FFFFFF', fontSize: 18, alignSelf: 'center', marginLeft: 10, fontFamily: 'DMSans-Bold' }}>Notifications</Text>
         <Switch
           trackColor={{ false: '#0F172A', true: '#D1A684' }}

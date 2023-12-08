@@ -40,7 +40,7 @@ const Login = ({ navigation }) => {
                 <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'DMSans-Bold' }}>Log in</Text>
             </View>
             <ScrollView>
-                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
+                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/email.jpg')} />
                     <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.8, fontFamily: 'DMSans-Bold', justifyContent: 'center' }} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
                 </View>
@@ -57,7 +57,7 @@ const Login = ({ navigation }) => {
                             Enter a valid email  Character (com)
                         </Text> : null
                 }
-                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: 340, flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
+                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
                     <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/lock.png')} />
                     <TextInput maxLength={8} style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.8, fontFamily: 'DMSans-Bold', justifyContent: 'center' }} onChangeText={(txt) => { setlogPassword(txt) }} keyboardType='Password-type' placeholder='Password'
                         placeholderTextColor='#FFFFFF' secureTextEntry={true} />
@@ -73,7 +73,7 @@ const Login = ({ navigation }) => {
 
                 <TouchableOpacity disabled={!logEmail || !logPassword} onPress={() => {
                     loginapi()
-                }} style={{ backgroundColor: '#1E293B', width: 340, height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
+                }} style={{ backgroundColor: '#1E293B', width: '90%', height: 46, justifyContent: 'center', alignSelf: 'center', borderRadius: 15, top: 30 }}>
                     <Text style={{ textAlign: 'center', fontSize: 16, color: '#FFFFFF', fontFamily: 'DMSans-Bold', justifyContent: 'center' }}>
                         Log in
                     </Text>

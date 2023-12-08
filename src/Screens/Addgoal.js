@@ -57,17 +57,14 @@ const Addgoal = ({ navigation }) => {
                 {/* <TouchableOpacity  style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 20, height: 55, alignItems: 'center', padding: 15, borderWidth: 2, borderColor: '#FFFFFF', marginBottom: 15 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium',opacity:0.5}}>Mission eg. 5 dollars a day</Text>
                 </TouchableOpacity> */}
-                <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.9, width: '93%', alignSelf: 'center', margin: 5 }}>
+                {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.9, width: '93%', alignSelf: 'center', margin: 5 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, }}>Mission eg. 5 dollars a day</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 {/* //Text input// */}
-                {/* <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '95%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
+                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '93%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
 
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10, fontFamily: 'Poppins-Medium', top: 5 }} keyboardType='Email-type' placeholder='Connections' placeholderTextColor='#FFFFFF' />
-                    <TouchableOpacity  style={{alignSelf: 'center', }} >
-                    <Image resizeMode='cover' style={{ height: 20, width: 20, alignSelf: 'center', left: 60 }} source={require('../Image/arrowdown.jpg')} />
-                    </TouchableOpacity>
-                </View> */}
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10,  fontFamily: 'DMSans-Bold'}} keyboardType='Email-type' placeholder='Mission eg. 5 dollars a day' placeholderTextColor='#FFFFFF' />
+                </View>
                 {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>On behalf of</Text>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, right: 15, top: 2 }} source={require('../Image/arrowdown.jpg')} />
@@ -123,17 +120,21 @@ const Addgoal = ({ navigation }) => {
                         />
                     </View>
                 )}
-                <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.9, width: '93%', alignSelf: 'center', margin: 5 }}>
+                {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.9, width: '93%', alignSelf: 'center', margin: 5 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 10, }}>Mother</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
+                <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '93%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
+
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10,  fontFamily: 'DMSans-Bold', }} keyboardType='Email-type' placeholder='Mother' placeholderTextColor='#FFFFFF' />
+                </View>
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.8, width: '93%', alignSelf: 'center', margin: 5 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 13, }}>Total Time</Text>
-                    <View style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, justifyContent: 'center' }}>
+                    <View style={{ color: '#FFFFFF', fontSize: 16,  fontFamily: 'DMSans-Bold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, justifyContent: 'center' }}>
 
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center', }}>Days</Text>
                     </View>
                 </TouchableOpacity>
-                <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', height: 46,width:'93%',alignSelf:'center',margin:5 }}>
+                <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', height: 46, width: '93%', alignSelf: 'center', margin: 10 }}>
 
                     <TouchableOpacity onPress={() => {
                         setCalendarOpen(true)

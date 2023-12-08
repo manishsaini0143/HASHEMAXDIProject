@@ -150,11 +150,11 @@ const Groups = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '85%', alignSelf: 'center', margin: 10 }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center',padding:5}}>
         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}>Groups</Text>
-        <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center' }} source={require('../Image/plus.png')} />
+        <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center' }} source={require('../Image/addbutten.png')} />
       </View>
-      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '88%', alignSelf: 'center' }}>
+      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '93%', alignSelf: 'center' }}>
         <Image resizeMode='contain' style={{ height: 20, width: 30, margin: 10, left: 5 }} source={require('../Image/search.jpg')} />
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>
