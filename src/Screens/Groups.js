@@ -5,7 +5,7 @@ const Groups = ({ navigation }) => {
   const data = [
     {
       id: '1',
-      image1: require('../Image/menpro.png'),
+      image1: require('../Image/menprofile.png'),
       name1: 'Group Name',
       name2: 'Connection',
       name3: 'Mission',
@@ -26,7 +26,7 @@ const Groups = ({ navigation }) => {
     },
     {
       id: '1',
-      image1: require('../Image/menpro.png'),
+      image1: require('../Image/menprofile.png'),
       name1: 'Group Name',
       name2: 'Connection',
       name3: 'Mission',
@@ -47,7 +47,7 @@ const Groups = ({ navigation }) => {
     },
     {
       id: '1',
-      image1: require('../Image/menpro.png'),
+      image1: require('../Image/menprofile.png'),
       name1: 'Group Name',
       name2: 'Connection',
       name3: 'Mission',
@@ -130,9 +130,9 @@ const Groups = ({ navigation }) => {
   };
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10,width:'95%',alignSelf:'center'}}>
         <View >
-          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 145, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
         <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
@@ -150,7 +150,7 @@ const Groups = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center',padding:5}}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center', padding: 5 }}>
         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', alignSelf: 'center' }}>Groups</Text>
         <Image resizeMode='contain' style={{ height: 30, width: 30, alignSelf: 'center' }} source={require('../Image/addbutten.png')} />
       </View>

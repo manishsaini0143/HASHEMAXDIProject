@@ -63,7 +63,7 @@ const Addgoal = ({ navigation }) => {
                 {/* //Text input// */}
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '93%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
 
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10,  fontFamily: 'DMSans-Bold'}} keyboardType='Email-type' placeholder='Mission eg. 5 dollars a day' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10, fontFamily: 'DMSans-Bold' }} keyboardType='Email-type' placeholder='Mission eg. 5 dollars a day' placeholderTextColor='#FFFFFF' />
                 </View>
                 {/* <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', margin: 10, opacity: 0.9 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-Medium', left: 10, top: 2 }}>On behalf of</Text>
@@ -125,11 +125,11 @@ const Addgoal = ({ navigation }) => {
                 </TouchableOpacity> */}
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '93%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center', borderWidth: 1, borderColor: '#FFFFFF', }} >
 
-                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10,  fontFamily: 'DMSans-Bold', }} keyboardType='Email-type' placeholder='Mother' placeholderTextColor='#FFFFFF' />
+                    <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.7, left: 10, fontFamily: 'DMSans-Bold', }} keyboardType='Email-type' placeholder='Mother' placeholderTextColor='#FFFFFF' />
                 </View>
                 <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1E293B', borderRadius: 15, height: 46, alignItems: 'center', borderWidth: 2, borderColor: '#FFFFFF', opacity: 0.8, width: '93%', alignSelf: 'center', margin: 5 }}>
                     <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', left: 13, }}>Total Time</Text>
-                    <View style={{ color: '#FFFFFF', fontSize: 16,  fontFamily: 'DMSans-Bold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, justifyContent: 'center' }}>
+                    <View style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', backgroundColor: '#0F172A', borderLeftWidth: 2, borderLeftColor: '#FFFFFF', height: 43, width: 100, borderTopRightRadius: 20, borderBottomRightRadius: 20, justifyContent: 'center' }}>
 
                         <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', textAlign: 'center', }}>Days</Text>
                     </View>

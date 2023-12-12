@@ -5,7 +5,7 @@ const Buddies = ({ navigation }) => {
   const data = [
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Dovid',
       add: 'Add Friend',
       text: 'Shared Connections',
@@ -13,7 +13,7 @@ const Buddies = ({ navigation }) => {
     },
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Tzedkah',
       add: 'Un Friend',
       text: 'Shared Connections',
@@ -21,7 +21,7 @@ const Buddies = ({ navigation }) => {
     },
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Dovid',
       add: 'Add Friend',
       text: 'Shared Connections',
@@ -29,7 +29,7 @@ const Buddies = ({ navigation }) => {
     },
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Tzedkah',
       add: 'Un Friend',
       text: 'Shared Connections',
@@ -37,7 +37,7 @@ const Buddies = ({ navigation }) => {
     },
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Dovid',
       add: 'Add Friend',
       text: 'Shared Connections',
@@ -45,7 +45,7 @@ const Buddies = ({ navigation }) => {
     },
     {
       id: '1',
-      image: require('../Image//parsnal.jpg'),
+      image: require('../Image/menprofile.png'),
       name: 'Tzedkah',
       add: 'Un Friend',
       text: 'Shared Connections',
@@ -59,7 +59,7 @@ const Buddies = ({ navigation }) => {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ flexDirection: 'row' }}>
 
-          <Image resizeMode='contain' style={{ height: 32, width: 32, alignSelf: 'center' }} source={item.image} />
+          <Image resizeMode='contain' style={{ height: 35, width: 35, alignSelf: 'center' }} source={item.image} />
           <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 18, alignSelf: 'center', marginLeft: 15 }}>{item.name}</Text>
         </View>
         <TouchableOpacity style={{ alignSelf: 'center', backgroundColor: '#D2A784', width: 122, alignItems: 'center', height: 30, borderRadius: 5, justifyContent: 'center' }}>
@@ -79,9 +79,9 @@ const Buddies = ({ navigation }) => {
   );
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
+      <View  style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10,width:'95%',alignSelf:'center'}}>
         <View >
-          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 145, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
         <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
@@ -102,7 +102,7 @@ const Buddies = ({ navigation }) => {
       <View style={{ margin: 15, left: 10 }}>
         <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold' }}>Friends</Text>
       </View>
-      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '93%', alignSelf: 'center',margin:10 }}>
+      <View style={{ backgroundColor: '#1E293B', height: 40, borderRadius: 30, flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', opacity: 0.7, width: '93%', alignSelf: 'center', margin: 10 }}>
         <Image resizeMode='contain' style={{ height: 20, width: 30, margin: 10, left: 5 }} source={require('../Image/search.jpg')} />
         <TextInput style={{ width: 270, height: 40, padding: 10, borderRadius: 20, color: '#FFFFFF' }} placeholder='' keyboardType='text' />
       </View>

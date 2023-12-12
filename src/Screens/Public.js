@@ -327,7 +327,7 @@ const Public = ({ navigation }) => {
                         </View>
                     </View>
                 </TouchableOpacity>
-                <Image style={{ alignSelf: 'center', height: 80, width: 278, marginTop: 15 }} resizeMode='cover' source={require('../Image/Splash1.jpg')} />
+                <Image style={{ alignSelf: 'center', height: 80, width: 278, marginTop: 15 }} resizeMode='cover' source={require('../Image/Splash2.png')} />
 
             </ScrollView>
         </View>

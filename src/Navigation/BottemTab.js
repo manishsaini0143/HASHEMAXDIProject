@@ -25,7 +25,6 @@ export default function BottomTab() {
         })} initialRouteName='Home'>
             <Tab.Screen name="Home" component={Home} options={{
                 tabBarIcon: ({ focused }) => (
-
                     focused ?
                         <Image resizeMode='contain' style={{ height: 28, width: 28, position: 'absolute', top: 20 }} source={require('../Image/home1.jpg')} />
                         : <Image resizeMode='contain' style={{ height: 28, width: 28, position: 'absolute', top: 20 }} source={require('../Image/home.jpg')} />
@@ -33,10 +32,9 @@ export default function BottomTab() {
             }} />
             <Tab.Screen name="Groups" component={Groups} options={{
                 tabBarIcon: ({ focused }) => (
-
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/Groups.png')} />
-                        : <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/group.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/Group2.png')} />
+                        : <Image resizeMode='contain' style={{ height: 30, width: 30, position: 'absolute', top: 19 }} source={require('../Image/Groups1.png')} />
                 )
             }} />
             <Tab.Screen name="Buddies" component={Buddies} options={{
@@ -47,11 +45,10 @@ export default function BottomTab() {
                 )
             }} />
             <Tab.Screen name="Calenders" component={Calenders} options={{
-
                 tabBarIcon: ({ focused }) => (
                     focused ?
-                        <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendarbottem.png')} />
-                        : <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendar.jpg')} />
+                        <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendarbottem1.png')} />
+                        : <Image resizeMode='contain' style={{ height: 25, width: 25, marginTop: 16 }} source={require('../Image/calendar.png')} />
                 )
             }} />
         </Tab.Navigator>

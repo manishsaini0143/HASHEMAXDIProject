@@ -4,9 +4,9 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 const Calenders = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
+      <View  style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10,width:'95%',alignSelf:'center'}}>
         <View >
-          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 145, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
         <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>

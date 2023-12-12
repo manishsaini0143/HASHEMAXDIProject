@@ -17,9 +17,8 @@ const CreateGrouplist = ({ navigation }) => {
 
     const dropdownItems = ['Connections', 'Option 1', 'Option 2', 'Option 3'];
     //drop down//
-
-    const [showdate, setshowdate] = useState(false);
-    const [detefix, setdetefix] = useState();
+    const [selected, setSelected] = useState('');
+    const [CalendarOpen, setCalendarOpen] = useState(false)
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '90%', alignSelf: 'center', margin: 15 }}>
@@ -47,7 +46,7 @@ const CreateGrouplist = ({ navigation }) => {
                 </View>
             </View>
             <View style={{ alignSelf: 'center', margin: 10 }}>
-                <Image resizeMode='contain' style={{ height: 70, width: 70, }} source={require('../Image/profile1.png')} />
+                <Image resizeMode='contain' style={{ height: 70, width: 70, }} source={require('../Image/groupdelpro.png')} />
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 20 }}>
 
@@ -143,33 +142,33 @@ const CreateGrouplist = ({ navigation }) => {
                     </TouchableOpacity>
                     <View style={{ width: '95%', flexDirection: 'row', borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: '#1E293B', borderRadius: 20, alignSelf: 'center', height: 46, width: '93%', alignSelf: 'center', margin: 10 }}>
 
-                        <TouchableOpacity
-                            onPress={() => {
-                                setshowdate(true)
-                            }}
-                            style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
+                        <TouchableOpacity onPress={() => {
+                            setCalendarOpen(true)
+                        }} style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderRightWidth: 1, borderColor: '#FFFFFF', borderTopLeftRadius: 20, borderBottomLeftRadius: 20 }}>
                             {
-                                !showdate ?
-                                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, justifyContent: 'center' }}>Start  Date</Text> : <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, top: 2.5 }}>{detefix}</Text>
+                                !selected ?
+
+                                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, }}>Start  Date</Text> :
+                                    <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'Poppins-SemiBold', margin: 5, }}>{selected}</Text>
                             }
                             <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                         </TouchableOpacity>
                         <TouchableOpacity style={{ flexDirection: "row", backgroundColor: '#1E293B', width: '50%', height: 44, justifyContent: 'center', alignItems: 'center', borderLeftWidth: 1, borderColor: '#FFFFFF', borderTopRightRadius: 20, borderBottomRightRadius: 20 }}>
-                            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, justifyContent: 'center' }}>End  Date</Text>
+                            <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', margin: 5, }}>End  Date</Text>
                             <Image resizeMode='contain' style={{ height: 20, width: 20, margin: 10, left: 5 }} source={require('../Image/calendar2.jpg')} />
                         </TouchableOpacity>
                     </View>
                     {
-                        showdate == true ?
+                        CalendarOpen == true ?
 
-                            <View style={{ width: 400, height: 400, alignSelf: 'center' }}>
+                            <View style={{ width: 400, height: 500 }}>
                                 <Calendar
                                     onDayPress={day => {
-                                        setdetefix(day.dateString);
-                                        setshowdate(false)
+                                        setSelected(day.dateString);
+                                        setCalendarOpen(false)
                                     }}
                                     markedDates={{
-                                        [detefix]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
+                                        [selected]: { selected: true, disableTouchEvent: true, selectedDotColor: 'orange' }
                                     }}
                                 />
                             </View>
@@ -192,10 +191,10 @@ const CreateGrouplist = ({ navigation }) => {
 
                             <Image resizeMode='cover' style={{ height: 20, width: 20 }} source={require('../Image/rong.jpg')} />
                         </TouchableOpacity> */}
-                        <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin:5 }}>
+                        <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin: 5 }}>
                             <View style={{ flexDirection: 'row', }}>
 
-                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/parsnal.jpg')} />
+                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menprofile.png')} />
                                 <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', marginLeft: 5 }}>Dovid</Text>
                             </View>
                             <Image resizeMode='cover' style={{ height: 20, width: 20 }} source={require('../Image/rong.jpg')} />
@@ -203,7 +202,7 @@ const CreateGrouplist = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin: 5 }}>
                             <View style={{ flexDirection: 'row', }}>
 
-                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/parsnal.jpg')} />
+                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menprofile.png')} />
                                 <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', marginLeft: 5 }}>Dovid</Text>
                             </View>
                             <Image resizeMode='cover' style={{ height: 20, width: 20 }} source={require('../Image/right.jpg')} />
@@ -211,7 +210,7 @@ const CreateGrouplist = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin: 5 }}>
                             <View style={{ flexDirection: 'row', }}>
 
-                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/parsnal.jpg')} />
+                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menprofile.png')} />
                                 <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', marginLeft: 5 }}>Dovid</Text>
                             </View>
 
@@ -220,7 +219,7 @@ const CreateGrouplist = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#0F172A', borderRadius: 20, height: 50, alignItems: 'center', padding: 15, margin: 5 }}>
                             <View style={{ flexDirection: 'row', }}>
 
-                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/parsnal.jpg')} />
+                                <Image resizeMode='contain' style={{ height: 30, width: 30, margin: 5 }} source={require('../Image/menprofile.png')} />
                                 <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', marginLeft: 5 }}>Dovid</Text>
                             </View>
 

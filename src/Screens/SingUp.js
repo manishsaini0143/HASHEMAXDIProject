@@ -42,7 +42,7 @@ const SingUp = ({ navigation }) => {
           : null}
       <View style={{ backgroundColor: '#0F172A', flex: 1 }}>
         <View style={{ alignItems: 'center', padding: 15 }}>
-          <Image style={{ width: 316, height: 316 }} source={require('../Image/Singup.jpg')} />
+          <Image style={{ width: 316, height: 316 }} source={require('../Image/Singup.png')} />
           <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'DMSans-Bold' }}>Sign up</Text>
         </View>
         <ScrollView>
@@ -60,7 +60,7 @@ const SingUp = ({ navigation }) => {
             }
           </View>
           <View style={{ margin: 10, borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', alignSelf: 'center' }} >
-            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, top: 4 }} source={require('../Image/email.jpg')} />
+            <Image resizeMode='contain' style={{ width: 25, height: 25, margin: 10, alignSelf: 'center' }} source={require('../Image/email.png')} />
             <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, opacity: 0.7, fontFamily: 'DMSans-Medium', justifyContent: 'center' }} onChangeText={(txt) => { setEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
           </View>
           {

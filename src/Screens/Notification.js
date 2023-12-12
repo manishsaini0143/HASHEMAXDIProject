@@ -5,60 +5,61 @@ const Notification = ({ navigation }) => {
     const data = [
         {
             id: '1',
-            image: require('../Image/parsnal.jpg'),
+            image: require('../Image/menprofile.png'),
             name: 'Dovid',
             text: 'Lorem Ipsum is simply dummy text of the printing and',
             add: 'Accept',
         },
         {
             id: '1',
-            image: require('../Image/parsnal.jpg'),
+            image: require('../Image/menprofile.png'),
             name: 'Dovid',
             text: 'Lorem Ipsum is simply dummy text of the printing and',
             add: 'Accept',
         },
         {
             id: '1',
-            image: require('../Image/parsnal.jpg'),
+            image: require('../Image/menprofile.png'),
             name: 'Dovid',
             text: 'Lorem Ipsum is simply dummy text of the printing and',
             add: 'Accept',
         },
     ];
     const renderItem1 = ({ item }) => {
-        return(
-<View style={{flexDirection:'row',width:'93%',alignSelf:'center',height:90,backgroundColor:'#1E293B',marginBottom:20,borderRadius:10}}>
-    <View style={{width:'15%',marginTop:10}}>
+        return (
+            <View style={{ flexDirection: 'row', width: '93%', alignSelf: 'center', height: 90, backgroundColor: '#1E293B', marginBottom: 20, borderRadius: 10 }}>
+                <View style={{ width: '15%', marginTop: 10 }}>
 
-<Image resizeMode='contain' style={{ height: 40, width: 40,alignSelf:'center'}} source={require('../Image/parsnal.jpg')} />
-    </View>
-    <View style={{width:'65%',marginTop:10}}>
-    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 18, }}>{item.name}</Text>
-         <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Regular', fontSize: 12, }}>{item.text}</Text>
-    </View>
-    <TouchableOpacity style={{justifyContent:'center',backgroundColor:'#0F172A',width:'20%',overflow:'hidden',borderTopRightRadius:10,borderBottomRightRadius:10,borderWidth:1,borderColor:'#D2A784'}}>
-    <Text style={{ color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center' }}>{item.add}</Text>
-    </TouchableOpacity>
-</View>
-        // <View style={{ flexDirection: 'row', height: 85, margin: 10, justifyContent: 'center', alignSelf: 'center' }}>
-        //     <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderTopLeftRadius: 15, borderBottomLeftRadius: 15 }}>
+                    <Image resizeMode='contain' style={{ height: 40, width: 40, alignSelf: 'center' }} source={item.image} />
+                    {/* <View style={{height:10,width:10,borderRadius:40,backgroundColor:'red',position:'absolute',left:35}}></View> */}
+                </View>
+                <View style={{ width: '65%', marginTop: 10 }}>
+                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 18, }}>{item.name}</Text>
+                    <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Regular', fontSize: 12, }}>{item.text}</Text>
+                </View>
+                <TouchableOpacity style={{ justifyContent: 'center', backgroundColor: '#0F172A', width: '20%', overflow: 'hidden', borderTopRightRadius: 10, borderBottomRightRadius: 10, borderWidth: 1, borderColor: '#D2A784' }}>
+                    <Text style={{ color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center' }}>{item.add}</Text>
+                </TouchableOpacity>
+            </View>
+            // <View style={{ flexDirection: 'row', height: 85, margin: 10, justifyContent: 'center', alignSelf: 'center' }}>
+            //     <View style={{ flexDirection: 'row', backgroundColor: '#1E293B', borderTopLeftRadius: 15, borderBottomLeftRadius: 15 }}>
 
-        //         <View style={{ margin: 10 }}>
-        //             <Image resizeMode='contain' style={{ height: 33, width: 33, }} source={require('../Image/parsnal.jpg')} />
-        //         </View>
-        //         <View style={{ width: 180, top: 10, marginLeft: 5 }}>
+            //         <View style={{ margin: 10 }}>
+            //             <Image resizeMode='contain' style={{ height: 33, width: 33, }} source={require('../Image/parsnal.jpg')} />
+            //         </View>
+            //         <View style={{ width: 180, top: 10, marginLeft: 5 }}>
 
-        //             <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 16, }}>{item.name}</Text>
-        //             <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Regular', fontSize: 12, }}>{item.text}
-        //             </Text>
-        //         </View>
-        //     </View>
-        //     <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20, width: 91, justifyContent: 'center', borderWidth: 1, borderColor: '#D2A784', opacity: 0.9, height: 85 }}>
-        //         <Text style={{ color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center' }}>{item.add}</Text>
-        //     </View>
-        // </View>
+            //             <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Bold', fontSize: 16, }}>{item.name}</Text>
+            //             <Text style={{ color: '#FFFFFF', fontFamily: 'DMSans-Regular', fontSize: 12, }}>{item.text}
+            //             </Text>
+            //         </View>
+            //     </View>
+            //     <View style={{ backgroundColor: '#0F172A', borderTopRightRadius: 20, borderBottomRightRadius: 20, width: 91, justifyContent: 'center', borderWidth: 1, borderColor: '#D2A784', opacity: 0.9, height: 85 }}>
+            //         <Text style={{ color: '#FFFFFF', fontFamily: 'Poppins-SemiBold', fontSize: 13, textAlign: 'center', alignSelf: 'center' }}>{item.add}</Text>
+            //     </View>
+            // </View>
         )
-        
+
     };
     return (
         <View style={{ flex: 1, backgroundColor: '#0D1134' }}>
@@ -80,7 +81,7 @@ const Notification = ({ navigation }) => {
                 </View>
             </View>
             <FlatList
-            style={{marginTop:30}}
+                style={{ marginTop: 30 }}
                 contentContainerStyle={{ paddingBottom: 100 }}
                 data={data}
                 renderItem={renderItem1}

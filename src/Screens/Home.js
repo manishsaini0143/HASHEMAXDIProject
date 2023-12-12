@@ -191,9 +191,9 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
         </View>
       </View> */}
-      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10,width:'95%',alignSelf:'center'}}>
         <View >
-          <Image resizeMode='cover' style={{ height: 130, width: 150, }} source={require('../Image/Splash.png')} />
+          <Image resizeMode='cover' style={{ height: 145, width: 150, }} source={require('../Image/Splash.png')} />
         </View>
         <View style={{ flexDirection: 'row', width: '80%', height: 70, top: 20, justifyContent: 'center', left: 5 }}>
           <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
@@ -535,7 +535,7 @@ const Home = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity>
 
-                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends.png')} />
+                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends1.png')} />
                 </TouchableOpacity>
               </View>
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', right: 13 }}>My Goal - 15/45 Days</Text>
@@ -572,7 +572,7 @@ const Home = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity>
 
-                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends.png')} />
+                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends1.png')} />
                 </TouchableOpacity>
               </View>
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', right: 13 }}>My Goal - 15/45 Days</Text>
@@ -608,7 +608,7 @@ const Home = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity>
 
-                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends.png')} />
+                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends1.png')} />
                 </TouchableOpacity>
               </View>
               <View style={{ flexDirection: 'row', right: 10 }}>
@@ -645,12 +645,11 @@ const Home = ({ navigation }) => {
                   value={onoff3}
                 />
                 <TouchableOpacity>
-
                   <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/Massage.jpg')} />
                 </TouchableOpacity>
                 <TouchableOpacity>
 
-                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends.png')} />
+                  <Image resizeMode='contain' style={{ height: 27, width: 30 }} source={require('../Image/frends1.png')} />
                 </TouchableOpacity>
               </View>
               <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'DMSans-Bold', alignSelf: 'center', right: 10 }}>My Goal - 15/45 Days</Text>
@@ -846,10 +845,9 @@ const Home = ({ navigation }) => {
             <Text style={{ color: '#FFFFFF', fontSize: 16, fontFamily: 'Poppins-SemiBold', top: 2.5 }}>85</Text>
           </TouchableOpacity> */}
         </View>
-        <Image style={{ height: 80, width: 278, alignSelf: 'center', margin: 10 }} source={require('../Image/Splash1.jpg')} />
+        <Image style={{ height: 80, width: 278, alignSelf: 'center', margin: 10 }} source={require('../Image/Splash2.png')} />
       </ScrollView>
     </View>
   );
 }
-
 export default Home;

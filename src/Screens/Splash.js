@@ -7,7 +7,7 @@ const Splash = () => {
       <View>
         <Image resizeMode='cover' style={{ alignSelf: 'center', width: 375, height: 579 }} source={require('../Image/Splash.png')} />
       </View>
-      <Image resizeMode='cover' style={{ height: 156, width: '100%' }} source={require('../Image/Splash1.jpg')} />
+      <Image resizeMode='cover' style={{ height: 156, width: '100%' }} source={require('../Image/Splash2.png')} />
     </View>
   );
 }

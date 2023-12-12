@@ -24,10 +24,10 @@ const profile = ({ navigation }) => {
                 </View>
             </View>
             <View style={{ alignItems: 'center' }}>
-                <Image resizeMode='contain' style={{ height: 76, width: 76 }} source={require('../Image/profilepicture.png')} />
-                <View style={{ height: 45, width: 45, alignItems: 'center', position: 'relative', bottom: 45, borderRadius: 30, }}>
+                <Image resizeMode='contain' style={{ height: 76, width: 76,opacity:0.5 }} source={require('../Image/menphoto.png')} />
+                <TouchableOpacity style={{ height: 45, width: 45, alignItems: 'center', position: 'relative', bottom: 45, borderRadius: 30, }}>
                     <Image resizeMode='contain' style={{ height: 20, width: 20, }} source={require('../Image/Edit.jpg')} />
-                </View>
+                </TouchableOpacity>
                 <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', bottom: 35 }}>Upload Pic</Text>
             </View>
             <View style={{ width: '93%', alignSelf: 'center' }}>

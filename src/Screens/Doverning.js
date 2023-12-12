@@ -436,7 +436,7 @@ const Doverning = ({ navigation }) => {
           <View style={{ borderWidth: 2, borderColor: '#64748B', alignSelf: 'center', borderRadius: 10, width: '93%', backgroundColor: '#1E293B' }}>
 
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 2, borderBlockColor: '#64748B', alignItems: 'center', marginTop: 5 }}>
-              <Image style={{ left: 20 }} source={require('../Image/menpro.png')} />
+              <Image style={{ left: 20 }} source={require('../Image/menprofile.png')} />
               <Switch
                 style={{ alignSelf: 'center', right: 30 }}
                 trackColor={{ false: '#0F172A', true: '#D1A684' }}
@@ -490,7 +490,7 @@ const Doverning = ({ navigation }) => {
             <View style={{ backgroundColor: '#D2A784', height: 2, width: 380, borderRadius: 10, alignSelf: 'center', opacity: 0.5 }}></View>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ margin: 10, height: 70, left: 10 }}>
-                <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+                <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled1.png')} />
               </View>
               <View style={{ margin: 20 }}>
                 <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B', fontFamily: 'DMSans-Bold' }}> 1h ago</Text></Text>
@@ -500,7 +500,7 @@ const Doverning = ({ navigation }) => {
             <View style={{ backgroundColor: '#0F172A', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', margin: 10 }}></View>
             <View style={{ flexDirection: 'row', }}>
               <View style={{ margin: 10, height: 70, left: 10 }}>
-                <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+                <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled1.png')} />
               </View>
               <View style={{ margin: 20 }}>
                 <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B' }}> 1h ago</Text></Text>

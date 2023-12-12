@@ -35,13 +35,13 @@ const Login = ({ navigation }) => {
                     <Loader />
                     : null}
             <View style={{ alignItems: 'center', padding: 15, marginTop: 20 }}>
-                <Image style={{ width: 305, height: 318 }} source={require('../Image/Login.png')} />
+                <Image style={{ width: 305, height: 318 }} source={require('../Image/logins.png')} />
                 {/* <Image resizeMode='cover' style={{ width: 305, height: 316 }} source={require('../Image/Login.svg')} /> */}
                 <Text style={{ color: '#FFFFFF', fontSize: 24, fontFamily: 'DMSans-Bold' }}>Log in</Text>
             </View>
             <ScrollView>
                 <View style={{ borderRadius: 15, backgroundColor: '#1E293B', width: '90%', flexDirection: 'row', margin: 10, height: 46, alignSelf: 'center' }} >
-                    <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/email.jpg')} />
+                    <Image resizeMode='contain' style={{ width: 25, height: 25, alignSelf: 'center', margin: 10 }} source={require('../Image/email.png')} />
                     <TextInput style={{ color: '#FFFFFF', width: '70%', fontSize: 16, alignSelf: 'center', opacity: 0.8, fontFamily: 'DMSans-Bold', justifyContent: 'center' }} onChangeText={(txt) => { setlogEmail(txt) }} keyboardType='Email-type' placeholder='Email address' placeholderTextColor='#FFFFFF' />
                 </View>
                 {

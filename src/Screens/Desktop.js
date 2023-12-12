@@ -4,27 +4,27 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 const slides = [
   {
     key: 'slide1',
-    image: require('../Image/Splash1.jpg'),
+    image: require('../Image/Splash2.png'),
     name: ' In Memory of blah blah'
   },
   {
     key: 'slide1',
-    image: require('../Image/Splash1.jpg'),
+    image: require('../Image/Splash2.png'),
     name: ' In Memory of blah blah'
   },
   {
     key: 'slide1',
-    image: require('../Image/Splash1.jpg'),
+    image: require('../Image/Splash2.png'),
     // name:' In Memory of blah blah'
   },
   {
     key: 'slide1',
-    image: require('../Image/Splash1.jpg'),
+    image: require('../Image/Splash2.png'),
     // name:' In Memory of blah blah'
   },
   {
     key: 'slide1',
-    image: require('../Image/Splash1.jpg'),
+    image: require('../Image/Splash2.png'),
     // name:' In Memory of blah blah'
   },
 

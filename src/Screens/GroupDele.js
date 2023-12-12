@@ -143,7 +143,7 @@ const GroupDele = ({ navigation }) => {
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '93%', alignSelf: 'center' }}>
 
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                    <Image resizeMode='contain' style={{ height: 80, width: 80, }} source={require('../Image/profile1.png')} />
+                    <Image resizeMode='contain' style={{ height: 80, width: 80, }} source={require('../Image/groupdelpro.png')} />
                     <Text style={{ color: '#FFFFFF', fontSize: 18, fontFamily: 'DMSans-Bold', left: 20, bottom: 5 }}>ABC GROUP</Text>
                 </View>
                 {/* //onPress={openShareDialog} // */}
@@ -517,7 +517,7 @@ const GroupDele = ({ navigation }) => {
                     <View style={{ backgroundColor: '#D2A784', height: 2, width: 380, borderRadius: 10, alignSelf: 'center', opacity: 0.7 }}></View>
                     <View style={{ flexDirection: 'row', }}>
                         <View style={{ margin: 10, height: 70, left: 10 }}>
-                            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+                            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled1.png')} />
                         </View>
                         <View style={{ margin: 20 }}>
                             <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B' }}> 1h ago</Text></Text>
@@ -527,7 +527,7 @@ const GroupDele = ({ navigation }) => {
                     <View style={{ backgroundColor: '#0F172A', height: 3, width: 330, borderRadius: 10, alignSelf: 'center', margin: 10 }}></View>
                     <View style={{ flexDirection: 'row', }}>
                         <View style={{ margin: 10, height: 70, left: 10 }}>
-                            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled.jpg')} />
+                            <Image resizeMode='cover' style={{ height: 60, width: 60, }} source={require('../Image/profiled1.png')} />
                         </View>
                         <View style={{ margin: 20 }}>
                             <Text style={{ color: "#FFFFFF", fontSize: 18, fontFamily: 'DMSans-Bold' }}>Com<Text style={{ color: '#64748B' }}> 1h ago</Text></Text>
